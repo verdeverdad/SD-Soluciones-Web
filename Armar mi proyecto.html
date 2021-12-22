@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SD-Soluciones en desarrollo</title>
+    <!-- build:css dist/index.css-->
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+    <!-- endbuild -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: azure;">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img class="circular--square" src="img/nuevo sol.jpg" width="130">
+            </a>
+        </nav>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Menú</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Quienes somos.html">¿Quiénes somos? <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">¿Cómo trabajamos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Porfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ¿Cómo comenzar?
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="todoLoQueTengoQueSaber.html">Todo lo que tengo que saber</a>
+                        <a class="dropdown-item" href="Armar mi proyecto.html">Armar mi proyecto</a>
+                    </div>
+                </li>
+            </ul>
+            <nav class="navbar navbar-light bg-light">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar.." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </nav>
+        </div>
+
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid" style="background-color: rgba(126, 196, 98, 0.067)">
+        <img class="img-thumbnail" src="img/mano grande.png" alt="Responsive image">
+
+    </div>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Armar mi proyecto</li>
+        </ol>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card form" style="width: 18rem;">
+                    <img src="img/proyecto.png" class="card-img-top" alt="Responsive">
+                    <div class="card-body form-group">
+                        <h5 class="card-title">¿Qué proyecto quiero?</h5>
+                        <label for="cars" class="form-label text-center">¡Eligue uno!</label><br>
+                        <select id="cars" class="form-control" name="cars">
+                            <option selected class="text-center"> ¡Eligue uno! </option>
+                            <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
+                                title="venta online de productos físicos o servicios">E-commers Tienda on-line</option>
+                            <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
+                                title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+                                Blog/magazine</option>
+                            <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
+                                title="informan al visitante sobre un producto específico">Landing pages</option>
+                            <option value="audi" class="text-center">Audi</option>
+                        </select><br>
+                        <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card form" style="width: 18rem;">
+                    <img src="img/partida.png" class="card-img-top" alt="Responsive">
+                    <div class="card-body form-group">
+                        <h5 class="card-title text-center">Punto de partida:</h5>
+                        <label for="cars" class="form-label text-center">¡Eligue uno!</label><br>
+                        <select id="cars" class="form-control" name="cars">
+                            <option selected class="text-center">¡Eligue uno! </option>
+                            <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
+                                title="informan al visitante sobre un producto específico">¡Ya tengo una idea!</option>
+                            <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
+                                title="venta online de productos físicos o servicios">Cuento con la idea y el diseño
+                            </option>
+                            <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
+                                title="Un blog o un sitio web de revista se centra en el contenido editorial.">Hay un
+                                proyecto ya publicado</option>
+                            <option value="audi" class="text-center">Hay un proyecto no publicado</option>
+                        </select><br>
+                        <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/Diseño sin título.png" class="card-img-top" alt="Responsive">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/manos.png" class="card-img-top" alt="Responsive">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/manos.png" class="card-img-top" alt="Responsive">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/manos.png" class="card-img-top" alt="Responsive">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h3 class="text-center">QUIERO QUE ME CONTACTEN:</h3><BR>
+        <form>
+            <!--para que me tome el form lo puse con espacio en vez de con "-"-->
+            <div class="form row">
+                <div class="form group col-sm-6">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form group col-sm-6">
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apellido">
+                </div>
+            </div>
+            <div class="form group ">
+                <label for="email">Email: </label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su Email">
+            </div>
+
+            <div class="form row">
+                <div class="form group col-sm-9">
+                    <label for="direccion">Dirección: </label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Ingrese su Dirección">
+                </div>
+                <div class="form group col-sm-3">
+                    <label for="Departamento">Departamento: </label>
+                    <select id="Departamento" class="form-control">
+                        <option selected>Montevideo</option>
+                        <option>Canelones</option>
+                        <option>Maldonado</option>
+                        <option>Colonia</option>
+                        <option>San José</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form group">
+                <label for="comentario">Comentario: </label>
+                <textarea class="form-control" id="comentario" placeholder="Ingrese su comentario" rows="10"></textarea>
+            </div>
+            <div class="form group">
+                <div class="form check">
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label class="form-check-label" for="check">Quiero que me contacten</label>
+
+                </div>
+            </div>
+            <button type="submit" class="btn" onclick="click_al_register()" style="background-color: crimson; 
+        color: white;"> Enviar</button>
+        </form>
+    </div>
+    </div>
+    <footer class="border border-3">
+        <div class="row">
+
+            <div class="col-sm-4 d-flex flex-column">
+                <p><a href="http://www.facebook.com">Facebook</a></p>
+                <p><a href="http://www.instagram.com">Instagram</a></p>
+                <p><a href="http://www.twitter.com">Twitter</a></p>
+
+                <address>
+                    <p><span class="oi oi-home footer-address-icon"></span>Montevideo e interior del país.</p>
+                    <p><span class="oi oi-phone footer-address-icon"></span> 099 678 345</p>
+                    <p><span class="oi oi-envelope-closed footer-address-icon"></span>contacto@solucionesDesarrollo.com
+                    </p>
+                </address>
+            </div>
+
+            <div class="col-sm-4 d-flex flex-column align-items-center">
+                <img src="img/Diseño sin título.png" class="img-fluid">
+            </div>
+
+
+            <div class="col-sm-4 d-flex flex-column align-items-end ">
+
+                <p><a href="http://www.facebook.com">Sobre nosotrxs</a></p>
+                <p><a href="http://www.instagram.com">Info de interés</a></p>
+                <p><a href="http://www.twitter.com">Únete a nuestro equipo</a></p>
+
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>

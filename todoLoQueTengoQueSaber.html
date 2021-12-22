@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SD-Soluciones en desarrollo</title>
+    <!-- build:css dist/index.css-->
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+    <!-- endbuild -->
+
+</head>
+
+<body class="body">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f3f3ff;">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img class="circular--square" src="img/nuevo sol.jpg" width="130">
+            </a>
+        </nav>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Menú</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Quienes somos.html">¿Quiénes somos? <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">¿Cómo trabajamos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Porfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ¿Cómo comenzar?
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="todoLoQueTengoQueSaber.html">Todo lo que tengo que saber</a>
+                        <a class="dropdown-item" href="Armar mi proyecto.html">Armar mi proyecto</a>
+                    </div>
+                </li>
+            </ul>
+            <nav class="navbar navbar-light bg-light">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar.." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </nav>
+        </div>
+
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <img class="img-thumbnail" src="img/mano grande.png" alt="Responsive image">
+
+    </div>
+
+    
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Todo lo que tengo que saber</li>
+            </ol>
+        </nav>
+    
+        <ul class="nav nav-tabs" id="mytabs" role="tablist">
+
+            <li class="nav-item">
+                <a class="nav-link active" id="uno-tab" data-toggle="tab" href="#uno" role="tab" aria-controls="uno"
+                    aria-selected="true">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas"
+                    aria-selected="false">Tarjetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab"
+                    aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
+    
+        </ul>
+    
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="uno" role="tabpanel" aria-labelledby="uno-tab">
+    
+                <div class="table-responsive">
+                    <table class="table table-striped" style="background-image: linear-gradient(to right, rgb(230, 46, 205), rgb(252, 181, 181), rgb(255, 193, 224));
+        ">
+                        <thead class="thead" style="background: rgb(226, 43, 211);">
+                            <th>Servicio</th>
+                            <th>Departamento</th>
+                            <th>Cantidad</th>
+                            <th>Calificaciones</th>
+                            <th>Descuentos</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Estetica</td>
+                                <td>Canelones</td>
+                                <td>15</td>
+                                <td><span class="oi oi-star"></span></td>
+                                <td>hasta 20%</td>
+                            </tr>
+                            <tr>
+                                <td>Reparaciones de hogar</td>
+                                <td>Montevideo</td>
+                                <td>25</td>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>hasta 30%</td>
+                            </tr>
+                            <tr>
+                                <td>Reposteria</td>
+                                <td>Maldonado</td>
+                                <td>12</td>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"></span>
+                                </td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Estetica</td>
+                                <td>Montevideo</td>
+                                <td>63</td>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"><span class="oi oi-star"></span></span></td>
+                                <td>hasta 20%</td>
+                            </tr>
+                            <tr>
+                                <td>Bienestar y salud</td>
+                                <td>Montevideo</td>
+                                <td>80</td>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"></span>
+                                </td>
+                                <td>hasta 30%</td>
+                            </tr>
+                        </tbody>
+    
+                    </table>
+                </div>
+    
+            </div>
+            <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Tarjeta de credito
+                                </button>
+                            </h5>
+                        </div>
+    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Hasta en 12 pagos si intereses
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Redes de cobranzas
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                En todas las redes de cobranzas de todo el pais.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Efectivo
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Pagas al momento de retirar la compra.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- <div class="accordion" id="accordionTarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headone">
+                            <h5 class="mb-0">
+                                <button class="btn collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseBasica" aria-expanded="false" aria-controls="collapseBasica"
+                                    style="background-color: rgb(252, 79, 122);">Tarjeta de credito
+                                </button>
+                            </h5>
+                        </div>
+    
+                        <div id="collapseBasica" class="collapse" aria-labelledby="headone" data-parent="accordionTarjetas">
+                            <div class="card-body">
+                                Hasta en 12 pagos si intereses
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headtwo">
+                            <h5 class="mb-0">
+                                <button class="btn collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseRedes" aria-controls="collapseRedes" aria-expanded="false"
+                                    style="background-color: rgb(252, 79, 122);">Redes de cobranzas
+                                </button>
+                            </h5>
+                        </div>
+    
+                        <div id="collapseRedes" class="collapse show" aria-labelledby="headtwo"
+                            data-parent="accordionTarjetas">
+                            <div class="card-body">
+                                En todas las redes de cobranzas de todo el pais.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headtree">
+                            <h5 class="mb-0">
+                                <button class="btn collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseEfectivo" aria-controls="collapseEfectivo" aria-expanded="true"
+                                    style="background-color: rgb(252, 79, 122);">Efectivo
+                                </button>
+                            </h5>
+                        </div>
+    
+                        <div id="collapseEfectivo" class="collapse" aria-labelledby="headtree"
+                            data-parent="accordionTarjetas">
+                            <div class="card-body">
+                                Pagas al momento de acordar la compra.
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <hr>
+                <!--  <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header" style="background-color: rgb(252, 79, 122);">
+                            <strong>Métodos de pago</strong>
+                        </div>
+                        <ul class="list-group list-group-flush" ">
+                            <li class=" list-group-item"style="background-color: rgb(248, 105, 134);">Tarjeta de crédito
+                            </li>
+                            <li class="list-group-item" style="background-color: rgb(253, 115, 143);">Tarjeta de débito
+                            </li>
+                            <li class="list-group-item" style="background-color: rgb(248, 124, 149);">Redes de cobranzas
+                            </li>
+                            <li class="list-group-item" style="background-color: rgb(252, 141, 163);">Efectivo</li>
+                        </ul>
+                    </div>
+                </div>-->
+            </div>
+    
+            <div class="tab-pane fade show" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                <h5> Comentarios: </h5>
+                <p>hola</p><br><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                    class="oi oi-star"></span>
+                <hr>
+                <p>hola</p><br><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                    class="oi oi-star"></span>
+                <hr>
+                <p>hola</p><br><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                    class="oi oi-star"></span>
+                <hr>
+                <p>hola</p><br>
+                <hr>
+            </div>
+    
+        </div>
+    
+
+    <footer class="border border-3">
+        <div class="row">
+
+            <div class="col-sm-4 d-flex flex-column">
+                <p><a href="http://www.facebook.com">Facebook</a></p>
+                <p><a href="http://www.instagram.com">Instagram</a></p>
+                <p><a href="http://www.twitter.com">Twitter</a></p>
+            </div>
+
+            <div class="col-sm-4 d-flex flex-column align-items-center">
+                <address>
+                    <p><span class="oi oi-home footer-address-icon"></span>Montevideo e interior del país.</p>
+                    <p><span class="oi oi-phone footer-address-icon"></span> 099 678 345</p>
+                    <p><span class="oi oi-envelope-closed footer-address-icon"></span>contacto@solucionesDesarrollo.com
+                    </p>
+                </address>
+            </div>
+
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <p><a href="http://www.facebook.com">Sobre nosotrxs</a></p>
+                <p><a href="http://www.instagram.com">Info de interés</a></p>
+                <p><a href="http://www.twitter.com">Únete a nuestro equipo</a></p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 "></div>
+                <div class="col-sm-4 ">
+                    <img src="img/Diseño sin título.png" class="img-fluid">
+                </div>
+                <div class="col-sm-4 "></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

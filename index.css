@@ -1,9 +1,26 @@
 .circular--square {
     border-radius: 100%
   }
-  .navbar {
-      color: black;
+
+.navbar {
+      background-color: #f3f3ff;
   }
-  .navbar {
-    color: black;
+
+ body {
+  background-image: url("img/mano grande.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
+
+ footer {
+      background-color: #f3f3ff;
+    }
+
+ address {
+      color: blue;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
