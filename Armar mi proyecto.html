@@ -25,10 +25,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: azure;">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <nav class="navbar">
-            <a class="navbar-brand" href="#">
-                <img class="circular--square" src="img/nuevo sol.jpg" width="130">
+            <a class="navbar-brand" href="index.html">
+                <img class="circular--square" src="img/nuevo sol 2.png" width="90">
             </a>
         </nav>
         <nav class="navbar navbar-light bg-light">
@@ -63,7 +63,7 @@
             </ul>
             <nav class="navbar navbar-light bg-light">
                 <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar.." aria-label="Search">
+                    <input class="form-control mr-sm-2 align-items-end" type="search" placeholder="Buscar.." aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                 </form>
             </nav>
@@ -71,7 +71,8 @@
 
     </nav>
 
-    <div class="jumbotron jumbotron-fluid" style="background-color: rgba(126, 196, 98, 0.067)">
+    
+    <div class="jumbotron jumbotron-fluid">
         <img class="img-thumbnail" src="img/mano grande.png" alt="Responsive image">
 
     </div>
@@ -83,111 +84,145 @@
         </ol>
     </nav>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card form" style="width: 18rem;">
-                    <img src="img/proyecto.png" class="card-img-top" alt="Responsive">
-                    <div class="card-body form-group">
-                        <h5 class="card-title">¿Qué proyecto quiero?</h5>
-                        <label for="cars" class="form-label text-center">Define el objetivo</label><br>
-                        <select id="cars" class="form-control" name="cars">
-                            <option selected class="text-center"> ¡Elige uno! </option>
-                            <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
-                                title="Un blog o un sitio web de revista se centra en el contenido editorial.">
-                                Blog/magazine</option>
-                            <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
-                                title="informan al visitante sobre un producto específico">Landing pages</option>
-                            <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
-                                title="venta online de productos físicos o servicios">E-commerce Tienda on-line</option>
+        <div class="d-flex flex-wrap flex-row">
 
-                            <option value="audi" class="text-center">Empresariales/corporativas</option>
-                        </select><br>
-                        <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
-                    </div>
+
+            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+                <img src="img/proyecto.png" class="card-img-top" alt="Responsive">
+                <div class="card-body form-group">
+                    <h5 class="card-title">¿Qué proyecto quiero?</h5>
+                    <label for="cars" class="form-label text-center">Define el objetivo</label><br>
+                    <select id="cars" class="form-control" name="cars">
+                        <option selected class="text-center"> ¡Elige uno! </option>
+                        <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+                            Blog/magazine</option>
+                        <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="informan al visitante sobre un producto específico">Landing pages</option>
+                        <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="venta online de productos físicos o servicios">E-commerce Tienda on-line
+                        </option>
+
+                        <option value="audi" class="text-center">Empresariales/corporativas</option>
+                    </select><br>
+                    <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card form" style="width: 18rem;">
-                    <img src="img/partida.png" class="card-img-top" alt="Responsive">
-                    <div class="card-body form-group">
-                        <h5 class="card-title text-center">Punto de partida:</h5>
-                        <label for="cars" class="form-label text-center">Elige el estilo</label><br>
-                        <select id="cars" class="form-control" name="cars">
-                            <option selected class="text-center">¡Elige uno! </option>
-                            <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
-                                title="informan al visitante sobre un producto específico">¡Ya tengo una idea!</option>
-                            <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
-                                title="venta online de productos físicos o servicios">Cuento con la idea y el diseño
-                            </option>
-                            <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
-                                title="Un blog o un sitio web de revista se centra en el contenido editorial.">Hay un
-                                proyecto ya publicado</option>
-                            <option value="audi" class="text-center">Hay un proyecto no publicado</option>
-                        </select><br>
-                        <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
-                    </div>
+
+
+            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+                <img src="img/partida.png" class="card-img-top" alt="Responsive">
+                <div class="card-body form-group">
+                    <h5 class="card-title text-center">Punto de partida:</h5>
+                    <label for="cars" class="form-label text-center">Elige el estilo</label><br>
+                    <select id="cars" class="form-control" name="cars">
+                        <option selected class="text-center">¡Elige uno! </option>
+                        <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="informan al visitante sobre un producto específico">¡Ya tengo una idea!
+                        </option>
+                        <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="venta online de productos físicos o servicios">Cuento con la idea y el diseño
+                        </option>
+                        <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="Un blog o un sitio web de revista se centra en el contenido editorial.">Hay
+                            un
+                            proyecto ya publicado</option>
+                        <option value="audi" class="text-center">Hay un proyecto no publicado</option>
+                    </select><br>
+                    <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card form" style="width: 18rem;">
-                    <img src="img/partida.png" class="card-img-top" alt="Responsive">
-                    <div class="card-body form-group">
-                        <h5 class="card-title text-center">Punto de partida:</h5>
-                        <label for="cars" class="form-label text-center">¡Eligue uno!</label><br>
-                        <select id="cars" class="form-control" name="cars">
-                            <option selected class="text-center">¡Eligue uno! </option>
-                            <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
-                                title="informan al visitante sobre un producto específico">¡Ya tengo una idea!</option>
-                            <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
-                                title="venta online de productos físicos o servicios">Cuento con la idea y el diseño
-                            </option>
-                            <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
-                                title="Un blog o un sitio web de revista se centra en el contenido editorial.">Hay un
-                                proyecto ya publicado</option>
-                            <option value="audi" class="text-center">Hay un proyecto no publicado</option>
-                        </select><br>
-                        <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
-                    </div>
+
+
+            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+                <img src="img/manos.png" class="card-img-top" alt="Responsive">
+                <div class="card-body form-group">
+                    <h5 class="card-title text-center">Crear un mapa del sitio:</h5>
+                    <label for="cars" class="form-label text-center">Empezar a darle forma</label><br>
+                    <select id="cars" class="form-control" name="cars">
+                        <option selected class="text-center">¡Eligue uno! </option>
+                        <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="informan al visitante sobre un producto específico">¡Ya tengo uno!</option>
+                        <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="venta online de productos físicos o servicios">Cuento con la idea pero no
+                            tengo el diseño
+                        </option>
+                        <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+                            Quiero que lo hagan por mi</option>
+
+                    </select><br>
+                    <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/manos.png" class="card-img-top" alt="Responsive">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+
+            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+                <img src="img/manos.png" class="card-img-top" alt="Responsive">
+                <div class="card-body form-group">
+                    <h5 class="card-title text-center">Elige las Palabras clave</h5>
+                    <label for="cars" class="form-label text-center">Haz la diferencia</label><br>
+                    <select id="cars" class="form-control" name="cars">
+                        <option selected class="text-center">¡Eligue uno! </option>
+                        <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="informan al visitante sobre un producto específico">¡Ya las tengo!</option>
+                        <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="venta online de productos físicos o servicios">Tengo una idea pero necesito
+                            asesoramiento
+                        </option>
+                        <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+                            Quiero que lo hagan por mi</option>
+
+                    </select><br>
+                    <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/manos.png" class="card-img-top" alt="Responsive">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+
+            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+                <img src="img/proyecto.png" class="card-img-top" alt="Responsive">
+                <div class="card-body form-group">
+                    <h5 class="card-title">Crea los contenidos:</h5>
+                    <label for="cars" class="form-label text-center">¿Qué es lo que quiero mostrar?</label><br>
+                    <select id="cars" class="form-control" name="cars">
+                        <option selected class="text-center"> ¡Elige uno! </option>
+                        <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+                            Tengo las imagenes y el contenido </option>
+                        <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="informan al visitante sobre un producto específico">Tengo las imagenes pero
+                            no el contenido</option>
+                        <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
+                            title="venta online de productos físicos o servicios">Tengo las imagenes y trabajaré
+                            en el contenido</option>
+
+                        <option value="audi" class="text-center">No tengo las imagenes pero trabajaré en el
+                            contenido</option>
+                        <option value="audi" class="text-center">No tengo las imagenes y no tengo en el
+                            contenido</option>
+
+                    </select><br>
+                    <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/manos.png" class="card-img-top" alt="Responsive">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+
+            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+                <img src="img/partida.png" class="card-img-top" alt="Responsive">
+                <div class="card-body form-group">
+                    <h5 class="card-title text-center">Detalles finales</h5>
+                    <label for="cars" class="form-label text-center">Agrega datos adicionales que creas que son
+                        importantes en este proceso</label><br>
+                    <textarea class="w-100"></textarea>
+                    <button type="button" class="btn btn-outline-dark align-bottom-center ">Enviar
+                        comentarios</button>
                 </div>
-            </div>
+            </div><br>
+
         </div>
+    </div>
 
-
-        <h3 class="text-center">QUIERO QUE ME CONTACTEN:</h3><BR>
+    <div class="container ">
         <form>
+            <h3 class="text-center">QUIERO QUE ME CONTACTEN:</h3><BR>
             <!--para que me tome el form lo puse con espacio en vez de con "-"-->
             <div class="form row">
                 <div class="form group col-sm-6">
@@ -237,6 +272,7 @@
         </form>
     </div>
 
+    
     <footer class="border border-3">
         <div class="row">
 

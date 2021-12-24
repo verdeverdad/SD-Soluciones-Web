@@ -4,6 +4,7 @@
 
 .navbar {
       background-color: #f3f3ff;
+      font-size:100%
   }
 
  body {
@@ -22,5 +23,9 @@
     }
   
     .card {
-      margin-bottom: 20px;
+      flex: 1 300px;
+  margin-top: 10px;
+  margin-right: 10px;
     }
+
+   

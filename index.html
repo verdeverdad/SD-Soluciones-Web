@@ -15,7 +15,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
     <!-- endbuild -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="body">
@@ -23,10 +24,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f3f3ff;">
-        <nav class="navbar" style="background-color: #f3f3ff;">
-            <a class="navbar-brand" href="#">
-                <img class="circular--square" src="img/nuevo sol.jpg" width="130">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar">
+            <a class="navbar-brand" href="index.html">
+                <img class="circular--square" src="img/nuevo sol 2.png" width="90">
             </a>
         </nav>
         <nav class="navbar navbar-light bg-light">
@@ -69,10 +70,6 @@
 
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
-        <img class="img-thumbnail" src="img/mano grande.png" alt="Responsive image">
-
-    </div>
 
 
     <nav aria-label="breadcrumb">
@@ -80,20 +77,52 @@
             <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
     </nav>
+    
+    <div class="jumbotron jumbotron-fluid ">
 
-    <div class="row">
-        <div class="col-sm-4 d-flex flex-column align-items-center">
-            <p><a href="http://www.facebook.com">Facebook</a></p>
-            <p><a href="http://www.instagram.com">Instagram</a></p>
-            <p><a href="http://www.twitter.com">Twitter</a></p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <h1>holaaaa</h1>
+
+
+        <!-- Carousel -->
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/5 razones.png" alt="Los Angeles" class="d-block" style="width:100%">
+                   
+                </div>
+                <div class="carousel-item">
+                    <img src="img/PARA TENER PRESENCIA EN INTERNET.png" alt="Chicago" class="d-block" style="width:100%">
+                   
+                </div>
+                <div class="carousel-item">
+                    <img src="img/02.png" alt="New York" class="d-block" style="width:100%">
+                    
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="container-fluid mt-3">
+            <h3>Carousel Example</h3>
+            <p>The following example shows how to create a basic carousel with indicators and controls.</p>
         </div>
     </div>
-
     <footer class="border border-3">
         <div class="row">
 
