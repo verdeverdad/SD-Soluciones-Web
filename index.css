@@ -5,10 +5,16 @@
 .navbar {
       background-color: #f3f3ff;
       font-size:100%
+      
+      
+  }
+
+  .jumbotron {
+    margin-top: 100px;
   }
 
  body {
-  background-image: url("img/mano grande.png");
+  background-image: url("img/fondo.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -24,8 +30,8 @@
   
     .card {
       flex: 1 300px;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin-top: 30px;
+  margin-right: 30px;
     }
 
    
