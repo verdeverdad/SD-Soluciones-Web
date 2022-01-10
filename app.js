@@ -1,9 +1,12 @@
 
-const express = require("express");
-const app = express();
-const port =  3000;
-//slkndfsjdglskdgn
-//const port = 3000
+
+
+//const port =  3000;
+
+const express = require("express"),
+    path = require("path"),
+    app = express(),
+    puerto = process.env.PORT || 3000; 
 
 app.use(express.static(__dirname + "/static"));
 
@@ -26,6 +29,6 @@ app.get("/otra_ruta", (req, res)=>{
 */
 
 app.listen(port, ()=>{
-    console.log("Escuchando a http://localhost:" + port)
+    console.log("Escuchando a http://localhost:" + puerto)
 });
 

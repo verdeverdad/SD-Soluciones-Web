@@ -4,3 +4,10 @@ $(function () {
     });
 
     
+
+    //Configuraciones para el elemento que sube archivos
+    var dzoptions = {
+        url:"/",
+        autoQueue: false
+    };
+    var myDropzone = new Dropzone("div#file-upload", dzoptions);  
