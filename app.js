@@ -1,16 +1,21 @@
-
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
+  }
+  
+  const DB_URI = process.env.DB_URI
+  const PORT = process.env.PORT || 3000;
 
 
 //const port =  3000;
 
-const express = require("express"),
-    path = require("path"),
-    app = express(),
-    puerto = process.env.PORT || 3000; 
+const express = require("express")
+const path = require("path")
+const app = express()
+
 
 app.use(express.static(__dirname + "/static"));
 
-app.use((req, res, next)=>{
+app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     next()
 })
@@ -28,7 +33,7 @@ app.get("/otra_ruta", (req, res)=>{
 });
 */
 
-app.listen(port, ()=>{
-    console.log("Escuchando a http://localhost:" + puerto)
+app.listen(PORT, () => {
+    console.log("Escuchando a http://localhost:" + PORT)
 });
 

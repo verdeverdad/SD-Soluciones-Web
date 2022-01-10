@@ -1,7 +1,22 @@
 {
-  "dependencies": {
-    "express": "^4.17.2",
-    "node": "^17.3.0",
-    "nodemon": "^2.0.15"
+  "name": "myapp",
+  "description": "a really cool app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "sofia delmonte",
+  "license": "ISC",
+  "engines": {
+    "node": "14.x"
+  },
+
+
+    "dependencies": {
+      "express": "^4.17.2",
+      "node": "^17.3.0",
+      "nodemon": "^2.0.15"
+    }
   }
-}
