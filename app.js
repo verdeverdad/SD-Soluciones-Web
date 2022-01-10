@@ -20,10 +20,8 @@ app.use((req, res, next) => {
     next()
 })
 
-/*app.get("/carrito", (req, res)=>{
-    res.send(carrito)
-})
-app.get("/category_info", (req, res)=>{
+
+/*app.get("/category_info", (req, res)=>{
     res.send(category_info)
 })
 
