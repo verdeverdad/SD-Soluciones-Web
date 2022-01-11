@@ -77,7 +77,7 @@ app.get('/todo_lo_que_tengo_que_saber', (req, res) => {
 })*/
 
 app.get('*', (req, res) => {
-	res.sendFile(__dirname+'/static/404.html')
+	res.sendFile(__dirname+'/static/templates/404.html')
 })
 
 
