@@ -1,4 +1,4 @@
-if (process.env.NODE_ENV !== 'production') {
+/*if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
   }
   
@@ -6,7 +6,8 @@ if (process.env.NODE_ENV !== 'production') {
   const PORT = process.env.PORT || 3000;
 
 
-//const port =  3000;
+*/
+const port =  3000;
 
 const express = require("express")
 const path = require("path")
@@ -29,9 +30,13 @@ app.use((req, res, next) => {
 app.get("/otra_ruta", (req, res)=>{
     res.send("Otra ruta!!!")
 });
-*/
 
 app.listen(PORT, () => {
     console.log("Escuchando a http://localhost:" + PORT)
+});
+*/
+
+app.listen(port, () => {
+    console.log("Escuchando a http://localhost:" + port)
 });
 

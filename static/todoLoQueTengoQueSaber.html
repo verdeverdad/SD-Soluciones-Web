@@ -82,8 +82,8 @@
                                 <path fill-rule="evenodd"
                                     d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
                             </svg><strong>Cerrar sesion</strong></a>
-                            <a class="dropdown-item" id="salir" class="center"
-                            href="perfil.html"><strong>iniciar sesion</strong></a>
+                        <a class="dropdown-item" id="salir" class="center" href="perfil.html"><strong>iniciar
+                                sesion</strong></a>
                     </div>
                 </li>
             </ul>
@@ -165,6 +165,7 @@
         <div class="container">
             <h1 class="text-center" style="color: #f3f3ff;">TODO LO QUE TENGO QUE SABER</h1>
         </div>
+        <!-- CLICK DE DIFERENTES PESTAÑAS -->
         <ul class="nav nav-tabs navbar-dark bg-dark opacity-75" id="mytabs" role="tablist">
 
             <li class="nav-item">
@@ -296,322 +297,344 @@
                                 </div>
                                 <br>
 
-                                <div class="card-body text-light">
-                                    <h3 class="text-center text-light">2 <br><br> Imágenes / images</h3>
-                                    <br>
-                                    <div class="text-center">
-                                        <img src="img/imagenes.gif" width="100%">
-                                    </div><br>
-                                    <div class="text-center">
-                                        <img src="img/imagenes 1.2.gif" width="100%">
-                                    </div><br>
-                                    <div class="text-center">
-                                        <img src="img/imagenes 1.3.gif" width="100%">
-                                    </div><br>
-                                    <!-- IMAGENES CORTADAS DIAPO-->
-                                    <div id="slider-k">
-                                        <div class="frame-k">
-                                            <img src="img/imagenes.gif" alt="" />
+
+                                <h3 class="text-center text-light">2 <br><br> Imágenes / images</h3>
+                                <br>
+                                <div id="carouselExampleFade2" class="carousel slide carousel-fade"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/imagenes.png" class="d-block w-100" alt="...">
                                         </div>
-                                        <div class="frame-k">
-                                            <img src="img/imagenes 1.2.gif" alt="" />
+                                        <div class="carousel-item">
+                                            <img src="img/imagenes (1).png" class="d-block w-100" alt="...">
                                         </div>
-                                        <div class="frame-k">
-                                            <img src="img/imagenes 1.3.gif" alt="" />
+                                        <div class="carousel-item">
+                                            <img src="img/imagenes (2).png" class="d-block w-100" alt="...">
                                         </div>
-                                        <div class="frame-k">
-                                            <img src="img/imagenes.gif" alt="" />
-                                        </div>
+
                                     </div>
-
-
-                                    <h3 class="text-center text-light">3 <br> Contenido del sitio web /site content</h3>
-                                    <p>Por contenido, nos referimos a las palabras escritas en tu sitio que explican de
-                                        qué
-                                        se trata, qué tiene para ofrecer y por qué es relevante para los visitantes.
-                                    </p>
-
-                                    <p> El contenido de un sitio web cubre una amplia gama de funciones. Desde los
-                                        párrafos
-                                        que explican la misión de tu marca o negocio, hasta una única palabra en los
-                                        diferentes botones.</p>
-
-
-                                    <p>Si bien el contenido breve en botones o menús puede parecer insignificante, en
-                                        realidad es la fuerza impulsora de tu página web. Este es el texto que deja en
-                                        claro
-                                        qué deben esperar los visitantes del sitio cuando hacen clic en algún lugar, por
-                                        ejemplo, "Comprar ahora" o "Preguntas frecuentes". Tómate tu tiempo para
-                                        planificar
-                                        cuidadosamente el contenido de tu sitio web para asegurarse de que cualquier
-                                        visitante pueda comprenderlo tan bien como tú. Recuerda que siempre puedes
-                                        actualizar tu contenido y mejorarlo si algo no funciona como lo planeaste.
-
-                                    </p>
-
-                                    <h3 class="text-center">4- Página de inicio / homepage</h3>
-                                    <p>Todos los diferentes tipos de páginas web tienen una sola página en común: la
-                                        página
-                                        de inicio. Siendo la primera impresión que tendrán los visitantes de tu sitio,
-                                        Esta
-                                        parte de una página web debe comunicar tu mensaje principal al instante para
-                                        mantenerlos interesados.</p>
-
-
-                                    <p> Uno de los consejos más importantes para triunfar con tu web, es mantener la
-                                        primera
-                                        página con un aspecto limpio y organizado. Mantén sólo la información más
-                                        relevante
-                                        como tu logotipo, tu tipo de negocio, tu eslogan (si lo tienes) y un botón que
-                                        invite a los visitantes a explorar más la página. Asegúrate de que toda esta
-                                        información aparezca al frente de todo, en la sección de tu página que es
-                                        visible
-                                        para los visitantes sin que tengan que desplazarse hacia abajo. </p>
-
-                                    <h3 class="text-center">5- Pie de página / footer</h3>
-                                    <p>En términos sencillos, el pie de página es la sección de hasta abajo de una
-                                        página
-                                        web. Normalmente contiene un mapa del sitio (que ayuda a los visitantes a
-                                        encontrar
-                                        lo que están buscando, incluyendo aquellas secciones que no están en el menú
-                                        superior), así como información básica de contacto y redes sociales.</p>
-
-
-                                    <p>En el pie de página también puedes incluir una barra de suscripción a tus
-                                        newsletters, políticas de tu empresa, o preguntas frecuentes. </p>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!--  CONECTAR MI PAGINA A LA RED DE INTERNET POR DEFINIR SI ES DEFINITIVO-->
-                    <div class="card bg-dark  ">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="text-center">
-                                <button class="btn collapsed btn-outline-light btn-lg" type="button" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    CONECTAR MI PAGINA A LA RED DE INTERNET
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-light">
-                                <h4 class=""> ¿Qué es y para qué sirve el e-commerce?</h4>
-                                <p>El E-commerce o comercio electrónico, es un concepto que empezó a utilizarse en los
-                                    años
-                                    90 para denominar todo proceso de compra o contratación de bienes y/o servicios a
-                                    través
-                                    de la red utilizando medios de pago como tarjetas de crédito o similares</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- TODO LO QUE HACEMOS POR VOS  FALTA LA INFORMACION CONECTA CON COMO TRABAJAMOS-->
-                    <div class="card bg-dark">
-                        <div class="card-header text-light" id="headingFour">
-                            <h5 class="text-center">
-                                <button class="btn collapsed btn-outline-light btn-lg" type="button" data-toggle="collapse"
-                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                  TODO LO QUE HACEMOS POR VOS
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-light ">
-                                <h4 class=""> ¿Qué son las páginas corporativas?</h4>
-                                <p>Los Portales Web Empresariales son sitios web avanzados que se crean utilizando
-                                    plataformas denominadas Sistemas de Administración de Contenidos (ó CMS por sus
-                                    siglas en inglés). Estas plataformas de software permiten manejar múltiples
-                                    tipos de
-                                    contenidos clasificados de acuerdo a sus funcionalidades y que se almacenan en
-                                    bases
-                                    de datos, lo que permite que crezcan de acuerdo a lo que se necesite.
+                                <!-- IMAGENES CORTADAS DIAPO-->
+                                <div id="slider-k">
+                                    <div class="frame-k">
+                                        <img src="img/imagenes.png" alt="" />
+                                    </div>
+                                    <div class="frame-k">
+                                        <img src="img/imagenes (1).png" alt="" />
+                                    </div>
+                                    <div class="frame-k">
+                                        <img src="img/imagenes (2).png" alt="" />
+                                    </div>
+                                    <div class="frame-k">
+                                        <img src="img/imagenes.png" alt="" />
+                                    </div>
+                                </div>
+
+
+                                <h3 class="text-center text-light">3 <br> Contenido del sitio web /site content</h3>
+                                <p>Por contenido, nos referimos a las palabras escritas en tu sitio que explican de
+                                    qué
+                                    se trata, qué tiene para ofrecer y por qué es relevante para los visitantes.
                                 </p>
-                                <p> Los Portales Web Empresariales tienen una estructura básica que se complementa
-                                    con
-                                    módulos funcionales. Esto permite que los mismos sean modulares y escalables, es
-                                    decir, que se configuren con los módulos que se requieran de acuerdo al perfil
-                                    de
-                                    cada portal logrando así especializarlos.</p>
+
+                                <p> El contenido de un sitio web cubre una amplia gama de funciones. Desde los
+                                    párrafos
+                                    que explican la misión de tu marca o negocio, hasta una única palabra en los
+                                    diferentes botones.</p>
+
+
+                                <p>Si bien el contenido breve en botones o menús puede parecer insignificante, en
+                                    realidad es la fuerza impulsora de tu página web. Este es el texto que deja en
+                                    claro
+                                    qué deben esperar los visitantes del sitio cuando hacen clic en algún lugar, por
+                                    ejemplo, "Comprar ahora" o "Preguntas frecuentes". Tómate tu tiempo para
+                                    planificar
+                                    cuidadosamente el contenido de tu sitio web para asegurarse de que cualquier
+                                    visitante pueda comprenderlo tan bien como tú. Recuerda que siempre puedes
+                                    actualizar tu contenido y mejorarlo si algo no funciona como lo planeaste.
+
+                                </p>
+
+                                <h3 class="text-center">4- Página de inicio / homepage</h3>
+                                <p>Todos los diferentes tipos de páginas web tienen una sola página en común: la
+                                    página
+                                    de inicio. Siendo la primera impresión que tendrán los visitantes de tu sitio,
+                                    Esta
+                                    parte de una página web debe comunicar tu mensaje principal al instante para
+                                    mantenerlos interesados.</p>
+
+
+                                <p> Uno de los consejos más importantes para triunfar con tu web, es mantener la
+                                    primera
+                                    página con un aspecto limpio y organizado. Mantén sólo la información más
+                                    relevante
+                                    como tu logotipo, tu tipo de negocio, tu eslogan (si lo tienes) y un botón que
+                                    invite a los visitantes a explorar más la página. Asegúrate de que toda esta
+                                    información aparezca al frente de todo, en la sección de tu página que es
+                                    visible
+                                    para los visitantes sin que tengan que desplazarse hacia abajo. </p>
+
+                                <h3 class="text-center">5- Pie de página / footer</h3>
+                                <p>En términos sencillos, el pie de página es la sección de hasta abajo de una
+                                    página
+                                    web. Normalmente contiene un mapa del sitio (que ayuda a los visitantes a
+                                    encontrar
+                                    lo que están buscando, incluyendo aquellas secciones que no están en el menú
+                                    superior), así como información básica de contacto y redes sociales.</p>
+
+
+                                <p>En el pie de página también puedes incluir una barra de suscripción a tus
+                                    newsletters, políticas de tu empresa, o preguntas frecuentes. </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!--SEGUNDA SECCION DIFERENTES PAGINAS WEB -->
-            <div class="tab-pane fade opacity-95" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-                <div class="accordion" id="accordionExample">
-                    <div class="card bg-dark text-light">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="text-center">
-                                <button class="btn collapsed btn-outline-light btn-lg" type="button" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Blog/magazine
-                                </button>
-                            </h5>
+                <!--  CONECTAR MI PAGINA A LA RED DE INTERNET POR DEFINIR SI ES DEFINITIVO-->
+                <div class="card bg-dark  ">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="text-center">
+                            <button class="btn collapsed btn-outline-light btn-lg" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                CONECTAR MI PAGINA A LA RED DE INTERNET
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body text-light">
+                            <h4 class=""> ¿Qué es y para qué sirve el e-commerce?</h4>
+                            <p>El E-commerce o comercio electrónico, es un concepto que empezó a utilizarse en los
+                                años
+                                90 para denominar todo proceso de compra o contratación de bienes y/o servicios a
+                                través
+                                de la red utilizando medios de pago como tarjetas de crédito o similares</p>
                         </div>
+                    </div>
+                </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-center">
-                                <h4> ¿Qué es un blog en la web?</h4>
-                                <p></p>
+                <!-- TODO LO QUE HACEMOS POR VOS  FALTA LA INFORMACION CONECTA CON COMO TRABAJAMOS-->
+                <div class="card bg-dark">
+                    <div class="card-header text-light" id="headingFour">
+                        <h5 class="text-center">
+                            <button class="btn collapsed btn-outline-light btn-lg" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                TODO LO QUE HACEMOS POR VOS
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body text-light ">
+                            <h4 class=""> ¿Qué son las páginas corporativas?</h4>
+                            <p>Los Portales Web Empresariales son sitios web avanzados que se crean utilizando
+                                plataformas denominadas Sistemas de Administración de Contenidos (ó CMS por sus
+                                siglas en inglés). Estas plataformas de software permiten manejar múltiples
+                                tipos de
+                                contenidos clasificados de acuerdo a sus funcionalidades y que se almacenan en
+                                bases
+                                de datos, lo que permite que crezcan de acuerdo a lo que se necesite.
+                            </p>
+                            <p> Los Portales Web Empresariales tienen una estructura básica que se complementa
+                                con
+                                módulos funcionales. Esto permite que los mismos sean modulares y escalables, es
+                                decir, que se configuren con los módulos que se requieran de acuerdo al perfil
+                                de
+                                cada portal logrando así especializarlos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SEGUNDA SECCION DIFERENTES PAGINAS WEB -->
+        <div class="tab-pane fade opacity-95" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+            <div class="accordion" id="accordionExample">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="text-center">
+                            <button class="btn collapsed btn-outline-light btn-lg" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Blog/magazine
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body text-center">
+                            <h4> ¿Qué es un blog en la web?</h4>
+                            <p>
                                 Un Weblog, conocido como blog , es un sitio web personal donde uno puede publicar
-                                cualquier cosa que desee compartir con otros. Se trata de un sitio Web, que se actualiza
+                                cualquier cosa que desee compartir con otros. Se trata de un sitio Web, que se
+                                actualiza
                                 periódicamente y que se recopila cronológicamente textos y artículos de uno o varios
                                 autores (el más reciente aparece primero).
-                                </p>
+                            </p>
+                            <P>El blog es una GRAN herramienta de promoción y sirve como estrategia para posicionar
+                                tu empresa en internet, porque con el contenido que publicas informas, resuelves
+                                dudas y ayudas a tu comprador a guiarlo en el proceso de compra.</P>
+                            <h4> ¿Qué es una revista digital o magazine?</h4>
+                            <p></p>
+                            Una revista digital es una publicación con características idénticas a una revista
+                            tradicional, pero en lugar de emplear el formato de papel se presenta como medio de
+                            difusión en formato electrónico.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="text-center">
+                            <button class="btn collapsed  btn-outline-light btn-lg" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Landing pages
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body text-center">
+                            <h4> Landing pages (páginas de destino o aterrizaje)</h4><br>
+                            <p>son páginas web creadas con un objetivo de conversión en concreto. Son páginas
+                                creadas para conseguir la conversión de los clientes potenciales para los cuales se
+                                creó.</p>
+                        </div>
+                    </div>
+                </div>
 
-                                <h4> ¿Qué es una revista digital o magazine?</h4>
-                                <p></p>
-                                Una revista digital es una publicación con características idénticas a una revista
-                                tradicional, pero en lugar de emplear el formato de papel se presenta como medio de
-                                difusión en formato electrónico.
-                                </p>
-                            </div>
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="text-center">
+                            <button class="btn collapsed btn-outline-light btn-lg" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                E-commerce/ Tienda on-line
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body text-center">
+                            <h4> ¿Qué es y para qué sirve el e-commerce?</h4>
+                            <p>El E-commerce o comercio electrónico, es un concepto que empezó a utilizarse en los
+                                años
+                                90 para denominar todo proceso de compra o contratación de bienes y/o servicios a
+                                través
+                                de la red utilizando medios de pago como tarjetas de crédito o similares</p>
                         </div>
                     </div>
-                    <div class="card bg-dark text-light">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="text-center">
-                                <button class="btn collapsed  btn-outline-light btn-lg" type="button" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Landing pages
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-center">
-                                <h4> Landing pages (páginas de destino o aterrizaje)</h4><br>
-                                <p>son páginas web creadas con un objetivo de conversión en concreto. Son páginas
-                                    creadas para conseguir la conversión de los clientes potenciales para los cuales se
-                                    creó.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="text-center">
+                            <button class="btn collapsed btn-outline-light btn-lg" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Empresariales/corporativas
+                            </button>
+                        </h5>
                     </div>
-
-                    <div class="card bg-dark text-light">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="text-center">
-                                <button class="btn collapsed btn-outline-light btn-lg" type="button" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    E-commerce/ Tienda on-line
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-center">
-                                <h4> ¿Qué es y para qué sirve el e-commerce?</h4>
-                                <p>El E-commerce o comercio electrónico, es un concepto que empezó a utilizarse en los
-                                    años
-                                    90 para denominar todo proceso de compra o contratación de bienes y/o servicios a
-                                    través
-                                    de la red utilizando medios de pago como tarjetas de crédito o similares</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-light">
-                        <div class="card-header" id="headingFour">
-                            <h5 class="text-center">
-                                <button class="btn collapsed btn-outline-light btn-lg" type="button" data-toggle="collapse"
-                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Empresariales/corporativas
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-center">
-                                <h4> ¿Qué son las páginas corporativas?</h4>
-                                <p>Los Portales Web Empresariales son sitios web avanzados que se crean utilizando
-                                    plataformas denominadas Sistemas de Administración de Contenidos (ó CMS por sus
-                                    siglas en inglés). Estas plataformas de software permiten manejar múltiples
-                                    tipos de
-                                    contenidos clasificados de acuerdo a sus funcionalidades y que se almacenan en
-                                    bases
-                                    de datos, lo que permite que crezcan de acuerdo a lo que se necesite.
-                                </p>
-                                <p> Los Portales Web Empresariales tienen una estructura básica que se complementa
-                                    con
-                                    módulos funcionales. Esto permite que los mismos sean modulares y escalables, es
-                                    decir, que se configuren con los módulos que se requieran de acuerdo al perfil
-                                    de
-                                    cada portal logrando así especializarlos.</p>
-                            </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body text-center">
+                            <h4> ¿Qué son las páginas corporativas?</h4>
+                            <p>Los Portales Web Empresariales son sitios web avanzados que se crean utilizando
+                                plataformas denominadas Sistemas de Administración de Contenidos (ó CMS por sus
+                                siglas en inglés). Estas plataformas de software permiten manejar múltiples
+                                tipos de
+                                contenidos clasificados de acuerdo a sus funcionalidades y que se almacenan en
+                                bases
+                                de datos, lo que permite que crezcan de acuerdo a lo que se necesite.
+                            </p>
+                            <p> Los Portales Web Empresariales tienen una estructura básica que se complementa
+                                con
+                                módulos funcionales. Esto permite que los mismos sean modulares y escalables, es
+                                decir, que se configuren con los módulos que se requieran de acuerdo al perfil
+                                de
+                                cada portal logrando así especializarlos.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- TERCER SECCION SIN DEFINIR CUANTO ANTES PERFAVOR -->
-            <div class="tab-pane fade show" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
-                <div class="container bg-dark">
-                    <h5 class="text-center" style="color: #f3f3ff;"> ¿Qué necesito para tener una web?</h5>
-                    <form>
-                        <h3 class="text-center" style="color: #f3f3ff;"></h3><BR>
-                        <!--para que me tome el form lo puse con espacio en vez de con "-"-->
-                        <div class="form-row">
-                            <div class="form group col-sm-6">
-                                <label for="nombre">Nombre: </label>
-                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <label for="apellido">Apellido: </label>
-                                <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apellido">
-                            </div>
-                        </div>
-                        <div class="form-group ">
-                            <label for="email">Email: </label>
-                            <input type="email" class="form-control" id="email" placeholder="Ingrese su Email">
-                        </div>
-                        <div class="form-group ">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div><br>
         </div>
+
+        <!-- TERCER SECCION SIN DEFINIR CUANTO ANTES PERFAVOR -->
+        <div class="tab-pane fade show" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+            <div class="container bg-dark">
+                <h5 class="text-center" style="color: #f3f3ff;"> ¿Qué necesito para tener una web?</h5>
+                <form>
+                    <h3 class="text-center" style="color: #f3f3ff;"></h3><BR>
+                    <!--para que me tome el form lo puse con espacio en vez de con "-"-->
+                    <div class="form-row">
+                        <div class="form group col-sm-6">
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="apellido">Apellido: </label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apellido">
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label for="email">Email: </label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su Email">
+                    </div>
+                    <div class="form-group ">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div><br>
+    </div>
     </div>
 
 
 
-<!-- FOOTER  -->
+    <!-- FOOTER  -->
     <footer class="border border-3">
-        <div class="row">
+        <div class="row d-flex">
 
             <div class="col-sm-4 d-flex flex-column">
                 <p><a href="http://www.facebook.com">Facebook</a></p>
                 <p><a href="http://www.instagram.com">Instagram</a></p>
                 <p><a href="http://www.twitter.com">Twitter</a></p>
-            </div>
 
-            <div class="col-sm-4 d-flex flex-column align-items-center">
                 <address>
-                    <p><span class="oi oi-home footer-address-icon"></span>Montevideo e interior del país.</p>
-                    <p><span class="oi oi-phone footer-address-icon"></span> 099 678 345</p>
-                    <p><span class="oi oi-envelope-closed footer-address-icon"></span>contacto@solucionesDesarrollo.com
+                    <p><span class="oi oi-home footer-address-icon"></span>En donde estes, nosotr@s estamos.</p>
+                    <p><span class="oi oi-phone footer-address-icon"></span> 099 675 402</p>
+                    <p><span
+                            class="oi oi-envelope-closed footer-address-icon"></span>contacto@SolucionesDesarrolloWeb.com
                     </p>
                 </address>
             </div>
 
+            <div class="col-sm-4 d-flex flex-column align-items-center">
+                <img src="img/Diseño sin título.png" class="img-fluid">
+            </div>
+
+
             <div class="col-sm-4 d-flex flex-column align-items-end">
-                <p><a href="http://www.facebook.com">Sobre nosotrxs</a></p>
-                <p><a href="http://www.instagram.com">Info de interés</a></p>
-                <p><a href="http://www.twitter.com">Únete a nuestro equipo</a></p>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 "></div>
-                <div class="col-sm-4 ">
-                    <img src="img/Diseño sin título.png" class="img-fluid">
-                </div>
-                <div class="col-sm-4 "></div>
-            </div>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p><a href="Quienes somos.html">¿Quiénes somos?</a></p>
+                <p><a href="todoLoQueTengoQueSaber.html">Todo lo que tengo que saber</a></p>
+                <p><a href="Armar mi proyecto.html">Armar mi proyecto</a></p>
+            </div><br><br>
+
+
         </div>
     </footer>
 </body>

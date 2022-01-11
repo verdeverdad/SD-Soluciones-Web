@@ -5,7 +5,8 @@ $(function () {
 
     
 
-    //Configuraciones para el elemento que sube archivos
+    //Configuraciones para el elemento que sube archivos DE IMAGENES PERO NO ANDA
+
     var dzoptions = {
         url:"/",
         autoQueue: false
