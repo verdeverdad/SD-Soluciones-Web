@@ -6,15 +6,12 @@ let direccion = document.getElementById("direccion");
 let nContacto = document.getElementById("numContacto");
 let perfil = document.getElementById("miperfil");
 let contraseña = document.getElementById("contraseña");
-let cpassword = document.getElementById("contraseña2");
+let contraseña2 = document.getElementById("contraseña2");
 
 
 
     document.addEventListener("DOMContentLoaded", function(){
 
-    
-   
-    
         let nombreUsuario = JSON.parse(localStorage.getItem("nombreUsuario")) //traigo lo que quedo guardado en el set
         console.log("nombreLogueado...::"+nombreUsuario.username)
         nameRegis.innerHTML =  nombreUsuario.username

@@ -24,18 +24,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+
+    <!--  NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
+
+        <!-- LOGO CIRCULAR-->
         <nav class="navbar">
             <a class="navbar-brand" href="index.html">
                 <img class="circular--square" src="img/nuevo sol 2.png" width="90">
             </a>
         </nav>
+        <!-- BOTON ICONO MENU-->
         <nav class="navbar navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </nav>
+        <!-- MENU DESPLEGABLE-->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -43,7 +49,7 @@
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">¿Cómo trabajamos?</a>
+                    <a class="nav-link " href="#">¿Cómo trabajamos?</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Porfolio</a>
@@ -59,6 +65,27 @@
                         <a class="dropdown-item" href="Armar mi proyecto.html">Armar mi proyecto</a>
                     </div>
                 </li>
+                <li class="nav-item dropdown justify-content-end">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mi Perfil
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="perfil.html">Perfil</a>
+                        <a class="dropdown-item" href="Armar mi proyecto.html">Proyectos</a>
+                        <a class="dropdown-item" id="salir" class="center" href="index.html"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                <path fill-rule="evenodd"
+                                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                            </svg><strong>Cerrar sesion</strong></a>
+                        <a class="dropdown-item" id="salir" class="center" href="perfil.html"><strong>iniciar
+                                sesion</strong></a>
+                    </div>
+                </li>
             </ul>
             <nav class="navbar navbar-light bg-light">
                 <form class="form-inline">
@@ -69,9 +96,7 @@
         </div>
 
     </nav>
-
-
-
+    <!--  JUMBOTRON CARROUSEL-->
     <div class="jumbotron jumbotron-fluid ">
         <!-- Carousel -->
 
@@ -129,17 +154,20 @@
 
 
 
+    <!-- BREADCRUM  -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">¿Quiénes somos?</li>
         </ol>
     </nav>
+
+
     <div class="container">
         <h1 class="text-center border border-white border-3" style="color: #f3f3ff;">¿QUIÉNES SOMOS?</h1>
     </div>
 
-
+    <!-- TARJETAS DE QUIENES SOMOS-->
     <div class="d-flex flex-wrap flex-row">
         <div class="card d-flex flex-column justify-content-between text-info bg-dark" style="width: 10rem;">
             <img src="img/20211224_001233-ANIMATION.gif" class="card-img-top" alt="Responsive">
@@ -188,7 +216,8 @@
                     trabajar de manera independiente a las grandes empresas, respondiendo de forma directa a
                     nuestros
                     clientes,
-                    sin intermediarios. Logrando mejor comunicación para el proceso y satisfaccion por el proyecto final.</p><br>
+                    sin intermediarios. Logrando mejor comunicación para el proceso y satisfaccion por el proyecto
+                    final.</p><br>
             </div>
         </div>
         <div class="card d-flex flex-column justify-content-between text-info bg-dark">
@@ -213,24 +242,23 @@
             </div>
         </div>
         <div class="col-sm-4"></div>
-    </div>
-    </div>
+    </div><br>
 
-    <br>
+    <!-- PIE DE FOTOS  -->
     <div class="container">
-    <figure class="text-center" style="color: #fdfdfd;">
-        <blockquote class="blockquote">
-            <h4 class="text-center">Un buen diseño hace la vida mejor.</h4>
-        </blockquote>
-        <figcaption class="blockquote-footer" style="color: #fdfdfd;">
-            @SolucionesDesarrolloWeb<br><cite title="Source Title">Imágenes de La Floresta, Año: 2021
+        <figure class="text-center" style="color: #fdfdfd;">
+            <blockquote class="blockquote">
+                <h4 class="text-center">Un buen diseño hace la vida mejor.</h4>
+            </blockquote>
+            <figcaption class="blockquote-footer" style="color: #fdfdfd;">
+                @SolucionesDesarrolloWeb<br><cite title="Source Title">Imágenes de La Floresta, Año: 2021
                 </cite>
-        </figcaption>
-    </figure>
-</div>
-
+            </figcaption>
+        </figure>
+    </div>
+    <!-- FOOTER  -->
     <footer class="border border-3">
-        <div class="row">
+        <div class="row d-flex">
 
             <div class="col-sm-4 d-flex flex-column">
                 <p><a href="http://www.facebook.com">Facebook</a></p>
@@ -238,9 +266,9 @@
                 <p><a href="http://www.twitter.com">Twitter</a></p>
 
                 <address>
-                    <p><span class="oi oi-home footer-address-icon"></span>Montevideo e interior del país.</p>
-                    <p><span class="oi oi-phone footer-address-icon"></span> 099 678 345</p>
-                    <p><span class="oi oi-envelope-closed footer-address-icon"></span>contacto@solucionesDesarrollo.com
+                    <p><span class="oi oi-home footer-address-icon"></span>En donde estes, nosotr@s estamos.</p>
+                    <p><span class="oi oi-phone footer-address-icon"></span> 099 675 402</p>
+                    <p><span class="oi oi-envelope-closed footer-address-icon"></span>contacto@SolucionesDesarrolloWeb.com
                     </p>
                 </address>
             </div>
@@ -250,13 +278,14 @@
             </div>
 
 
-            <div class="col-sm-4 d-flex flex-column align-items-end ">
-
-                <p><a href="http://www.facebook.com">Sobre nosotrxs</a></p>
-                <p><a href="http://www.instagram.com">Info de interés</a></p>
-                <p><a href="http://www.twitter.com">Únete a nuestro equipo</a></p>
-
-            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p><a href="Quienes somos.html">¿Quiénes somos?</a></p>
+                <p><a href="todoLoQueTengoQueSaber.html">Todo lo que tengo que saber</a></p>
+                <p><a href="Armar mi proyecto.html">Armar mi proyecto</a></p>
+            </div><br><br>
 
 
         </div>
