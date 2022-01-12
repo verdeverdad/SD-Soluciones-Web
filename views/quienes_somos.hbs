@@ -25,24 +25,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
 
-
-
-    <!-- HEADER -->
-    {{> header}}
+    <!--  NAVBAR -->
+   {{> header}}
+    <!--  JUMBOTRON CARROUSEL-->
     {{> jumbotron}}
 
 
+
+
+    <!-- BREADCRUM  -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">¿Quiénes somos?</li>
         </ol>
     </nav>
+
+
     <div class="container">
         <h1 class="text-center border border-white border-3" style="color: #f3f3ff;">¿QUIÉNES SOMOS?</h1>
     </div>
 
-
+    <!-- TARJETAS DE QUIENES SOMOS-->
     <div class="d-flex flex-wrap flex-row">
         <div class="card d-flex flex-column justify-content-between text-info bg-dark" style="width: 10rem;">
             <img src="img/20211224_001233-ANIMATION.gif" class="card-img-top" alt="Responsive">
@@ -117,10 +121,9 @@
             </div>
         </div>
         <div class="col-sm-4"></div>
-    </div>
-    </div>
+    </div><br>
 
-    <br>
+    <!-- PIE DE FOTOS  -->
     <div class="container">
         <figure class="text-center" style="color: #fdfdfd;">
             <blockquote class="blockquote">
@@ -132,10 +135,8 @@
             </figcaption>
         </figure>
     </div>
-
-    <!-- FOOTER -->
+    <!-- FOOTER  -->
     {{> footer}}
-
 </body>
 
 </html>
