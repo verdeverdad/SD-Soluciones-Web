@@ -6,8 +6,11 @@
   const PORT = process.env.PORT || 3000;
 
 */
+
+// para utilizar las variables de entorno que estan en el archivo .env
 require('dotenv').config()
 
+// toma del arcihvo .env el valor que queremos asignar al puerto 
 const port =  process.env.PORT;
 
 const express = require("express")
