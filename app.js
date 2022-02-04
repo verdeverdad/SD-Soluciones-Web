@@ -71,6 +71,13 @@ app.get('/todo_lo_que_tengo_que_saber', (req, res) => {
     })
 });
 
+app.get('/blog', (req, res) => {
+	res.render('blog', {
+        //titulo:'Soluciones Web'
+        titulo: 'SD-Soluciones en desarrollo'
+    })
+});
+
 
 /*app.get('/quienes_somos', (req, res) => {
 	res.sendFile(__dirname+'/static/Quienes somos.html')
