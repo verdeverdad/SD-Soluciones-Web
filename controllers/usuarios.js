@@ -111,17 +111,12 @@ const usuariosPatch = (req, res = response) => {
 // ===============
 const usuariosDelete = async (req, res = response) => {
 
-        const id = req.params.id;
-        //const {id} = req.params
-
-        // borrado fisicamente
-        //const usuario = await Usuario.findByIdAndDelete(id);
+        const id = req.params.id; //const {id} = req.params
 
         // cambiar a inactivo el usuario
         const usuario =  await Usuario.findByIdAndUpdate(id, {estado:false});
 
-
-        res.status(203).json({
+        res.status(200).json({
                 usuario
         });
 }
