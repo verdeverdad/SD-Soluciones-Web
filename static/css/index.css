@@ -3,16 +3,16 @@
   }
 
 .navbar {
-      background-color: #f3f3ff;
+      background-color: #f5f5ef;
       font-size:100%;
-      color: #f3f3ff;
+      color: #f5f5ef;
       font-family: 'Lucida Sans', sans-serif;
       
       
   }
 
   .jumbotron {
-    margin-top: 100px;
+    
     background-image: url("../img/fondo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -33,9 +33,9 @@
     }
 
  address {
-      color: blue;
+      color: rgb(116, 101, 253);
     }
-  
+
     .card {
       flex: 1 200px;
   margin-top: 30px;
