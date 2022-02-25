@@ -6,8 +6,6 @@
       background-color: #f5f5ef;
       font-size:100%;
       color: #f5f5ef;
-      font-family: 'Lucida Sans', sans-serif;
-      
       
   }
 
@@ -76,3 +74,12 @@
      
      #slider-k > div:first-child {margin-left: -63px;}
      #slider-k > div:last-child {margin-right: -63px;}
+
+    .titulo {
+      font-size: 340%;
+      background-color: #212529;
+      opacity: 80%;
+      text-align: center;
+      color: #f3f3ff;
+      font-family: sans-serif;
+    }

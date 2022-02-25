@@ -71,6 +71,17 @@ app.get('/todo_lo_que_tengo_que_saber', (req, res) => {
     })
 });
 
+
+// COMO TRABAJAMOS
+app.get('/como_trabajamos', (req, res) => {
+	res.render('como_trabajamos', {
+        //titulo:'Soluciones Web'
+        titulo: 'SD-Soluciones en desarrollo'
+    })
+});
+
+
+// BLOG
 app.get('/blog', (req, res) => {
 	res.render('blog', {
         //titulo:'Soluciones Web'

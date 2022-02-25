@@ -26,97 +26,103 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="js/index.js"></script>
-        
+
 
         <!-- HEADER -->
-	{{> header}}
+        {{> header}}
         {{> jumbotron}}
 
 
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Perfil</li>
-        </ol>
-    </nav>
+        <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb bg-dark mb-3">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Perfil</li>
+                </ol>
+        </nav><br>
 
-        <div class="container ">
-                <h2>Mi perfil</h2>
-                <div class="row">
-                        <div class="col align-self-start"></div>
-
-                        <div class="card col-sm-9 align-self-center" style="width: 45rem; opacity: 75%;
-          ">
-                                <img src="../img/nuevo sol 2.png" class="card-img-top" alt="">
-                                <div class="card-body">
-                                        <h5>Usuario: </h5>
-                                        <h3 id="usuario" class="card-title">Usuario: </h3>
-                                        <p class="card-text"></p>
-                                </div>
-                                <ul id="ulNoEditable" class="list-group list-group-flush">
-                                        <label>Nombre completo: </label>
-                                        <li class="list-group-item m-2" id="nombre" contenteditable="false"></li>
-                                        <label>Edad: </label>
-                                        <li class="list-group-item m-2" id="edad" contenteditable="false"></li>
-                                        <label>Email: </label>
-                                        <li class="list-group-item m-2" id="email" contenteditable="false"></li>
-                                        <label>Dirección: </label>
-                                        <li class="list-group-item m-2" id="direccion" contenteditable="false"></li>
-                                        <label>Número de contacto: </label>
-                                        <li class="list-group-item m-2" id="numContacto" contenteditable="false"></li>
-                                        <div id="contr" style="display: none;">
-                                                <label>Contraseña: </label>
-                                                <li class="list-group-item m-2" id="contraseña" contenteditable="false">
-                                                </li>
-                                                <label>Confirmar contraseña: </label>
-                                                <li class="list-group-item m-2" id="contraseña2"
-                                                        contenteditable="false"></li>
+        <div class="container">
+                <div class="container bg-dark opacity-75" style="color: #f3f3ff;">
+                        <form class="row g-3 needs-validation" novalidate>
+                                <h1 class="text-center">Completa tus datos:</h1><br>
+                                <div class="col-md-4 position-relative">
+                                        <label for="validationTooltip01" class="form-label">First name</label>
+                                        <input type="text" class="form-control" id="validationTooltip01" value="Mark"
+                                                required>
+                                        <div class="valid-tooltip">
+                                                Looks good!
                                         </div>
-                                </ul>
-
-                                <div class="card-body">
-                                        <button id="modificarP" type="submit" onclick="modificar()"
-                                                class="btn btn col-sm-4" style="background-color: rgb(57, 231, 243);">
-                                                Modificar</button>
-                                        <button id="bguardar" type="submit" onclick="guardarModificados()"
-                                                class="btn btn col-sm-4"
-                                                style=" display: none; background-color: rgb(89, 202, 255);">
-                                                Guardar</button>
-
-                                        <button id="EliminarP" type="submit" onclick="eliminarPerfil()"
-                                                class="btn btn-dark col-sm-4">
-                                                Eliminar
-                                                perfil</button>
-
                                 </div>
+                                <div class="col-md-4 position-relative">
+                                        <label for="validationTooltip02" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" id="validationTooltip02" value="Otto"
+                                                required>
+                                        <div class="valid-tooltip">
+                                                Looks good!
+                                        </div>
+                                </div>
+                                <div class="col-md-4 position-relative">
+                                        <label for="validationTooltipUsername" class="form-label">Username</label>
+                                        <div class="input-group has-validation">
+                                                <span class="input-group-text"
+                                                        id="validationTooltipUsernamePrepend">@</span>
+                                                <input type="text" class="form-control" id="validationTooltipUsername"
+                                                        aria-describedby="validationTooltipUsernamePrepend" required>
+                                                <div class="invalid-tooltip">
+                                                        Please choose a unique and valid username.
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-6 position-relative">
+                                        <label for="validationTooltip03" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="validationTooltip03" required>
+                                        <div class="invalid-tooltip">
+                                                Please provide a valid city.
+                                        </div>
+                                </div>
+                                <div class="col-md-3 position-relative">
+                                        <label for="validationTooltip04" class="form-label">State</label>
+                                        <select class="form-select" id="validationTooltip04" required>
+                                                <option selected disabled value="">Choose...</option>
+                                                <option>...</option>
+                                        </select>
+                                        <div class="invalid-tooltip">
+                                                Please select a valid state.
+                                        </div>
+                                </div>
+                                <div class="col-md-3 position-relative">
+                                        <label for="validationTooltip05" class="form-label">Zip</label>
+                                        <input type="text" class="form-control" id="validationTooltip05" required>
+                                        <div class="invalid-tooltip">
+                                                Please provide a valid zip.
+                                        </div>
+                                </div>
+                                <div class="col-12">
+                                        <button class="btn btn-primary" type="submit">Submit form</button>
+                                </div>
+                        </form>
+                </div>
+
+                <div id="slider-k">
+                        <div class="frame-k">
+                                <img src="img/1.png" alt="" />
                         </div>
-
-                        <div class="col align-self-end"> </div>
+                        <div class="frame-k">
+                                <img src="img/2.png" alt="" />
+                        </div>
+                        <div class="frame-k">
+                                <img src="img/3.png" alt="" />
+                        </div>
+                        <div class="frame-k">
+                                <img src="img/4.png" alt="" />
+                        </div>
+                        <div class="frame-k">
+                                <img src="img/5.png" alt="" />
+                        </div>
                 </div>
         </div>
-
-
-        <div id="slider-k">
-                <div class="frame-k">
-                        <img src="img/1.png" alt="" />
-                </div>
-                <div class="frame-k">
-                        <img src="img/2.png" alt="" />
-                </div>
-                <div class="frame-k">
-                        <img src="img/3.png" alt="" />
-                </div>
-                <div class="frame-k">
-                        <img src="img/4.png" alt="" />
-                </div>
-                <div class="frame-k">
-                        <img src="img/5.png" alt="" />
-                </div>
-        </div>
-
 
         <!-- FOOTER -->
-	{{> footer}}
+        {{> footer}}
 
 
         <script src="js/perfil.js"></script>
