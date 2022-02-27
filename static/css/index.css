@@ -43,8 +43,8 @@
   
     #slider-k {
       background: #fff;
-      width: 600px;
-      height: 300px;
+      width: 300px;
+      height: 150px;
       margin: 50px auto;
       overflow: hidden;
       border-radius: .5rem;
@@ -83,3 +83,30 @@
       color: #f3f3ff;
       font-family: sans-serif;
     }
+
+    
+		#myDIV,
+		#myDIV2,
+		#myDIV3,
+		#myDIV4 {
+
+			background-color: coral;
+			color: white;
+			animation: mymove 9s infinite;
+			border: 10px solid #212529;
+		}
+
+		@keyframes mymove {
+			50% {
+				box-shadow:  10px 10px 10px #011f3d;
+
+			}
+
+			50% {
+				border-color: #011f3d;
+			}
+		}
+     
+		
+	 
+	
