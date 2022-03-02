@@ -1,7 +1,7 @@
 const express = require("express")
 const cors = require("cors")
 const {dbConnection} = require("../database/config")
-
+const hbs = require('hbs');
 
 class Server {
 
@@ -11,6 +11,7 @@ class Server {
 
 
                 this.paths = {
+                        frontend:'/',
                         auth:'/api/auth',
                         categorias: '/api/categorias',
                         productos: '/api/productos',
@@ -44,8 +45,16 @@ class Server {
                 this.app.use(express.json());
 
                 // Directorio público
-                this.app.use(express.static("public"));
+                //this.app.use(express.static("public"));
+                /*hbs.registerPartials(__dirname + '/views/parciales', function (err) {});
+                this.app.set('view engine', 'hbs');
+                this.app.set("views", __dirname + "/views");
+                this.app.use(express.static(__dirname + "/static"));*/
 
+                hbs.registerPartials(__dirname + '/../views/parciales', function (err) {});
+                this.app.set('view engine', 'hbs');
+                this.app.set("views", __dirname + "/../views");
+                this.app.use(express.static(__dirname + "/../static"));
 
         }
 
@@ -55,6 +64,7 @@ class Server {
                 this.app.use(this.paths.categorias, require('../routes/categorias'));
                 this.app.use(this.paths.productos, require('../routes/productos'));
                 this.app.use(this.paths.usuarios, require('../routes/usuarios'));
+                this.app.use(this.paths.frontend, require('../routes/frontend'));
                 //this.app.use(this.usuariosPath, require('../routes/usuarios'));
 
         }
