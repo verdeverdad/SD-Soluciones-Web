@@ -51,8 +51,8 @@ class Server {
                 this.app.set("views", __dirname + "/views");
                 this.app.use(express.static(__dirname + "/static"));*/
 
-                hbs.registerPartials(__dirname + '/../views/parciales', function (err) {});
                 this.app.set('view engine', 'hbs');
+                hbs.registerPartials(__dirname + '/../views/parciales', function (err) {});
                 this.app.set("views", __dirname + "/../views");
                 this.app.use(express.static(__dirname + "/../static"));
 

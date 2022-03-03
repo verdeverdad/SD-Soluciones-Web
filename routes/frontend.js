@@ -69,9 +69,26 @@ router.get('/blog', (req, res) => {
 });
 
 
-router.get('/quienes_somos', (req, res) => {
+/*router.get('/quienes_somos', (req, res) => {
 	res.sendFile(__dirname+'/static/Quienes somos.html')
-})
+})*/
+
+
+// login
+router.get('/login', (req, res) => {
+	res.render('login', {
+        //titulo:'Soluciones Web'
+        titulo: 'SD-Soluciones en desarrollo'
+    })
+});
+
+
+// api test
+router.get('/api_test', (req, res) => {
+	res.render('api_test')
+});
+
+
 /*var
 router.get('*', (req, res) => {
 	res.sendFile(__dirname+'/static/templates/404.html')

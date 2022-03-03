@@ -1,0 +1,87 @@
+{{> head_2}}
+	
+<body class="body">
+<div class="container text-white">
+
+	<h1>Google sign-in</h1>
+	<hr>
+
+	<div id="g_id_onload"
+         data-client_id="1021570357847-n28ns8aq7639df4iq1sm9a3aombrpk81.apps.googleusercontent.com"
+	 
+         data-auto_prompt="false"
+	 data-callback="handleCredentialResponse">
+      </div>
+      <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+      </div>
+
+      <br>
+
+        <div class="py-5">
+                <button id="google_signout" class="btn btn-secondary">SignOut</button>
+        </div>
+
+</div>
+
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+	<script>
+		function handleCredentialResponse(response) {
+		   
+			// Google Token : ID_TOKEN
+			console.log('id_token', response.credential);
+
+			const body = { id_token:response.credential}
+
+			//fetch('https://desarrollo-soluciones-web.herokuapp.com/api/auth/google',{
+			//fetch('https://localhost:8080/api/auth/google',{
+			fetch('http://localhost:8080/api/auth/google',{
+				method: 'POST',
+				headers: {
+					'content-type': 'application/json'
+				},
+				body: JSON.stringify(body)
+			})
+				.then(resp => resp.json())
+				.then(resp => {
+					console.log(resp);
+					localStorage.setItem('email',resp.usuario.correo)
+				})
+				.catch(console.warn)
+
+
+
+
+		}
+
+
+		const btn_google_signout = document.getElementById('google_signout');
+		
+		btn_google_signout.onclick = ()=>{
+
+			console.log(google.accounts.id);
+			google.accounts.id.disableAutoSelect();
+
+			google.accounts.id.revoke(localStorage.getItem('email'), done=>{
+				localStorage.clear();
+				location.reload();
+			})
+
+		}
+
+
+	      </script>
+	      
+<!-- FOOTER -->
+	{{> footer}}
+
+
+</body>
+
+</html>
