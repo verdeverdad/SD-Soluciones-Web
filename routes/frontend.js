@@ -1,8 +1,10 @@
 const { Router } = require('express');
 
+const {estaAutenticado} = require('../middlewares/validar-autenticacion')
+
 const router = Router();
 
-
+const passport = require('passport');
 
 
 // HOME
@@ -34,7 +36,10 @@ router.get('/quienes_somos', (req, res) => {
 
 
 // PERFIL
-router.get('/perfil', (req, res) => {
+router.get('/perfil', [
+    // validaciones antes de acceder a la ruta
+    estaAutenticado
+], (req, res) => {
 	res.render('perfil', {
         //titulo:'Soluciones Web'
         titulo: 'SD-Soluciones en desarrollo'
@@ -74,13 +79,7 @@ router.get('/blog', (req, res) => {
 })*/
 
 
-// login
-router.get('/login', (req, res) => {
-	res.render('login', {
-        //titulo:'Soluciones Web'
-        titulo: 'SD-Soluciones en desarrollo'
-    })
-});
+
 
 
 // api test
@@ -94,6 +93,57 @@ router.get('*', (req, res) => {
 	res.sendFile(__dirname+'/static/templates/404.html')
 })
 */
+
+
+
+
+
+
+// ============
+// registro de usuario
+// ============
+router.get('/registrarse', (req, res, next)=>{
+    res.render('registrarse');
+});
+
+
+router.post('/registrarse', passport.authenticate('local-signup',{
+    successRedirect: '/perfil', 
+    failureRedirect: '/registrarse',
+    passReqToCallback:true
+}));
+
+
+
+// ============
+// login
+// ============
+router.get('/iniciar_sesion', (req, res) => {
+	res.render('iniciar_sesion', {
+        //titulo:'Soluciones Web'
+        titulo: 'SD-Soluciones en desarrollo'
+    })
+});
+
+/*router.get('/iniciar_sesion', (req, res, next)=>{
+    res.render('iniciar_sesion');
+});*/
+
+
+router.post('/iniciar_sesion', passport.authenticate('local-signin',{
+    successRedirect: '/perfil', 
+    failureRedirect: '/iniciar_sesion',
+    passReqToCallback:true
+}));
+
+
+// ============
+// carrar sesion
+// ============
+router.get('/cerrar_sesion', (req, res, next)=>{
+    req.logout();
+    res.redirect('/');
+});
 
 
 
