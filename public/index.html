@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Google Sign-in</title>
+	<!-- build:css dist/index.css-->
+	
+        
+</head>
+
+<body class="">
+	
+
+
+	<h1>Google sign-in</h1>
+	<hr>
+
+	<div id="g_id_onload"
+         data-client_id="1021570357847-n28ns8aq7639df4iq1sm9a3aombrpk81.apps.googleusercontent.com"
+	 
+         data-auto_prompt="false"
+	 data-callback="handleCredentialResponse">
+      </div>
+      <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+      </div>
+
+      <br>
+
+      <button id="google_signout">SignOut</button>
+
+
+
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+	<script>
+		function handleCredentialResponse(response) {
+		   
+			// Google Token : ID_TOKEN
+			console.log('id_token', response.credential);
+
+			const body = { id_token:response.credential}
+
+			//fetch('https://desarrollo-soluciones-web.herokuapp.com/api/auth/google',{
+			//fetch('https://localhost:8080/api/auth/google',{
+			fetch('http://localhost:8080/api/auth/google',{
+				method: 'POST',
+				headers: {
+					'content-type': 'application/json'
+				},
+				body: JSON.stringify(body)
+			})
+				.then(resp => resp.json())
+				.then(resp => {
+					console.log(resp);
+					localStorage.setItem('email',resp.usuario.correo)
+				})
+				.catch(console.warn)
+
+
+
+
+		}
+
+
+		const btn_google_signout = document.getElementById('google_signout');
+		
+		btn_google_signout.onclick = ()=>{
+
+			console.log(google.accounts.id);
+			google.accounts.id.disableAutoSelect();
+
+			google.accounts.id.revoke(localStorage.getItem('email'), done=>{
+				localStorage.clear();
+				location.reload();
+			})
+
+		}
+
+
+	      </script>
+	      
+
+</body>
+
+</html>
