@@ -1,6 +1,17 @@
-const express = require("express")
-const cors = require("cors")
+const express = require("express");
+const cors = require("cors");
+
+const passport = require('passport');
+const session = require('express-session');
+const flash = require('connect-flash');
+
+
 const {dbConnection} = require("../database/config")
+
+require('../passport/local-auth')
+
+const morgan = require('morgan');
+
 const hbs = require('hbs');
 
 class Server {
@@ -43,6 +54,28 @@ class Server {
 
                 // Lectura y parseo del body
                 this.app.use(express.json());
+                //abilita la llegada de datos por formularios
+                this.app.use(express.urlencoded({extended:false}))
+
+                // configuracion del morgan()
+                this.app.use(morgan('dev'));
+
+
+                this.app.use(session({
+                        secret:process.env.SECRETORPRIVATEKEY,
+                        resave:false,
+                        saveUninitialized:false
+                }));
+                this.app.use(flash()); //debe ir despues de session() y antes que el passport
+                this.app.use(passport.initialize());
+                this.app.use(passport.session());
+
+                this.app.use((req,res,next)=>{
+                        this.app.locals.signupMessage = req.flash('signupMessage');
+                        this.app.locals.signinMessage = req.flash('signinMessage');
+
+                        next();
+                })
 
                 // Directorio público
                 //this.app.use(express.static("public"));
@@ -51,6 +84,7 @@ class Server {
                 this.app.set("views", __dirname + "/views");
                 this.app.use(express.static(__dirname + "/static"));*/
 
+                // establece el motor de plantillas(en este caso 'hbs', pero podria ser 'ejs')
                 this.app.set('view engine', 'hbs');
                 hbs.registerPartials(__dirname + '/../views/parciales', function (err) {});
                 this.app.set("views", __dirname + "/../views");
