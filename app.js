@@ -83,6 +83,24 @@ server.listen();
 });*/
 
 
+// COMO TRABAJAMOS
+/*app.get('/como_trabajamos', (req, res) => {
+	res.render('como_trabajamos', {
+        //titulo:'Soluciones Web'
+        titulo: 'SD-Soluciones en desarrollo'
+    })
+});
+*/
+
+// BLOG
+/*app.get('/blog', (req, res) => {
+	res.render('blog', {
+        //titulo:'Soluciones Web'
+        titulo: 'SD-Soluciones en desarrollo'
+    })
+});
+*/
+
 /*app.get('/quienes_somos', (req, res) => {
 	res.sendFile(__dirname+'/static/Quienes somos.html')
 })*/
