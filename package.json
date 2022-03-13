@@ -80,6 +80,9 @@
 
     "ext": "js,json,hbs"
 
+  },
+  "optionalDependencies": {
+    "fsevents": "2.1.2"
   }
 
 }
