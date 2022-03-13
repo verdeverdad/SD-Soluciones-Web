@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm sticky-sm-top  fixed-top ">
+<nav class="navbar navbar-expand-lg sticky-sm-top  fixed-top ">
     <!-- LOGO CIRCULAR-->
     <nav class="navbar">
         <style>
@@ -110,39 +110,40 @@
                 }
             }
         </style>
+        <div class="row">
+            <div class="col-sm-6">
+                <img id="myImg" class="circular--square" src="img/horizontal logo.png"
+                    alt="099675402 <br> contacto@SolucionesDesarrolloWeb.com" style="width:45%;max-width:300px">
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
 
-        <img id="myImg" class="circular--square" src="img/horizontal logo.png"
-            alt="099675402 <br> contacto@SolucionesDesarrolloWeb.com" style="width:45%;max-width:300px">
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
 
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
 
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function () {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
-        </script>
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+            </script>
 
     </nav>
     <!-- BOTON ICONO MENU-->
@@ -192,9 +193,6 @@
                     <a class="dropdown-item" href="/armar_mi_proyecto">Proyectos</a>
 
                     <a class="dropdown-item" id="salir" class="center" href="/cerrar_sesion"><svg
-
-                   
-
                             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-box-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"

@@ -41,17 +41,12 @@
         </ol>
     </nav>
 
-<nav aria-label="breadcrumb">
-		<ol class="breadcrumb " style="background-color: rgb(227, 255, 224, 0); color:rgba(174, 235, 168,)">
-			<li class="breadcrumb-item ">Home</li>
-             <li class="breadcrumb-item active" aria-current="page">¿Quiénes somos?</li>
-		</ol>
-	</nav>
     <div>
         <h1 class="titulo" style="color: #f3f3ff;">¿Quiénes somos?</h1>
     </div>
 
     <!-- TARJETAS DE QUIENES SOMOS-->
+    <div class="container">
     <div class="d-flex flex-wrap flex-row">
         <div class="card d-flex flex-column justify-content-between text-info bg-dark" style="width: 10rem;">
             <img src="img/20211224_001233-ANIMATION.gif" class="card-img-top" alt="Responsive">
@@ -60,7 +55,7 @@
                     abrazad@s por la naturaleza.</h4>
             </div>
         </div>
-        <div class=" card d-flex flex-column justify-content-between text-info" style="width: 10rem;">
+        <div class=" card d-flex flex-column justify-content-between text-info bg-dark" style="width: 10rem;">
             <img src="img/aves.gif" class="card-img-top" alt="Responsive">
             <div class="card-body">
                 <h5 class="text-center">Somos un equipo jóven, fresco y energético, con talento creativo y
@@ -78,7 +73,7 @@
             </div>
         </div>
 
-        <div class="card d-flex flex-column justify-content-between text-info " style="width: 10rem;">
+        <div class="card d-flex flex-column justify-content-between text-info bg-dark " style="width: 10rem;">
             <img src="img/fuego.gif" class="card-img-top" alt="Responsive">
             <div class="card-body">
                 <br>
@@ -142,12 +137,14 @@
             </figcaption>
         </figure>
     </div><br>
-    
-    <div class="d-grid gap-2 col-6 mx-auto">
-        <a href="/como_trabajamos" type="button" class="btn btn-outline-info btn-lg">¿Cómo
-            trabajamos?</a>
 
-    </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <a href="/armar_mi_proyecto" type="button" class=" btn btn-outline-light btn-lg"><strong>Armar mi proyecto</strong>
+</strong></a>
+        <a href="/todo_lo_que_tengo_que_saber" type="button" class="btn btn-outline-light btn-lg"><strong>Todo lo que tengo que
+            saber</strong>
+</strong></a><br>
+    </div></div>
     <!-- FOOTER  -->
     {{> footer}}
 </body>
