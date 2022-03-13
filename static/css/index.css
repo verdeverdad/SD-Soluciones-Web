@@ -81,10 +81,11 @@
     .titulo {
       font-size: 340%;
       background-color: #212529;
-      opacity: 80%;
+      opacity: 90%;
       text-align: center;
       color: #f3f3ff;
-      font-family: sans-serif;
+      font-family: monospace;
+      margin-bottom: 20px;
     }
 
 
