@@ -17,9 +17,9 @@ const ProyectoSchema = Schema({
                 type:String
         },
         usuario: {
-                type:String,
-                //required:true
-                //enum: ['ADMIN_ROLE', 'USER_ROLE']
+                type:Schema.Types.ObjectId,
+                ref:'Usuario',
+                
         },
         estado: {
                 type: Boolean,
