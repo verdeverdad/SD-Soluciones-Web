@@ -2,6 +2,10 @@ const { Router } = require('express');
 
 const {estaAutenticado} = require('../middlewares/validar-autenticacion')
 
+const {verPerfil} = require('../controllers/perfil')
+
+const {armarMiProyecto} = require('../controllers/proyectos')
+
 const router = Router();
 
 const passport = require('passport');
@@ -21,9 +25,12 @@ router.get('/', (req, res) => {
 router.get('/armar_mi_proyecto', (req, res) => {
 	res.render('armar_mi_proyecto', {
         //titulo:'Soluciones Web'
-        titulo: 'SD-Soluciones en desarrollo'
+        miMensaje: 'llegue por get'
     })
 });
+
+router.post('/armar_mi_proyecto', armarMiProyecto)
+
 
 
 // QUIENES SOMOS
@@ -36,15 +43,13 @@ router.get('/quienes_somos', (req, res) => {
 
 
 // PERFIL
-router.get('/perfil', [
-    // validaciones antes de acceder a la ruta
-    estaAutenticado
-], (req, res) => {
+router.get('/perfil',[estaAutenticado],verPerfil);
+/*router.get('/perfil', [estaAutenticado], (req, res) => {
 	res.render('perfil', {
-        //titulo:'Soluciones Web'
-        titulo: 'SD-Soluciones en desarrollo'
+        miVariable: 'Archivo de Rutas',
+        miOtraVariable:verPerfil
     })
-});
+});*/
 
 
 // TODO LO QUE TENGO QUE SABER
