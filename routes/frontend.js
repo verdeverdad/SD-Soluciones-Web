@@ -5,6 +5,7 @@ const {estaAutenticado} = require('../middlewares/validar-autenticacion')
 const {verPerfil} = require('../controllers/perfil')
 
 const {armarMiProyecto} = require('../controllers/proyectos')
+const {verProductos, peticionesPostDeAdministracion} = require('../controllers/productos')
 
 const router = Router();
 
@@ -79,9 +80,11 @@ router.get('/blog', (req, res) => {
 });
 
 
-/*router.get('/quienes_somos', (req, res) => {
-	res.sendFile(__dirname+'/static/Quienes somos.html')
-})*/
+// administracion
+router.get('/administracion', verProductos);
+
+router.post('/administracion', peticionesPostDeAdministracion); // controlers/productos.js
+
 
 
 

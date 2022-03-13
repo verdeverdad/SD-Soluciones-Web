@@ -22,11 +22,11 @@ const armarMiProyecto = async (req, res, done) => {
                 elige_las_palabras_clave: req.body.elige_las_palabras_clave,
                 crea_los_contenidos: req.body.crea_los_contenidos,
                 detalles_finales: req.body.detalles_finales,
+                // TODO resolver el calculo de precio
                 precio_estimado: "el precio estimado es us$ 300"
         }
 
 
-        // TODO
         // guardar el proyecto en la base de datos
         const objetoProyecto = new Proyecto();
         const fecha = new Date();
@@ -34,9 +34,10 @@ const armarMiProyecto = async (req, res, done) => {
         objetoProyecto.descripcion = JSON.stringify(descripcion);
         objetoProyecto.fecha = fecha.toString();
         
-        // TODO
-        //el campo usuario deberia hacer referencia al modelo de usuarios
-        objetoProyecto.usuario = req.user.correo;
+        //el campo usuario hace referencia al modelo de usuarios
+        if(req.user){
+                objetoProyecto.usuario = req.user;
+        }
 
         await objetoProyecto.save();
 
