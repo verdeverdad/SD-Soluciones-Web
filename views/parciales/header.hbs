@@ -183,6 +183,9 @@
             <li class="nav-item">
                 <a class="nav-link fs-6" style="color: #202f5c;" href="/blog">BLOG</a>
             </li>
+
+            {{#if user}}
+
             <li class="nav-item dropdown justify-content-end fs-6">
                 <a class="nav-link dropdown-toggle" style="color: #202f5c;" href="#" id="navbarDropdownMenuLink"
                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -201,10 +204,18 @@
                             <path fill-rule="evenodd"
                                 d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
                         </svg><strong>Cerrar sesion</strong></a>
-                    <a class="dropdown-item" id="salir" class="center" href="/iniciar_sesion"><strong>iniciar
-                            sesion</strong></a>
+                    
                 </div>
             </li>
+
+            {{else}}
+
+                <li class="nav-item">
+                    <a class="dropdown-item" id="salir" class="center" href="/iniciar_sesion"><strong>iniciar sesion</strong></a>
+                </li>
+
+            {{/if}}
+
         </ul>
 
     </div>
