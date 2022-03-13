@@ -2,36 +2,28 @@ const { Schema, model } = require('mongoose');
 
 const ProyectoSchema = Schema({
 
-        nombre: {
+        descripcion: {
                 type:String,
-                required:[true, 'El nombre es obligatorio']
+                //required:[true, 'El nombre es obligatorio']
         },
 
         //TODO vvvvvv
-        descripcion: {
-                type:String,
-                required:[true, 'El correo es obligatorio'],
-                unique: true
-        },
+        
         categoria: {
                 type:String,
-                required:[true, 'El password es obligatoria']
+                //required:[true, 'El password es obligatoria']
         },
         fecha: {
                 type:String
         },
         usuario: {
-                type:String,
-                required:true
-                //enum: ['ADMIN_ROLE', 'USER_ROLE']
+                type:Schema.Types.ObjectId,
+                ref:'Usuario',
+                
         },
         estado: {
                 type: Boolean,
                 default: true
-        },
-        google: {
-                type: Boolean,
-                default: false
         }
 
 });
@@ -39,13 +31,13 @@ const ProyectoSchema = Schema({
 
 
 
-UsuarioSchema.methods.toJSON = function() {
-        const { __v, password, _id, ...usuario } = this.toObject();
-        usuario.uid = _id;
+ProyectoSchema.methods.toJSON = function() {
+        const { __v, ...proyecto } = this.toObject();
+        //proyecto.uid = _id;
 
-        return usuario;
+        return proyecto;
 }
 
 
 
-module.exports = model('Usuario', UsuarioSchema);
+module.exports = model('Proyectos', ProyectoSchema);

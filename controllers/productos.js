@@ -3,7 +3,67 @@ const {Producto, Categoria} = require('../models');
 
 
 // ==================
-// GET /Productos
+// ver Productos
+// ==================
+const verProductos = async (req = request, res = response) => {
+
+        const query = {estado:true};
+
+        const [total, productos] = await Promise.all( [
+                Producto.countDocuments(query),
+                Producto.find(query).populate('usuario', 'nombre')
+
+        ]);
+
+        res.render('administracion',{
+                total,
+                productos
+        });
+
+}
+
+
+
+// ===============================
+// peticionesPostDeAdministracion
+// ===============================
+const peticionesPostDeAdministracion = async (req = request, res = response) => {
+
+        //console.log('======================')
+        //console.log(req.body.nombre);
+        if(req.body.nombre != ''){
+                const {nombre, precio, descripcion} = req.body;
+                //console.log('si detecta los datos del formulario')
+                const nuevoProducto = new Producto()
+                nuevoProducto.nombre = nombre;
+                nuevoProducto.descripcion = descripcion;
+                nuevoProducto.precio = parseInt(precio);
+
+                await nuevoProducto.save();
+        }
+        //console.log('si pasa por post')
+
+
+        const query = {estado:true};
+
+        const [total, productos] = await Promise.all( [
+                Producto.countDocuments(query),
+                Producto.find(query).populate('usuario', 'nombre')
+        ]);
+
+        res.render('administracion',{
+                total,
+                productos
+        });
+
+}
+
+
+
+
+
+// ==================
+// API - GET /Productos
 // ==================
 // obtenerProductos - paginado - total- populate
 const obtenerProductos = async (req = request, res = response) => {
@@ -30,7 +90,7 @@ const obtenerProductos = async (req = request, res = response) => {
 
 
 // ==================
-// GET id Producto
+// API - GET id Producto
 // ==================
 // obtenerProducto - paginado - total- populate
 const obtenerProducto = async (req = request, res = response) => {
@@ -57,7 +117,7 @@ const obtenerProducto = async (req = request, res = response) => {
 
 
 // ==================
-// POST
+// API - POST
 // ==================
 // crearProducto 
 const crearProducto = async (req = request, res = response) => {
@@ -99,7 +159,7 @@ const crearProducto = async (req = request, res = response) => {
 
 
 // ==================
-// PUT
+// API - PUT
 // ==================
 // actualizar producto
 const actualizarProducto = async (req, res = response) => {
@@ -132,7 +192,7 @@ const actualizarProducto = async (req, res = response) => {
 
 
 // ==================
-// DELETE 
+// API - DELETE 
 // ==================
 // borrar Producto - estado :false
 const borrarProducto = async (req, res = response) => {
@@ -149,8 +209,12 @@ const borrarProducto = async (req, res = response) => {
 
 
 
-
+// ==================
+// EXPORTS
+// ==================
 module.exports = {
+        verProductos,
+        peticionesPostDeAdministracion,
         obtenerProductos,
         obtenerProducto,
         crearProducto,
