@@ -2,57 +2,75 @@
 <html lang="es">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SD-Soluciones en desarrollo</title>
-    <!-- build:css dist/index.css-->
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>SD-Soluciones en desarrollo</title>
+	<!-- build:css dist/index.css-->
+	<link href="css/index.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+		crossorigin="anonymous">
 
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
-    <!-- endbuild -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+	<link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+	<!-- endbuild -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="body">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
 
-    <!--  NAVBAR -->
-    {{> header}}
-    <!--  JUMBOTRON CARROUSEL-->
-    {{> jumbotron}}
+	<!--  NAVBAR -->
+	{{> header}}
+	<!--  JUMBOTRON CARROUSEL
+	{{> jumbotron}}
+	-->
 
-    <!-- BREADCRUM  -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-dark">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Armar mi proyecto</li>
-        </ol>
-    </nav>
+	<!-- BREADCRUM  -->
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb bg-dark">
+			<li class="breadcrumb-item"><a href="/">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Armar mi proyecto</li>
+		</ol>
+	</nav>
 
-    <div class="mb-5">
-        <h1 class="titulo">Armar mi proyecto</h1>
-    </div>
-    	<div id="myDIV3" class="card bg-dark opacity-75">
-			<h1 class="card-header text-center text-light font-monospace fs-2">
-				Queremos comprender en que situacion te encuentras con respecto a la idea que tienes
-			</h1>
-			<div class="card-body text-center text-light">
-				<h3 class="card-title font-monospace fs-1">Te pedimos que selecciones tus preferencias antes de tener una primera entrevista</h3><br>
-				<h4 class="card-text">Así ya podremos
-                saber con que tipo de proyecto trabajaremos.</h4><br>
-				<a href="/como_trabajamos" class="btn btn-outline-light btn-lg"><strong>¿Comenzamos?</strong></a><br>
-			</div>
-		</div><br>
-        <!--  PRIMERA DESCRIPCION
+
+	<div class="p-5 text-white">
+		<p>{{objetoProyecto}}</p>
+
+		<ul>
+			{{#each proyecto}}
+			<li>{{this}}</li>
+			{{/each}}
+			
+		</ul>
+	</div>
+
+
+	<div class="mb-5">
+		<h1 class="titulo">Armar mi proyecto</h1>
+	</div>
+	<div id="myDIV3" class="card bg-dark opacity-75">
+		<h1 class="card-header text-center text-light font-monospace fs-2">
+			Queremos comprender en que situacion te encuentras con respecto a la idea que tienes
+		</h1>
+		<div class="card-body text-center text-light">
+			<h3 class="card-title font-monospace fs-1">Te pedimos que selecciones tus preferencias antes de
+				tener una primera entrevista</h3><br>
+			<h4 class="card-text">Así ya podremos
+				saber con que tipo de proyecto trabajaremos.</h4><br>
+			<a href="/como_trabajamos"
+				class="btn btn-outline-light btn-lg"><strong>¿Comenzamos?</strong></a><br>
+		</div>
+	</div><br>
+	<!--  PRIMERA DESCRIPCION
     <div class="container opacity-75 bg-dark text-light">
         <div class="clearfix">
             <img src="img/proyecto.png" style="width:30%;" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
@@ -64,222 +82,297 @@
             </p>
         </div>
 
-    </div>
+    </div>-->
 
-    <!-- CARDS ARMAR MI PROYECTO  -->
-    <div class="container">
-        <div class="d-flex flex-wrap flex-row ">
-
-
-            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
-                <img src="img/proyecto.png" class="card-img-top" alt="Responsive">
-                <div class="card-body form-group">
-                    <h5 class="card-title">¿Qué proyecto quiero?</h5>
-                    <label for="cars" class="form-label text-center">Define el objetivo</label><br>
-                    <select id="cars" class="form-control" name="cars">
-                        <option selected class="text-center"> ¡Elige uno! </option>
-                        <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="Un blog o un sitio web de revista se centra en el contenido editorial.">
-                            Blog/magazine</option>
-                        <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="informan al visitante sobre un producto específico">Landing pages</option>
-                        <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="venta online de productos físicos o servicios">E-commerce Tienda on-line
-                        </option>
-
-                        <option value="audi" class="text-center">Empresariales/corporativas</option>
-                    </select><br>
-                    <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
-                </div>
-            </div>
+	<!-- CARDS ARMAR MI PROYECTO  -->
+	<div class="container">
+		<form method="post" action="/armar_mi_proyecto">
+			<div class="d-flex flex-wrap flex-row ">
 
 
-            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
-                <img src="img/partida.png" class="card-img-top" alt="Responsive">
-                <div class="card-body form-group">
-                    <h5 class="card-title text-center">Punto de partida:</h5>
-                    <label for="cars" class="form-label text-center">Elige el estilo</label><br>
-                    <select id="cars" class="form-control" name="cars">
-                        <option selected class="text-center">¡Elige uno! </option>
-                        <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="informan al visitante sobre un producto específico">¡Ya tengo una idea!
-                        </option>
-                        <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="venta online de productos físicos o servicios">Cuento con la idea y el diseño
-                        </option>
-                        <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="Un blog o un sitio web de revista se centra en el contenido editorial.">Hay
-                            un
-                            proyecto ya publicado</option>
-                        <option value="audi" class="text-center">Hay un proyecto no publicado</option>
-                    </select><br>
-                    <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
-                </div>
-            </div>
+				<!-- ============================== -->
+				<!-- =====¿Qué proyecto quiero?===== -->
+				<!-- ============================== -->
+				<div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+					<img src="img/proyecto.png" class="card-img-top" alt="Responsive">
+					<div class="card-body form-group">
+						<h5 class="card-title">¿Qué proyecto quiero?</h5>
+						<label for="cars" class="form-label text-center">Define el
+							objetivo</label><br>
+						<select id="cars" class="form-control" name="que_proyecto_quiero">
+							<option value="" selected class="text-center"> ¡Elige uno!
+							</option>
+							<option value="Blog/magazine" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+								Blog/magazine</option>
+							<option value="Landing pages" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="informan al visitante sobre un producto específico">
+								Landing pages</option>
+							<option value="E-commerce Tienda on-line" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="venta online de productos físicos o servicios">
+								E-commerce Tienda on-line
+							</option>
+
+							<option value="Empresariales/corporativas" class="text-center">
+								Empresariales/corporativas
+							</option>
+						</select><br>
+						<button type="button" class="btn btn-outline-dark">Guardar
+							preferencia</button>
+					</div>
+				</div>
 
 
-            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
-                <img src="img/manos.png" class="card-img-top" alt="Responsive">
-                <div class="card-body form-group">
-                    <h5 class="card-title text-center">Crear un mapa del sitio:</h5>
-                    <label for="cars" class="form-label text-center">Empezar a darle forma</label><br>
-                    <select id="cars" class="form-control" name="cars">
-                        <option selected class="text-center">¡Eligue uno! </option>
-                        <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="informan al visitante sobre un producto específico">¡Ya tengo uno!</option>
-                        <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="venta online de productos físicos o servicios">Cuento con la idea pero no
-                            tengo el diseño
-                        </option>
-                        <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="Un blog o un sitio web de revista se centra en el contenido editorial.">
-                            Quiero que lo hagan por mi</option>
+				<!-- ========================= -->
+				<!-- =====Punto de partida===== -->
+				<!-- ========================= -->
+				<div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+					<img src="img/partida.png" class="card-img-top" alt="Responsive">
+					<div class="card-body form-group">
+						<h5 class="card-title text-center">Punto de partida:</h5>
+						<label for="cars" class="form-label text-center">Elige el estilo</label><br>
+						<select id="cars" class="form-control" name="punto_de_partida">
+							<option selected class="text-center">¡Elige uno! </option>
+							<option value="¡Ya tengo una idea!" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="informan al visitante sobre un producto específico">
+								¡Ya tengo una idea!
+							</option>
+							<option value="Cuento con la idea y el diseño" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="venta online de productos físicos o servicios">
+								Cuento con la idea y el diseño
+							</option>
+							<option value="Hay un proyecto ya publicado" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+								Hay un proyecto ya publicado</option>
+							<option value="Hay un proyecto no publicado" class="text-center">Hay un proyecto no publicado
+							</option>
+						</select><br>
+						<button type="button" class="btn btn-outline-dark">Guardar
+							preferencia</button>
+					</div>
+				</div>
 
-                    </select><br>
-                    <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
-                </div>
-            </div>
 
-            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
-                <img src="img/manos.png" class="card-img-top" alt="Responsive">
-                <div class="card-body form-group">
-                    <h5 class="card-title text-center">Elige las Palabras clave</h5>
-                    <label for="cars" class="form-label text-center">Haz la diferencia</label><br>
-                    <select id="cars" class="form-control" name="cars">
-                        <option selected class="text-center">¡Eligue uno! </option>
-                        <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="informan al visitante sobre un producto específico">¡Ya las tengo!</option>
-                        <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="venta online de productos físicos o servicios">Tengo una idea pero necesito
-                            asesoramiento
-                        </option>
-                        <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="Un blog o un sitio web de revista se centra en el contenido editorial.">
-                            Quiero que lo hagan por mi</option>
+				<!-- =============================== -->
+				<!-- =====Crear un mapa del sitio===== -->
+				<!-- =============================== -->
+				<div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+					<img src="img/manos.png" class="card-img-top" alt="Responsive">
+					<div class="card-body form-group">
+						<h5 class="card-title text-center">Crear un mapa del sitio:</h5>
+						<label for="cars" class="form-label text-center">Empezar a darle
+							forma</label><br>
+						<select id="cars" class="form-control" name="crear_un_mapa_del_sitio">
+							<option value="" selected class="text-center">¡Eligue uno! </option>
+							<option value="¡Ya tengo uno!" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="informan al visitante sobre un producto específico">
+								¡Ya tengo uno!</option>
+							<option value="Cuento con la idea pero no tengo el diseño" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="venta online de productos físicos o servicios">
+								Cuento con la idea pero no tengo el diseño
+							</option>
+							<option value="Quiero que lo hagan por mi" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+								Quiero que lo hagan por mi</option>
 
-                    </select><br>
-                    <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
-                </div>
-            </div>
+						</select><br>
+						<button type="button" class="btn btn-outline-dark">Guardar
+							preferencia</button>
+					</div>
+				</div>
 
-            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
-                <img src="img/proyecto.png" class="card-img-top" alt="Responsive">
-                <div class="card-body form-group">
-                    <h5 class="card-title">Crea los contenidos:</h5>
-                    <label for="cars" class="form-label text-center">¿Qué es lo que quiero mostrar?</label><br>
-                    <select id="cars" class="form-control" name="cars">
-                        <option selected class="text-center"> ¡Elige uno! </option>
-                        <option value="saab" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="Un blog o un sitio web de revista se centra en el contenido editorial.">
-                            Tengo las imagenes y el contenido </option>
-                        <option value="fiat" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="informan al visitante sobre un producto específico">Tengo las imagenes pero
-                            no el contenido</option>
-                        <option value="volvo" class="text-center" data-toggle="tooltip" data-placement="top"
-                            title="venta online de productos físicos o servicios">Tengo las imagenes y trabajaré
-                            en el contenido</option>
 
-                        <option value="audi" class="text-center">No tengo las imagenes pero trabajaré en el
-                            contenido</option>
-                        <option value="audi" class="text-center">No tengo las imagenes y no tengo en el
-                            contenido</option>
+				<!-- ================================= -->
+				<!-- ===== Elige las Palabras clave ===== -->
+				<!-- ================================= -->
+				<div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+					<img src="img/manos.png" class="card-img-top" alt="Responsive">
+					<div class="card-body form-group">
+						<h5 class="card-title text-center">Elige las Palabras clave</h5>
+						<label for="cars" class="form-label text-center">Haz la
+							diferencia</label><br>
+						<select id="cars" class="form-control" name="elige_las_palabras_clave">
+							<option value="" selected class="text-center">¡Eligue uno! </option>
+							<option value="¡Ya las tengo!" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="informan al visitante sobre un producto específico">
+								¡Ya las tengo!</option>
+							<option value="Tengo una idea pero necesito asesoramiento" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="venta online de productos físicos o servicios">
+								Tengo una idea pero necesito asesoramiento
+							</option>
+							<option value="Quiero que lo hagan por mi" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+								Quiero que lo hagan por mi</option>
 
-                    </select><br>
-                    <button type="button" class="btn btn-outline-dark">Guardar preferencia</button>
-                </div>
-            </div>
+						</select><br>
+						<button type="button" class="btn btn-outline-dark">Guardar
+							preferencia</button>
+					</div>
+				</div>
 
-            <div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
-                <img src="img/partida.png" class="card-img-top" alt="Responsive">
-                <div class="card-body form-group">
-                    <h5 class="card-title text-center">Detalles finales</h5>
-                    <label for="cars" class="form-label text-center">Agrega datos adicionales que creas que son
-                        importantes en este proceso</label><br>
-                    <textarea class="w-100"></textarea>
-                    <button type="button" class="btn btn-outline-dark align-bottom-center ">Enviar
-                        comentarios</button>
-                </div>
-            </div><br>
 
-        </div><br>
-    </div><br> -->
-    <!-- FORMULARIO DE CONTACTO -->
-    <div class="container">
-        <div class="d-flex flex-wrap flex-row ">
+				<!-- ============================= -->
+				<!-- ===== Crea los contenidos ===== -->
+				<!-- ============================= -->
+				<div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+					<img src="img/proyecto.png" class="card-img-top" alt="Responsive">
+					<div class="card-body form-group">
+						<h5 class="card-title">Crea los contenidos:</h5>
+						<label for="cars" class="form-label text-center">¿Qué es lo que quiero
+							mostrar?</label><br>
+						<select id="cars" class="form-control" name="crea_los_contenidos">
+							<option value="" selected class="text-center"> ¡Elige uno! </option>
+							<option value="Tengo las imagenes y el contenido" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+								Tengo las imagenes y el contenido </option>
+							<option value="Tengo las imagenes pero no el contenido" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="informan al visitante sobre un producto específico">
+								Tengo las imagenes pero no el contenido</option>
+							<option value="Tengo las imagenes y trabajaré en el contenido" class="text-center" data-toggle="tooltip"
+								data-placement="top"
+								title="venta online de productos físicos o servicios">
+								Tengo las imagenes y trabajaré en el contenido</option>
 
-            <button type="button" class="btn btn-light col-6 mx-auto" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                QUIERO QUE ME CONTACTEN
-            </button>
+							<option value="No tengo las imagenes pero trabajaré en el contenido" class="text-center">
+								No tengo las imagenes pero trabajaré en el contenido</option>
+							<option value="No tengo las imagenes y	no tengo en el contenido" class="text-center">
+								No tengo las imagenes y	no tengo en el contenido</option>
 
-        </div>
-        <!-- Modal -->
-        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Por favor ingrese los siguientes datos:
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <h3 class="text-center" style="color: #f3f3ff;"></h3><BR>
-                            <!--para que me tome el form lo puse con espacio en vez de con "-"-->
-                            <div class="form-row">
-                                <div class="form group col-sm-6">
-                                    <label for="nombre">Nombre: </label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="apellido">Apellido: </label>
-                                    <input type="text" class="form-control" id="apellido"
-                                        placeholder="Ingrese su Apellido">
-                                </div>
-                            </div>
-                            <div class="form-group ">
-                                <label for="email">Email: </label>
-                                <input type="email" class="form-control" id="email" placeholder="Ingrese su Email">
-                            </div>
+						</select><br>
+						<button type="button" class="btn btn-outline-dark">Guardar
+							preferencia</button>
+					</div>
+				</div>
 
-                            <div class="form-row">
-                                <div class="form group col-sm-9">
-                                    <label for="direccion">Dirección: </label>
-                                    <input type="text" class="form-control" id="direccion"
-                                        placeholder="Ingrese su Dirección">
-                                </div>
-                                <div class="form-group col-sm-3">
-                                    <label for="Departamento">Departamento: </label>
-                                    <select id="Departamento" class="form-control">
-                                        <option selected>Montevideo</option>
-                                        <option>Canelones</option>
-                                        <option>Maldonado</option>
-                                        <option>Colonia</option>
-                                        <option>San José</option>
-                                    </select>
-                                </div>
 
-                            </div>
-                            <div class="form-group">
-                                <label for="comentario">Comentario: </label>
-                                <textarea class="form-control" id="comentario" placeholder="Ingrese su comentario"
-                                    rows="10"></textarea>
-                            </div>
+				<!-- ========================== -->
+				<!-- ===== Detalles finales ===== -->
+				<!-- ========================== -->
+				<div class="card form d-flex flex-column justify-content-between" style="width: 18rem;">
+					<img src="img/partida.png" class="card-img-top" alt="Responsive">
+					<div class="card-body form-group">
+						<h5 class="card-title text-center">Detalles finales</h5>
+						<label for="cars" class="form-label text-center">Agrega datos
+							adicionales que
+							creas que son
+							importantes en este proceso</label><br>
+						<textarea name="detalles_finales" class="w-100"></textarea>
+						<button type="button"
+							class="btn btn-outline-dark align-bottom-center ">Enviar
+							comentarios</button>
+					</div>
+				</div><br>
 
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Enviar</button>
-                    </div>
-                </div>
-            </div> <br>
-        </div>
+			</div><br>
 
-    </div>
+			<div class="p-3">
+				<button class="btn btn-block btn-success" type="submit">Calcular precio</button>
+			</div>
 
-    <!-- FOOTER  -->
-    {{> footer}}
+
+		</form>
+	</div><br> -->
+	<!-- FORMULARIO DE CONTACTO -->
+	<div class="container">
+		<div class="d-flex flex-wrap flex-row ">
+
+			<button type="button" class="btn btn-light col-6 mx-auto" data-bs-toggle="modal"
+				data-bs-target="#exampleModal">
+				QUIERO QUE ME CONTACTEN
+			</button>
+
+		</div>
+		<!-- Modal -->
+		<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Por favor ingrese los
+							siguientes datos:
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<h3 class="text-center" style="color: #f3f3ff;"></h3><BR>
+							<!--para que me tome el form lo puse con espacio en vez de con "-"-->
+							<div class="form-row">
+								<div class="form group col-sm-6">
+									<label for="nombre">Nombre: </label>
+									<input type="text" class="form-control"
+										id="nombre"
+										placeholder="Ingrese su nombre">
+								</div>
+								<div class="form-group col-sm-6">
+									<label for="apellido">Apellido: </label>
+									<input type="text" class="form-control"
+										id="apellido"
+										placeholder="Ingrese su Apellido">
+								</div>
+							</div>
+							<div class="form-group ">
+								<label for="email">Email: </label>
+								<input type="email" class="form-control" id="email"
+									placeholder="Ingrese su Email">
+							</div>
+
+							<div class="form-row">
+								<div class="form group col-sm-9">
+									<label for="direccion">Dirección: </label>
+									<input type="text" class="form-control"
+										id="direccion"
+										placeholder="Ingrese su Dirección">
+								</div>
+								<div class="form-group col-sm-3">
+									<label for="Departamento">Departamento: </label>
+									<select id="Departamento" class="form-control">
+										<option selected>Montevideo</option>
+										<option>Canelones</option>
+										<option>Maldonado</option>
+										<option>Colonia</option>
+										<option>San José</option>
+									</select>
+								</div>
+
+							</div>
+							<div class="form-group">
+								<label for="comentario">Comentario: </label>
+								<textarea class="form-control" id="comentario"
+									placeholder="Ingrese su comentario"
+									rows="10"></textarea>
+							</div>
+
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary"
+							data-bs-dismiss="modal">Cerrar</button>
+						<button type="button" class="btn btn-primary">Enviar</button>
+					</div>
+				</div>
+			</div> <br>
+		</div>
+
+	</div>
+
+	<!-- FOOTER  -->
+	{{> footer}}
 </body>
 
 </html>

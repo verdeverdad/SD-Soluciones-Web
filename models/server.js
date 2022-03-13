@@ -73,7 +73,7 @@ class Server {
                 this.app.use((req,res,next)=>{
                         this.app.locals.signupMessage = req.flash('signupMessage');
                         this.app.locals.signinMessage = req.flash('signinMessage');
-
+                        this.app.locals.user = req.user
                         next();
                 })
 
