@@ -6,6 +6,10 @@ const ProyectoSchema = Schema({
                 type:String,
                 //required:[true, 'El nombre es obligatorio']
         },
+        productos: [{
+                type:Schema.Types.ObjectId,
+                ref:'Producto',
+        }],
 
         //TODO vvvvvv
         
