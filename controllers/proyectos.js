@@ -1,4 +1,31 @@
+const Producto = require('../models/producto')
 const Proyecto = require('../models/proyecto')
+
+
+const verMisProyectos = async (req, res, done) => {
+
+        const productos = await Producto.find({estado:true})
+        
+        if(req.user){
+//TODO vvvvv
+                const query = {usuario:req.user._id};
+
+                const [total, proyectos] = await Promise.all( [
+                        Proyecto.countDocuments(query),
+                        Proyecto.find(query).populate('usuario', 'nombre').populate('productos', 'nombre')
+                ]);
+
+                //const proyectos = req.user._id;
+                res.render('armar_mi_proyecto', {
+                        total,
+                        proyectos,
+                        productos
+                })
+        }
+
+        res.render('armar_mi_proyecto',{productos})
+}
+
 
 
 
@@ -26,26 +53,49 @@ const armarMiProyecto = async (req, res, done) => {
                 precio_estimado: "el precio estimado es us$ 300"
         }
 
+        const {productosDelNuevoProyecto} = req.body;
+        console.log('VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV')
+        console.log(productosDelNuevoProyecto)
+        
+        let data =[]
+        
+        for(let i in productosDelNuevoProyecto){
+                console.log(i)
+                console.log(productosDelNuevoProyecto[i])
+                data.push( await Producto.findOne({_id:productosDelNuevoProyecto[i]}))
+                
+        }
+        
+        console.log("data para el new Proyecto() vvvvvv")
+        console.log(data)
 
         // guardar el proyecto en la base de datos
-        const objetoProyecto = new Proyecto();
-        const fecha = new Date();
-
+        let objetoProyecto = new Proyecto();
+        
         objetoProyecto.descripcion = JSON.stringify(descripcion);
+        
+        // TODO 
+        // que el modelo de Proyectos guarde el objeto Date
+        const fecha = new Date();
         objetoProyecto.fecha = fecha.toString();
         
         //el campo usuario hace referencia al modelo de usuarios
         if(req.user){
                 objetoProyecto.usuario = req.user;
         }
+        
+        objetoProyecto.productos = data;
 
         await objetoProyecto.save();
 
-
-        res.render('armar_mi_proyecto', {
+        res.redirect('armar_mi_proyecto')
+        /*res.render('armar_mi_proyecto', {
+                total,
+                proyectos,
                 proyecto,
-                objetoProyecto
-        })
+                objetoProyecto,
+                productos
+        })*/
 
 
 
@@ -57,5 +107,6 @@ const armarMiProyecto = async (req, res, done) => {
 
 
 module.exports = {
+        verMisProyectos,
         armarMiProyecto
 }

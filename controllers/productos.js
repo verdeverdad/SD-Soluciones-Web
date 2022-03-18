@@ -28,6 +28,7 @@ const verProductos = async (req = request, res = response) => {
 // peticionesPostDeAdministracion
 // ===============================
 const peticionesPostDeAdministracion = async (req = request, res = response) => {
+        //aca se procesa el formulario para crear productos
 
         //console.log('======================')
         //console.log(req.body.nombre);

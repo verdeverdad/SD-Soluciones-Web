@@ -22,6 +22,7 @@
 </head>
 
 <body class="body">
+	<div class="m-0 p-0"style="background-color:rgba(255,255,255,0.2)" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -41,17 +42,37 @@
 		</ol>
 	</nav>
 
+	{{#if total }}
 
-	<div class="p-5 text-white">
-		<p>{{objetoProyecto}}</p>
-
-		<ul>
-			{{#each proyecto}}
-			<li>{{this}}</li>
-			{{/each}}
+		<div class="m-5">
 			
-		</ul>
-	</div>
+			<h3 class="text-light">Usted tiene un total de {{total}} proyectos.</h3>
+			
+			{{#each proyectos}}
+				<div class="card bg-dark opacity-75 m-3 p-3 text-light">
+					<div class="card-header">
+						Proyecto creado el {{this.fecha}} 
+						<hr>
+					</div>
+					<div class="card-body">
+						<ul>
+							{{#each this.productos}}
+								<li>{{this.nombre}} <small>{{this.descripcion}}</small></li>
+							{{/each}}
+						</ul>
+					</div>
+				</div>
+			{{/each}}
+				
+		</div>
+
+	{{else}}
+
+		<div class="m-5 alert alert-primary" role="alert">
+			<p>Todavia no tiene proyectos.</p>
+		</div>
+	{{/if}}
+
 
 
 	<div class="mb-5">
@@ -279,8 +300,23 @@
 
 			</div><br>
 
-			<div class="p-3">
-				<button class="btn btn-block btn-success" type="submit">Calcular precio</button>
+
+
+			<div class="card d-flex flex-column justify-content-between" >
+				<img src="img/proyecto.png" class="card-img-top" alt="Responsive">
+				<div class="card-body form-group">
+					<h5 class="card-title">¿Qué proyecto quiero?</h5>
+						{{#each productos}}
+							<div class="m-3 p-3 form-check border">
+								<input name="productosDelNuevoProyecto" value="{{this.id}}" type="checkbox" class="form-check-input" id="{{this.nombre}}">
+								<label class="form-check-label" for="{{this.nombre}}">{{this.nombre}} <small>({{this.descripcion}})</small></label>
+							</div>
+						{{/each}}
+				</div>
+
+				<div class="px-4 pb-3">
+					<button class="btn btn-block btn-success" type="submit">Calcular precio</button>
+				</div>
 			</div>
 
 
@@ -373,6 +409,7 @@
 
 	<!-- FOOTER  -->
 	{{> footer}}
+	</div>
 </body>
 
 </html>
