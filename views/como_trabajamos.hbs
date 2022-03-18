@@ -26,26 +26,60 @@
     <script src="js/index.js"></script>
 
 
-    <!--  NAVBAR -->
-
-    <!-- LOGO CIRCULAR-->
+    <!--  NAVBAR --> <!-- LOGO CIRCULAR-->
     {{> header}}
 
 
     <!--  JUMBOTRON CARROUSEL-->
     {{> jumbotron}}
 
-    <!--   BREADCRUMB    -->
-    <nav aria-label="breadcrumb ">
-        <ol class="breadcrumb bg-dark">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">¿Cómo trabajamos?</li>
-        </ol>
-    </nav>
-
-    <div>
-        <h1 class="titulo">¿ Cómo trabajamos?</h1>
+  
+    <div class="">
+        <h1 class="titulo">¿Cómo trabajamos?</h1>
     </div>
+
+    <div id="myDIV" class="card bg-dark" style="opacity: 90%; 
+    background-image: url('../img/equipo4.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;">
+        <h1 class="card-header text-center text-light font-monospace fs-2">
+            <strong> ¡¡Trabajamos en equipo!!</strong>
+        </h1>
+        <div class="card-body text-center text-light">
+            <h3 class="card-title font-monospace fs-1">Estaremos en contacto constante.</h3><br>
+            <h4 class="card-text ">Trabajando de forma cooperativa para lograr los mejores resultadoso.</h4><br>
+
+        </div>
+    </div><br>
+    <div id="myDIV2" class="card bg-dark" style="opacity: 90%; 
+    background-image: url('../img/equipo2.1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;">
+        <h1 class="card-header text-center text-light font-monospace fs-2">
+            Nos contactamos por la plataforma que prefieras,
+        </h1>
+        <div class="card-body text-center text-light">
+            <h3 class="card-title font-monospace fs-1">seremos fluidos en la comunicación</h3><br>
+            <h4 class="card-text">para ir definiendo las partes del proceso.</h4><br>
+        </div>
+    </div><br>
+    <div id="myDIV3" class="card bg-dark" style="opacity: 90%; 
+    background-image: url('../img/equipo3.1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;">
+        <h1 class="card-header text-center text-light font-monospace fs-2">
+           Para concretar un entrevista,
+        </h1>
+        <div class="card-body text-center text-light">
+            <h3 class="card-title font-monospace fs-1">Primero completa los datos de tu proyecto </h3><br>
+            <h4 class="card-text">y luego tus datos de contacto <br>en la seccion:</h4><br>
+            <a href="/quienes_somos" class="btn btn-outline-light btn-lg"><strong>Armar mi proyecto <strong></a><br>
+        </div>
+    </div><br>
+
 
     <div class="container">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -109,13 +143,7 @@
         </div>
     </div>
 
-    <div class="d-grid gap-2 col-6 mx-auto">
-        <a href="/armar_mi_proyecto" type="button" class=" btn btn-outline-light btn-lg"><strong>Armar mi proyecto</strong>
-</strong></a>
-        <a href="/todo_lo_que_tengo_que_saber" type="button" class="btn btn-outline-light btn-lg"><strong>Todo lo que tengo que
-            saber</strong>
-</strong></a><br>
-    </div>
+
 
     {{>footer}}
 </body>

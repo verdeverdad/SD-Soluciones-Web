@@ -83,6 +83,7 @@
       background-color: #212529;
       opacity: 90%;
       text-align: center;
+      text-shadow: 2px 2px 5px rgb(0, 195, 255);
       color: #f3f3ff;
       font-family: monospace;
       margin-bottom: 20px;
@@ -98,7 +99,7 @@
 			background-color: coral;
 			color: white;
 			animation: mymove 9s infinite;
-			border: 10px solid #212529;
+			border: 8px solid #ebf0f5;
 		}
 
 		@keyframes mymove {
