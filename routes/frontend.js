@@ -4,7 +4,7 @@ const {estaAutenticado} = require('../middlewares/validar-autenticacion')
 
 const {verPerfil} = require('../controllers/perfil')
 
-const {armarMiProyecto} = require('../controllers/proyectos')
+const {armarMiProyecto, verMisProyectos} = require('../controllers/proyectos')
 const {verProductos, peticionesPostDeAdministracion} = require('../controllers/productos')
 
 const router = Router();
@@ -23,14 +23,15 @@ router.get('/', (req, res) => {
 
 
 // ARMAR MI PROYECTO
-router.get('/armar_mi_proyecto', (req, res) => {
+/*router.get('/armar_mi_proyecto', (req, res) => {
 	res.render('armar_mi_proyecto', {
         //titulo:'Soluciones Web'
         miMensaje: 'llegue por get'
     })
-});
+});*/
 
-router.post('/armar_mi_proyecto', armarMiProyecto)
+router.get('/armar_mi_proyecto',verMisProyectos);
+router.post('/armar_mi_proyecto', armarMiProyecto);
 
 
 
