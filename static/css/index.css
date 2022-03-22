@@ -4,13 +4,19 @@
 
 .navbar {
       background-color: #f5f5ef;
-      font-size:100%;
-      color: #f5f5ef;
+      /*font-size:100%;*/
+      /*color: #f5f5ef;*/
       
   }
 
-  .jumbotron {
-    
+.espaciador-del-navbar{
+  height: 101px;
+  background-color:red;
+}
+
+
+  .jumbotronn {
+
     background-image: url("../img/fondo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -79,14 +85,20 @@
 
 
     .titulo {
-      font-size: 340%;
+      font-size: 240%;
       background-color: #212529;
       opacity: 90%;
       text-align: center;
-      text-shadow: 2px 2px 5px rgb(0, 195, 255);
+      text-shadow: 1px 1px 4px rgb(0, 195, 255);
       color: #f3f3ff;
       font-family: monospace;
       margin-bottom: 20px;
+    }
+
+    .tarjeta{
+      background-color: #212529;
+      opacity: 90%;
+      color: #f3f3ff;
     }
 
 

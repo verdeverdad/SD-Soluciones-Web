@@ -1,17 +1,18 @@
 {{> head_2}}
 
 <body class="body">
-	<div class="m-0 p-0"style="background-color:rgba(255,255,255,0.2)" >
+
+	<!-- HEADER -->
+	{{> header_2}}
 	
+	<!--  JUMBOTRON CARROUSEL-->
+	{{> jumbotron}}
 
-        <!-- HEADER -->
-        {{> header_2}}
-
-        <!--mensajes tipo alert -->
+	<!--mensajes tipo alert -->
 	{{> mensajes}}
 
 
-
+<!--
 <div class="text-white p-5">
         <ul>
                 <li>miVariable {{miVariable}}</li>
@@ -25,22 +26,12 @@
 
         </ul>
 </div>
-
-
-        {{> jumbotron}}
-
-
-        <nav aria-label="breadcrumb ">
-                <ol class="breadcrumb bg-dark mb-3">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Perfil</li>
-                </ol>
-        </nav><br>
+-->
 
         <div class="container">
                 <div class="container bg-dark opacity-75" style="color: #f3f3ff;">
                         <form class="row g-3 needs-validation" novalidate>
-                                <h1 class="text-center">Completa tus datos:</h1><br>
+                                <h2 class="text-center">Completa tus datos:</h2><br>
                                 <div class="col-md-4 position-relative">
                                         <label for="validationTooltip01" class="form-label">First name</label>
                                         <input type="text" class="form-control" id="validationTooltip01" value="Mark"
