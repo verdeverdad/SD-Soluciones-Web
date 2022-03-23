@@ -1,6 +1,6 @@
 
 
-
+//console.log('variable proveniente del backend', miOtraVariable)
 
 // ==================
 // EDITAR DATOS PUT
