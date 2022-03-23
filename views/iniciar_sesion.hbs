@@ -11,9 +11,9 @@
 
 	<div class="container mb-5">
 
-		<div class="tarjeta mt-5 p-3 text-center">
-			<h2 class="">Iniciar sesion</h2>
-			<form class="" action="/iniciar_sesion" method="post">
+		<div class="tarjeta mt-5 p-3">
+			<h2 class="text-center">Iniciar sesion</h2>
+			<form action="/iniciar_sesion" method="post">
 
 				<div class="form-group">
 					<input class="form-control" type="email" name="email" placeholder="Email">
@@ -22,14 +22,12 @@
 					<input class="form-control" type="password" name="password"
 						placeholder="Password">
 				</div>
-				<div class="row">
-					<div class="col-6">
-						<button class="btn btn-primary" type="submit">Iniciar sesíon</button>
-					</div>
-					<div class="col-6">
-						<a class="btn btn-success" href="/registrarse">Registrarse.</a>
-					</div>
-
+				<div class="mb-3">
+					<button class="btn btn-primary" type="submit">Iniciar sesíon</button>
+				</div>
+				<hr>
+				<div class="">
+					<a class="text-light" href="/registrarse">Registrarse.</a>
 				</div>
 			</form>
 

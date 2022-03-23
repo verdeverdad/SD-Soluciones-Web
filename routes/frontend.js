@@ -1,8 +1,10 @@
 const { Router } = require('express');
 
-const {estaAutenticado} = require('../middlewares/validar-autenticacion')
+const {estaAutenticado} = require('../middlewares/validar-autenticacion');
 
-const {verPerfil} = require('../controllers/perfil')
+const {validarCampos,validarJWT, esAdminRole, tieneRole} = require('../middlewares')
+
+const {verPerfil, editarPerfil} = require('../controllers/perfil')
 
 const {armarMiProyecto, verMisProyectos} = require('../controllers/proyectos')
 const {verProductos, peticionesPostDeAdministracion} = require('../controllers/productos')
@@ -52,6 +54,23 @@ router.get('/perfil',[estaAutenticado],verPerfil);
         miOtraVariable:verPerfil
     })
 });*/
+
+router.put('/editar_perfil/:id', [
+    validarJWT,
+    estaAutenticado,
+    /*esAdminRole,
+    check('id', 'No es un ID válido').isMongoId(),
+    check('id').custom(existeProductoPorId),
+    check('nombre', 'El nombre es obligatorio').not().isEmpty(),
+    check('categoria', 'La categoria no es un ID válido').isMongoId(),
+    check('categoria').custom(existeCategoriaPorId),
+    check('precio', 'El precio es obligatorio').not().isEmpty(),
+    check('precio', 'El precio debe ser un valor numerico.').isNumeric(),*/
+    validarCampos
+], editarPerfil)
+
+
+
 
 
 // TODO LO QUE TENGO QUE SABER
@@ -153,6 +172,7 @@ router.get('/cerrar_sesion', (req, res, next)=>{
     req.logout();
     res.redirect('/');
 });
+
 
 
 
