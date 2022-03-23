@@ -9,8 +9,8 @@ document.querySelector('#editar-datos').addEventListener('click', () => {
 	console.log('click en Guardar(editar-datos)');
 	
 	let id = 'miIdPorURL';
-	//let url = 'https://desarrollo-soluciones-web.herokuapp.com/editar_perfil/'+id;
-	let url = 'http://localhost:8080/editar_perfil/'+id;
+	let url = 'https://desarrollo-soluciones-web.herokuapp.com/editar_perfil/'+id;
+	//let url = 'http://localhost:8080/editar_perfil/'+id;
 
 	// TODO VVVV
 	let data = { 
@@ -26,7 +26,7 @@ document.querySelector('#editar-datos').addEventListener('click', () => {
 		body: JSON.stringify(data), // data can be `string` or {object}!
 		headers: {
 			'Content-Type': 'application/json',
-			'x-token':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjI5NGViMGY3OTEwODljZTEyODcwZjkiLCJpYXQiOjE2NDc5OTcwMzMsImV4cCI6MTY0ODAxMTQzM30.9wMUbiwWJmG_d2sTZNZG1EDvTP7YAQbYb7rqHeD5sdA'
+			'x-token':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjI5NGViMGY3OTEwODljZTEyODcwZjkiLCJpYXQiOjE2NDc5OTg2OTEsImV4cCI6MTY0ODAxMzA5MX0.M_zKzAU2LmlH4BhsTnF8OlFkNC7mPd4xFdHurQfgfjw'
 		}
 	}).then(res => res.json())
 		.catch(error => console.error('Error:', error))
