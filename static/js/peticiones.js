@@ -155,6 +155,11 @@ document.querySelector('#put_producto').addEventListener('click', () => {
 
 
 
+
+
+
+
+
 const mostrarResultados = (data)=>{
 
         console.log('se ejecuto la funcion mostrarResultados()');
