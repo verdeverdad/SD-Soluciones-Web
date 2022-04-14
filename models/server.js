@@ -60,6 +60,11 @@ class Server {
                 // configuracion del morgan()
                 this.app.use(morgan('dev'));
 
+                // establece el motor de plantillas(en este caso 'hbs', pero podria ser 'ejs')
+                this.app.set('view engine', 'hbs');
+                hbs.registerPartials(__dirname + '/../views/parciales', function (err) {});
+                this.app.set("views", __dirname + "/../views");
+                this.app.use(express.static(__dirname + "/../static"));
 
                 this.app.use(session({
                         secret:process.env.SECRETORPRIVATEKEY,
@@ -84,11 +89,7 @@ class Server {
                 this.app.set("views", __dirname + "/views");
                 this.app.use(express.static(__dirname + "/static"));*/
 
-                // establece el motor de plantillas(en este caso 'hbs', pero podria ser 'ejs')
-                this.app.set('view engine', 'hbs');
-                hbs.registerPartials(__dirname + '/../views/parciales', function (err) {});
-                this.app.set("views", __dirname + "/../views");
-                this.app.use(express.static(__dirname + "/../static"));
+                
 
         }
 

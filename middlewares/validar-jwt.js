@@ -17,11 +17,11 @@ const validarJWT = async (req = request, res = response, next) => {
 
 
         try {
-
+                //console.log('el token es: ', token)
                 const {uid} = jwt.verify(token, process.env.SECRETORPRIVATEKEY)
-
+                //console.log('el uid es: ', uid)
                 const usuario = await Usuario.findById(uid);
-
+                //console.log('el usuario es: ', usuario)
                 if(!usuario){
                         return res.status(401).json({
                                 msg:'Token no valido - usuario no existe en BD'

@@ -1,115 +1,93 @@
 {{> head_2}}
 
 <body class="body">
-        <div>
 
 
-                <!-- HEADER -->
-                {{> header_2}}
+	<!-- HEADER -->
+	{{> header_2}}
+	
+	<!--  JUMBOTRON CARROUSEL-->
+	{{> jumbotron}}
+
+	<!--mensajes tipo alert -->
+	{{> mensajes}}
+
 
                 <!--mensajes tipo alert -->
                 {{> mensajes}}
                 {{> jumbotron}}
 
-                <div class="text-white p-5">
-                        <ul>
-                                <li>miVariable {{miVariable}}</li>
-                                <li>miOtraVariable {{miOtraVariable}}</li>
-                                <li>laReq: {{laReq}}</li>
-                                <li>user: {{user}}</li>
-                                <li>user.nombre: {{user.nombre}}</li>
-                                <li>user.correo: {{user.correo}}</li>
-                                <li>user.rol: {{user.rol}}</li>
-                                <li>user.estado: {{user.estado}}</li>
 
-                        </ul>
+<div class="text-white p-5">
+        <ul>
+                <li>miVariable {{miVariable}}</li>
+                <li>miOtraVariable {{miOtraVariable}}</li>
+                <li>user.token: {{user.token}}</li>
+                <li>usuario.token: {{usuario.token}}</li>
+                <li>token: {{token}}</li>
+                <li>req.session: {{req.session}}</li>
+                <li>user: {{user}}</li>
+                <li>user.nombre: {{user.nombre}}</li>
+                <li>user.correo: {{user.correo}}</li>
+                <li>user.rol: {{user.rol}}</li>
+                <li>user.estado: {{user.estado}}</li>
+
+        </ul>
+</div>
+
+
+        <div class="container mb-5">
+
+                <div class="tarjeta p-3">
+                        <h2 class="text-center">Edita tus datos</h2>
+                        <form >
+                                <input type="hidden" id="token" name="token" value="{{user.token}}">
+                                <input type="hidden" id="id" name="id" value="{{user._id}}">
+
+                                <div class="form-group">
+                                        <label for="editar-nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="editar-nombre" value="{{user.nombre}}">
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="editar-apellido" class="form-label">Apellido</label>
+                                        <input type="text" class="form-control" id="editar-apellido" value="{{user.apellido}}">
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="editar-ubicacion" class="form-label">Ubicacion</label>
+                                        <input type="text" class="form-control" id="editar-ubicacion" required value="{{user.ubicacion}}">
+                                </div>
+
+                                <div class="">
+                                        <button class="btn btn-primary" id="editar-datos">Guardar</button>
+                                </div>
+                                
+                        </form>
                 </div>
 
-                <div class="container">
-                        <div class="container bg-dark opacity-75" style="color: #f3f3ff;">
-                                <form class="row g-3 needs-validation" novalidate>
-                                        <h1 class="text-center">Completa tus datos:</h1><br>
-                                        <div class="col-md-4 position-relative">
-                                                <label for="validationTooltip01" class="form-label">First name</label>
-                                                <input type="text" class="form-control" id="validationTooltip01"
-                                                        value="Mark" required>
-                                                <div class="valid-tooltip">
-                                                        Looks good!
-                                                </div>
-                                        </div>
-                                        <div class="col-md-4 position-relative">
-                                                <label for="validationTooltip02" class="form-label">Last name</label>
-                                                <input type="text" class="form-control" id="validationTooltip02"
-                                                        value="Otto" required>
-                                                <div class="valid-tooltip">
-                                                        Looks good!
-                                                </div>
-                                        </div>
-                                        <div class="col-md-4 position-relative">
-                                                <label for="validationTooltipUsername"
-                                                        class="form-label">Username</label>
-                                                <div class="input-group has-validation">
-                                                        <span class="input-group-text"
-                                                                id="validationTooltipUsernamePrepend">@</span>
-                                                        <input type="text" class="form-control"
-                                                                id="validationTooltipUsername"
-                                                                aria-describedby="validationTooltipUsernamePrepend"
-                                                                required>
-                                                        <div class="invalid-tooltip">
-                                                                Please choose a unique and valid username.
-                                                        </div>
-                                                </div>
-                                        </div>
-                                        <div class="col-md-6 position-relative">
-                                                <label for="validationTooltip03" class="form-label">City</label>
-                                                <input type="text" class="form-control" id="validationTooltip03"
-                                                        required>
-                                                <div class="invalid-tooltip">
-                                                        Please provide a valid city.
-                                                </div>
-                                        </div>
-                                        <div class="col-md-3 position-relative">
-                                                <label for="validationTooltip04" class="form-label">State</label>
-                                                <select class="form-select" id="validationTooltip04" required>
-                                                        <option selected disabled value="">Choose...</option>
-                                                        <option>...</option>
-                                                </select>
-                                                <div class="invalid-tooltip">
-                                                        Please select a valid state.
-                                                </div>
-                                        </div>
-                                        <div class="col-md-3 position-relative">
-                                                <label for="validationTooltip05" class="form-label">Zip</label>
-                                                <input type="text" class="form-control" id="validationTooltip05"
-                                                        required>
-                                                <div class="invalid-tooltip">
-                                                        Please provide a valid zip.
-                                                </div>
-                                        </div>
-                                        <div class="col-12">
-                                                <button class="btn btn-primary" type="submit">Submit form</button>
-                                        </div>
-                                </form>
+                <!--
+                <div id="slider-k">
+                        <div class="frame-k">
+                                <img src="img/1.png" alt="" />
                         </div>
-
-                        <div id="slider-k">
-                                <div class="frame-k">
-                                        <img src="img/1.png" alt="" />
-                                </div>
-                                <div class="frame-k">
-                                        <img src="img/2.png" alt="" />
-                                </div>
-                                <div class="frame-k">
-                                        <img src="img/3.png" alt="" />
-                                </div>
-                                <div class="frame-k">
-                                        <img src="img/4.png" alt="" />
-                                </div>
-                                <div class="frame-k">
-                                        <img src="img/5.png" alt="" />
-                                </div>
+                        <div class="frame-k">
+                                <img src="img/2.png" alt="" />
+                        </div>
+                        <div class="frame-k">
+                                <img src="img/3.png" alt="" />
+                        </div>
+                        <div class="frame-k">
+                                <img src="img/4.png" alt="" />
+                        </div>
+                        <div class="frame-k">
+                                <img src="img/5.png" alt="" />
                         </div>
                 </div>
+                -->
+
+        </div>
+
 
                 <!-- FOOTER -->
                 {{> footer}}

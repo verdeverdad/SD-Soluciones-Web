@@ -1,14 +1,22 @@
 {{> head_2}}
+
 {{> header_2}}
 
+
 <body class="body">
-	<div class="container text-white">
 
-		{{> mensajes}}
+	<!--  NAVBAR -->
+	{{> header_2}}
 
-		<div class="container py-5">
-			<h4>Iniciar sesion</h4>
-			<form class="form-group" action="/iniciar_sesion" method="post">
+	<!--mensajes tipo alert -->
+	{{> mensajes}}
+
+
+	<div class="container mb-5">
+
+		<div class="tarjeta mt-5 p-3">
+			<h2 class="text-center">Iniciar sesion</h2>
+			<form action="/iniciar_sesion" method="post">
 
 				<div class="form-group">
 					<input class="form-control" type="email" name="email" placeholder="Email">
@@ -17,31 +25,39 @@
 					<input class="form-control" type="password" name="password"
 						placeholder="Password">
 				</div>
-				<button class="btn btn-primary" type="submit">Iniciar sesion</button>
+				<div class="mb-3">
+					<button class="btn btn-primary" type="submit">Iniciar sesíon</button>
+				</div>
+				<hr>
+				<div class="">
+					<a class="text-light" href="/registrarse">Registrarse.</a>
+				</div>
 			</form>
-			<hr>
-			<a class="btn btn-warning" href="/registrarse">Registrarse.</a>
+
 		</div>
 
 
-		<div class="container py-5">
-			<h4>Iniciar sesion con Google</h4>
-			<hr>
+		<div class="tarjeta mt-5 p-3 text-center">
+			<h2>Iniciar sesion con Google</h2>
 
-			<div id="g_id_onload"
-				data-client_id="1021570357847-n28ns8aq7639df4iq1sm9a3aombrpk81.apps.googleusercontent.com"
-				data-auto_prompt="false" data-callback="handleCredentialResponse">
-			</div>
-			<div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
-				data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+			<div class="row">
+				<div class="col-6">
+					<div id="g_id_onload"
+						data-client_id="1021570357847-n28ns8aq7639df4iq1sm9a3aombrpk81.apps.googleusercontent.com"
+						data-auto_prompt="false" data-callback="handleCredentialResponse">
+					</div>
+					<div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
+						data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+					</div>
+				</div>
+
+				<div class="col-6">
+					<div class="">
+						<button id="google_signout" class="btn btn-secondary">Salir de la sesion con Google</button>
+					</div>
+				</div>
 			</div>
 
-			<br>
-
-			<div class="py-5">
-				<button id="google_signout" class="btn btn-secondary">Salir de la sesion con
-					Google</button>
-			</div>
 		</div>
 
 	</div>
