@@ -1,0 +1,29 @@
+{{> head_2}}
+
+<body class="body">
+
+	{{> mensajes}}
+
+	<div class="container py-5 ">
+
+
+
+		<form class="form-group" action="/registrarse" method="post">
+			<h4 class="text-white">Por favor los afiliados</h4>
+			<div class="form-group">
+				<input class="form-control" type="text" name="nombre" placeholder="Nombre">
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="email" name="email" placeholder="Email">
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="password" name="password" placeholder="Password">
+			</div>
+			<button class="btn btn-primary" type="submit">Registrarme</button>
+		</form>
+	</div>
+
+
+</body>
+
+</html>

@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg sticky-sm-top  fixed-top ">
+<nav class="navbar navbar-expand-lg sticky-top site-header fixed-top ">
     <!-- LOGO CIRCULAR-->
     <nav class="navbar">
         <style>
-             #myImg {
+            #myImg {
                 border-radius: 5px;
                 cursor: pointer;
                 transition: 0.3s;
@@ -13,7 +13,7 @@
             }
 
             /* The Modal (background) */
-            .modal {
+            .modal1 {
                 display: none;
                 /* Hidden by default */
                 position: fixed;
@@ -37,7 +37,7 @@
             }
 
             /* Modal Content (image) */
-            .modal-content {
+            .modal-content1 {
                 margin: auto;
                 display: block;
                 width: 80%;
@@ -57,7 +57,7 @@
             }
 
             /* Add Animation */
-            .modal-content,
+            .modal-content1,
             #caption {
                 -webkit-animation-name: zoom;
                 -webkit-animation-duration: 0.6s;
@@ -105,18 +105,20 @@
 
             /* 100% Image Width on Smaller Screens */
             @media only screen and (max-width: 700px) {
-                .modal-content {
+                .modal-content1 {
                     width: 100%;
                 }
             }
         </style>
-
-            <img id="myImg" class="circular--square" src="img/horizontal logo.png" alt="099675402 <br> contacto@SolucionesDesarrolloWeb.com" style="width:45%;max-width:300px">
-
+        <div class="row">
+            <div class="col-sm-6">
+                <img id="myImg" class="circular--square" src="img/horizontal logo.png"
+                    alt="099675402 <br> contacto@SolucionesDesarrolloWeb.com" style="width:45%;max-width:300px">
+            </div>
             <!-- The Modal -->
-            <div id="myModal" class="modal">
+            <div id="myModal" class="modal1">
                 <span class="close">&times;</span>
-                <img class="modal-content" id="img01">
+                <img class="modal-content1" id="img01">
                 <div id="caption"></div>
             </div>
 
@@ -146,24 +148,26 @@
     </nav>
     <!-- BOTON ICONO MENU-->
     <nav class="navbar navbar-light">
-        <button  style="color: #212529;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button style="color: #212529;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
     <!-- MENU DESPLEGABLE-->
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-             <li class="nav-item active fs-6">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active fs-6">
                 <a class="nav-link" style="color: #202f5c;" href="/">INICIO<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item fs-6 ">
-                <a class="nav-link" style="color: #202f5c;" href="/quienes_somos">¿QUIÉNES SOMOS? <span class="sr-only">(current)</span></a>
+                <a class="nav-link" style="color: #202f5c;" href="/quienes_somos">¿QUIÉNES SOMOS? <span
+                        class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link fs-6" style="color: #202f5c;" href="/como_trabajamos">¿CÓMO TRABAJAMOS?</a>
             </li>
-           
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fs-6" href="#" id="navbarDropdownMenuLink" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #202f5c;">
@@ -175,32 +179,40 @@
                     <a class="dropdown-item" href="/armar_mi_proyecto">Armar mi proyecto</a>
                 </div>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link fs-6" style="color: #202f5c;" href="/blog">BLOG</a>
             </li>
+
+            {{#if user}}
+
             <li class="nav-item dropdown justify-content-end fs-6">
-                <a class="nav-link dropdown-toggle" style="color: #202f5c;"  href="#" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" style="color: #202f5c;" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     MI PERFIL
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#"></a>
                     <a class="dropdown-item" href="/perfil">Perfil</a>
                     <a class="dropdown-item" href="/armar_mi_proyecto">Proyectos</a>
-                    <a class="dropdown-item" id="salir" class="center" href="index.html"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
-                            <path fill-rule="evenodd"
-                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
-                        </svg><strong>Cerrar sesion</strong></a>
-                    <a class="dropdown-item" id="salir" class="center" href="perfil.html"><strong>iniciar
+
+                    <a class="dropdown-item" id="salir" class="center" href="/cerrar_sesion"><strong>Cerrar
                             sesion</strong></a>
+
                 </div>
             </li>
+
+            {{else}}
+
+            <li class="nav-item">
+                <a class="nav-link fs-6" style="color: #202f5c;" id="salir" class="center" href="/iniciar_sesion">INICIAR SESION</a>
+            </li>
+            
+            {{/if}}
+
         </ul>
-        
+
     </div>
 
+
 </nav><br>
+

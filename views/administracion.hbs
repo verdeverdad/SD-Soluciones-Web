@@ -1,0 +1,81 @@
+{{> head_2}}
+
+<body class="body text-white">
+
+        <!-- HEADER -->
+        {{> header_2}}
+
+        <h3>Area de administracion de la plataforma</h3>
+        <!--mensajes tipo alert -->
+        {{> mensajes}}
+
+
+        <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb bg-dark mb-3">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">administracion</li>
+                </ol>
+        </nav><br>
+
+
+
+        <div class="container mt-3 text-white">
+                <h2>Tabla de productos</h2>
+                <p>Hay un total de {{total}} productos</p>
+                <table class="table table-dark table-striped">
+                        <thead>
+                                <tr>
+                                        <th>Nombre</th>
+                                        <th>precio</th>
+                                        <th>Descripcion</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+
+                                {{#each productos}}
+                                <tr>
+                                        <td>{{this.nombre}}</td>
+                                        <td>{{this.precio}}</td>
+                                        <td>{{this.descripcion}}</td>
+                                </tr>
+                                {{/each}}
+
+                        </tbody>
+                </table>
+        </div>
+
+
+
+
+        <div class="p-5">
+                <form action="/administracion" method="post">
+                        <h4>Crear un producto</h4>
+                        <div class="mb-3 mt-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre"
+                                        name="nombre">
+                        </div>
+                        <div class="mb-3">
+                                <label for="precio" class="form-label">Precio:</label>
+                                <input type="number" class="form-control" id="precio" name="precio">
+                        </div>
+                        <div class="mb-3">
+                                <label for="descripcion" class="form-label">Descripcion:</label>
+                                <input type="text" class="form-control" id="descripcion"
+                                        placeholder="Descripcion" name="descripcion">
+                        </div>
+                        
+
+                        <button type="submit" name="crear_producto" class="btn btn-primary">crear producto</button>
+                </form>
+        </div>
+
+
+        <!-- FOOTER -->
+        {{> footer}}
+
+
+        <script src="js/perfil.js"></script>
+</body>
+
+</html>

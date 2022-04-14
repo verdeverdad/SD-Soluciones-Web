@@ -1,150 +1,132 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SD-Soluciones en desarrollo</title>
-    <!-- build:css dist/index.css-->
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
-    <!-- endbuild -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+{{> head_2}}
 
 <body class="body">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
-
-    <!--  NAVBAR -->
-    {{> header}}
-    <!--  JUMBOTRON CARROUSEL-->
-    {{> jumbotron}}
-
-
-
-
-    <!-- BREADCRUM  -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-dark ">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">¿Quiénes somos?</li>
-        </ol>
-    </nav>
-
-
     <div>
-        <h1 class="titulo" style="color: #f3f3ff;">¿Quiénes somos?</h1>
+      
+        <!--  NAVBAR -->
+        {{> header_2}}
+        <!--  JUMBOTRON CARROUSEL-->
+        {{> jumbotron}}
+
+        <div class="">
+            <h1 class="titulo" style="color: #f3f3ff;">¿Quiénes somos?</h1>
+        </div>
+
+        <!-- TARJETAS DE QUIENES SOMOS-->
+        <div class="container">
+            <div class="d-flex flex-wrap flex-row">
+                <div class="card d-flex flex-column justify-content-between text-info bg-dark"
+                    style="width: 10rem; opacity: 95%;">
+                    <img src="img/20211224_001233-ANIMATION.gif" class="card-img-top" alt="Responsive">
+                    <div class="card-body">
+                        <h4 class="text-center">Somos Soluciones en Desarrollo Web con sede en La Floresta, Canelones,
+                            Uruguay
+                            abrazad@s por la naturaleza.</h4>
+                    </div>
+                </div>
+                <div class=" card d-flex flex-column justify-content-between text-info bg-dark"
+                    style="width: 10rem; opacity: 95%;">
+                    <img src="img/aves.gif" class="card-img-top" alt="Responsive">
+                    <div class="card-body">
+                        <h5 class="text-center">Somos un equipo jóven, fresco y energético, con talento creativo y
+                            pasión
+                            por lo que hacemos, trabajamos de forma
+                            cooperativa para lograr los mejores resultados.</h5>
+                    </div>
+                </div>
+
+                <div class="card d-flex flex-column justify-content-between text-info bg-dark"
+                    style="width: 10rem; opacity: 95%;">
+                    <img src="img/mar.gif" class="card-img-top" alt="Responsive">
+                    <div class="card-body">
+                        <h4 class="text-center" ;>Creemos que la suma de nuestros conocimientos hace un
+                            mejor resultado.</h4>
+                    </div>
+                </div>
+
+                <div class="card d-flex flex-column justify-content-between text-info bg-dark "
+                    style="width: 10rem; opacity: 95%;">
+                    <img src="img/fuego.gif" class="card-img-top" alt="Responsive">
+                    <div class="card-body">
+                        <br>
+                        <h2 class="text-center">La tecnología es mejor cuando reúne a la gente.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap flex-row">
+
+                <div class="card d-flex flex-column justify-content-between text-info bg-dark" style="opacity: 95%;">
+                    <img src="img/ola.gif" class="card-img-top" alt="Responsive">
+                    <div class="card-body">
+                        <h3 class="text-center">El gran motor del cambio</h3><br><br>
+                        <p class="text-center">Somos Soluciones en Desarrollo Web. Apasionados por nuestro trabajo
+                            ofrecemos
+                            soluciones
+                            a la empresas y pymes, emprendedores y particulares para insertarse en la Web. Nuestra
+                            cooperativa
+                            surge de la necesidad de
+                            trabajar de manera independiente a las grandes empresas, respondiendo de forma directa a
+                            nuestros
+                            clientes,
+                            sin intermediarios. Logrando mejor comunicación para el proceso y satisfaccion por el
+                            proyecto
+                            final.</p><br>
+                    </div>
+                </div>
+                <div class="card d-flex flex-column justify-content-between text-info bg-dark" style="opacity: 95%;">
+                    <img src="img/magia.gif" class="card-img-top" alt="Responsive">
+                    <div class="card-body">
+                        <br>
+                        <h3 class="text-center">Compartir es bueno, y con la tecnología digital, compartir es sencillo.
+                        </h3>
+                        <br>
+                        <h4 class="text-center">Rompiendo las barreras del tiempo y la distancia.</h4><br>
+                        <h5 class="text-center"> Acercándonos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class=" col-sm-4"></div>
+                <div class="card col-sm-4  text-info bg-dark">
+                    <img src="img/luna.gif" class="card-img-top" alt="Responsive" style="margin-top: 20px;">
+                    <div class="card-body">
+                        <h3 class="text-center">Sigue siendo magia aunque sepas cómo se hace.</h3><br>
+                        <h5 class="text-center">Tenemos que hackear a los estereptipos</h5><br>
+                        <p class="text-center">¡Tenes la libertad de crear el perfil que quieras!</p>
+                    </div>
+                </div>
+                <div class="col-sm-4"></div>
+            </div><br>
+
+        </div>
+
+        <!-- PIE DE FOTOS  -->
+        <div class="container p-3">
+            <figure class="text-center" style="color: #fdfdfd; text-shadow: 4px 4px 5px rgb(0, 195, 255);">
+                <blockquote class="blockquote">
+                    <h4 class="text-center" style="text-shadow: 4px 4px 5px rgb(0, 195, 255);">Un buen diseño hace la vida mejor.</h4>
+                </blockquote>
+                <figcaption class="blockquote-footer" style="color: #fdfdfd;text-shadow: 4px 4px 5px rgb(0, 195, 255);">
+                    @SolucionesDesarrolloWeb<br><cite title="Source Title">Imágenes de La Floresta, Año: 2021
+                    </cite>
+                </figcaption>
+            </figure>
+        </div><br>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a href="/armar_mi_proyecto" type="button" class=" btn btn-dark btn-lg"><strong>Armar mi
+                    proyecto</strong>
+                </strong></a>
+            <a href="/todo_lo_que_tengo_que_saber" type="button" class="btn btn-outline-light btn-lg"><strong>Todo lo
+                    que
+                    tengo que
+                    saber</strong>
+                </strong></a><br>
+        </div>
+
+        <!-- FOOTER  -->
+        {{> footer}}
     </div>
-
-    <!-- TARJETAS DE QUIENES SOMOS-->
-    <div class="d-flex flex-wrap flex-row">
-        <div class="card d-flex flex-column justify-content-between text-info bg-dark" style="width: 10rem;">
-            <img src="img/20211224_001233-ANIMATION.gif" class="card-img-top" alt="Responsive">
-            <div class="card-body">
-                <h4 class="text-center">Somos Soluciones en Desarrollo Web con sede en La Floresta, Canelones, Uruguay
-                    abrazad@s por la naturaleza.</h4>
-            </div>
-        </div>
-        <div class=" card d-flex flex-column justify-content-between text-info" style="width: 10rem;">
-            <img src="img/aves.gif" class="card-img-top" alt="Responsive">
-            <div class="card-body">
-                <h5 class="text-center">Somos un equipo jóven, fresco y energético, con talento creativo y
-                    pasión
-                    por lo que hacemos, trabajamos de forma
-                    cooperativa para lograr los mejores resultados.</h5>
-            </div>
-        </div>
-
-        <div class="card d-flex flex-column justify-content-between text-info bg-dark" style="width: 10rem;">
-            <img src="img/mar.gif" class="card-img-top" alt="Responsive">
-            <div class="card-body">
-                <h3 class="text-center" ;>Creemos que la suma de nuestros conocimientos hace un
-                    mejor resultado.</h3>
-            </div>
-        </div>
-
-        <div class="card d-flex flex-column justify-content-between text-info " style="width: 10rem;">
-            <img src="img/fuego.gif" class="card-img-top" alt="Responsive">
-            <div class="card-body">
-                <br>
-                <h2 class="text-center">La tecnología es mejor cuando reúne a la gente.</h2>
-            </div>
-        </div>
-    </div>
-    <div class="d-flex flex-wrap flex-row">
-
-        <div class="card d-flex flex-column justify-content-between text-info bg-dark">
-            <img src="img/ola.gif" class="card-img-top" alt="Responsive">
-            <div class="card-body">
-                <h3 class="text-center">El gran motor del cambio</h3><br><br>
-                <p class="text-center">Somos Soluciones en Desarrollo Web. Apasionados por nuestro trabajo ofrecemos
-                    soluciones
-                    a la empresas y pymes, emprendedores y particulares para insertarse en la Web. Nuestra
-                    cooperativa
-                    surge de la necesidad de
-                    trabajar de manera independiente a las grandes empresas, respondiendo de forma directa a
-                    nuestros
-                    clientes,
-                    sin intermediarios. Logrando mejor comunicación para el proceso y satisfaccion por el proyecto
-                    final.</p><br>
-            </div>
-        </div>
-        <div class="card d-flex flex-column justify-content-between text-info bg-dark">
-            <img src="img/magia.gif" class="card-img-top" alt="Responsive">
-            <div class="card-body">
-                <br>
-                <h3 class="text-center">Compartir es bueno, y con la tecnología digital, compartir es sencillo.</h3>
-                <br>
-                <h4 class="text-center">Rompiendo las barreras del tiempo y la distancia.</h4><br>
-                <h5 class="text-center"> Acercándonos</h5>
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class=" col-sm-4"></div>
-        <div class="card col-sm-4 justify-content-between text-info bg-dark">
-            <img src="img/luna.gif" class="card-img-top" alt="Responsive" style="margin-top: 20px;">
-            <div class="card-body">
-                <h3 class="text-center">Sigue siendo magia aunque sepas cómo se hace.</h3><br>
-                <h5 class="text-center">Tenemos que hackear a los estereptipos</h5><br>
-                <p class="text-center">¡Tenes la libertad de crear el perfil que quieras!</p>
-            </div>
-        </div>
-        <div class="col-sm-4"></div>
-    </div><br>
-
-
-
-    <!-- PIE DE FOTOS  -->
-    <div class="container">
-        <figure class="text-center" style="color: #fdfdfd;">
-            <blockquote class="blockquote">
-                <h4 class="text-center">Un buen diseño hace la vida mejor.</h4>
-            </blockquote>
-            <figcaption class="blockquote-footer" style="color: #fdfdfd;">
-                @SolucionesDesarrolloWeb<br><cite title="Source Title">Imágenes de La Floresta, Año: 2021
-                </cite>
-            </figcaption>
-        </figure>
-    </div><br>
-    
-    <div class="d-grid gap-2 col-6 mx-auto">
-        <a href="/como_trabajamos" type="button" class="btn btn-outline-info btn-lg">¿Cómo
-            trabajamos?</a>
-
-    </div>
-    <!-- FOOTER  -->
-    {{> footer}}
 </body>
 
 </html>
