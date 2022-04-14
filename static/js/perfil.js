@@ -8,25 +8,25 @@
 document.querySelector('#editar-datos').addEventListener('click', () => {
 	console.log('click en Guardar(editar-datos)');
 	
-	let id = 'miIdPorURL';
-	let url = 'https://desarrollo-soluciones-web.herokuapp.com/editar_perfil/'+id;
-	//let url = 'http://localhost:8080/editar_perfil/'+id;
+	let token = document.getElementById("token").value; 
+	
+	let id = document.getElementById("id").value; 
+	//let url = 'https://desarrollo-soluciones-web.herokuapp.com/editar_perfil/'+id;
+	let url = 'http://localhost:8080/editar_perfil/'+id;
 
 	// TODO VVVV
 	let data = { 
-		nombre:"prueba",
-		estado:true,
-		precio:1500,
-		categoria:"621b85dea22fc908e3ce9e67",
-		descripcion:"descripcion para el producto seo buscador",
-		disponible:true };
+		nombre:document.getElementById("editar-nombre").value,
+		apellido:document.getElementById("editar-apellido").value,
+		ubicacion:document.getElementById("editar-ubicacion").value
+		 };
       
 	fetch(url, {
 		method: 'PUT', // or 'POST'
 		body: JSON.stringify(data), // data can be `string` or {object}!
 		headers: {
 			'Content-Type': 'application/json',
-			'x-token':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjI5NGViMGY3OTEwODljZTEyODcwZjkiLCJpYXQiOjE2NDc5OTg2OTEsImV4cCI6MTY0ODAxMzA5MX0.M_zKzAU2LmlH4BhsTnF8OlFkNC7mPd4xFdHurQfgfjw'
+			'x-token':token
 		}
 	}).then(res => res.json())
 		.catch(error => console.error('Error:', error))
@@ -36,8 +36,12 @@ document.querySelector('#editar-datos').addEventListener('click', () => {
 
 
 
+
+
+
+
 	// Example starter JavaScript for disabling form submissions if there are invalid fields
-	(function () {
+	/*(function () {
 		'use strict'
 
 		// Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -55,4 +59,4 @@ document.querySelector('#editar-datos').addEventListener('click', () => {
 					form.classList.add('was-validated')
 				}, false)
 			})
-	})()
+	})()*/
