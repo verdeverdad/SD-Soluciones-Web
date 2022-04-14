@@ -35,6 +35,7 @@
 }
  footer {
       background-color: #f5f5ef;
+      
     }
 
  address {
@@ -93,6 +94,7 @@
       color: #f3f3ff;
       font-family: monospace;
       margin-bottom: 20px;
+      
     }
 
     .tarjeta{
@@ -108,10 +110,16 @@
 		#myDIV3,
 		#myDIV4 {
 
-			background-color: coral;
+			background-color: rgb(34, 32, 32);
 			color: white;
-			animation: mymove 9s infinite;
-			border: 8px solid #ebf0f5;
+			animation: mymove 16s infinite;
+			border: 4px solid #ebf0f5;
+		}
+
+    .card {
+
+			animation: mymove 16s infinite;
+			border: 4px solid #ebf0f5;
 		}
 
 		@keyframes mymove {

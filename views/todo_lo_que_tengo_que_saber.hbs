@@ -1,527 +1,511 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SD-Soluciones en desarrollo</title>
-    <!-- build:css dist/index.css-->
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
-    <!-- endbuild -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+{{> head_2}}
 
 <body class="body">
-    	<div class="m-0 p-0"style="background-color:rgba(255,255,255,0.8)" >
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
-
-    <!--  NAVBAR -->
-    {{> header}}
-    <br><br><br><br>
-    <!--  JUMBOTRON CARROUSEL-->
-    {{> jumbotron}}
-
-    <!-- TITULO -->
     <div>
-        <h1 class="titulo">Todo lo que tengo que saber</h1>
-    </div>
-
-    <!-- DIFERENTES PESTAÑAS -->
-    <div class="container" style="opacity: 90%">
-        <ul class="nav nav-tabs bg-dark fs-5" id="mytabs" role="tablist">
-
-            <li class="nav-item">
-                <a class="nav-link active" id="uno-tab" data-toggle="tab" href="#uno" role="tab" aria-controls="uno"
-                    aria-selected="true">¿Por donde comenzar?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab"
-                    aria-controls="tarjetas" aria-selected="false">Diferentes páginas web</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab"
-                    aria-controls="comentarios" aria-selected="false">Diseño UI/UX/Experiencia de usuario</a>
-            </li>
-
-        </ul><br>
-        <!-- DIFERENTES PESTAÑAS -->
-        <div class="tab-content " id="myTabContent">
 
 
-            <!--  PRIMERA SECCION ¿POR DONDE COMENZAR? -->
-            <div class="tab-pane fade show active" id="uno" role="tabpanel" aria-labelledby="uno-tab">
+        <!--  NAVBAR -->
+        {{> header_2}}
+        <br><br><br><br>
+        <!--  JUMBOTRON CARROUSEL-->
+        {{> jumbotron}}
 
-                <div class="accordion" id="accordionExample">
-
-
-                    <!-- 5 RAZONES -->
-                    <div class="card bg-dark">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="text-center">
-                                <button class="btn collapsed btn-outline-light text-center btn-lg" type="button"
-                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                    aria-controls="collapseOne">
-                                    5 RAZONES POR LAS QUE TU NEGOCIO DEBE TENER UNA PÁGINA WEB
-                                </button>
-                            </h5>
-                        </div>
-                        <!-- CARROUSEL 5 RAZONES-->
-                        <div id="collapseOne" class="collapse show " aria-labelledby="headingOne"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-center">
-                                <div class="text-center">
-                                    <img src="img/1.png" width="80%">
-                                </div>
-                                <div class="text-center">
-                                    <img src="img/1.1.gif" width="80%">
-                                </div><br>
-
-                                <div class="text-center">
-                                    <img src="img/2.png" width="80%">
-                                </div>
-                                <div class="text-center">
-                                    <img src="img/2.1.gif" width="80%">
-                                </div><br>
-
-                                <div class="text-center">
-                                    <img src="img/3.png" width="80%">
-                                </div>
-                                <div class="text-center">
-                                    <img src="img/3.2.gif" width="80%">
-                                </div><br>
-                                <div class="text-center">
-                                    <img src="img/4.png" width="80%">
-                                </div>
-                                <div class="text-center">
-                                    <img src="img/4.1.gif" width="80%">
-                                </div><br>
-                                <div class="text-center">
-                                    <img src="img/5.png" width="80%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- ESTRUCTURA DE UNA WEB -->
-                    <div class="card bg-dark" >
-
-                        <!-- BOTON-->
-                        <div class="card-header bg-dark" id="headingTwo">
-                            <h5 class="text-center">
-                                <button class="btn collapsed  btn-outline-light btn-lg" type="button"
-                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    ESTRUCTURA DE UNA WEB
-                                </button>
-                            </h5>
-
-
-
-
-                            <div class="container">
-
-
-                                <div id="collapseTwo" class="collapse bg-dark " aria-labelledby="headingcollapseTwo"
-                                    data-parent="#accordionExample">
-
-                                    <!-- ENCABEZADO Y MENU -->
-                                    <h3 class="text-center text-info ">1 <br><br> Encabezado y menú </h3>
-                                    <br>
-                                    <div id="carouselExampleFade" class="carousel slide carousel-fade"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="img/fondo blanco 2.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/foto en blanco 2.jpg" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/fondo blanco 3.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/fondo blanco 4.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/fondo blanco 5.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/fondo blanco 6.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/fondo blanco 7.png" class="d-block w-100" alt="...">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                    <br>
-
-
-                                    <!-- IMAGENES  -->
-                                    <div class="card-body text-light">
-                                        <h3 class="text-center text-info">2 <br><br> Imágenes</h3>
-                                        <br>
-                                        <div class="text-center">
-                                            <img src="img/img 1.png" width="100%">
-                                        </div><br>
-                                        <div class="text-center">
-                                            <img src="img/img 2.png" width="100%">
-                                        </div><br>
-                                        <div class="text-center">
-                                            <img src="img/img 3.png" width="100%">
-                                        </div><br>
-                                        <!-- IMAGENES CORTADAS DIAPO-->
-                                        <div id="slider-k">
-                                            <div class="frame-k">
-                                                <img src="img/imagenes.png" alt="" />
-                                            </div>
-                                            <div class="frame-k">
-                                                <img src="img/imagenes (1).png" alt="" />
-                                            </div>
-                                            <div class="frame-k">
-                                                <img src="img/imagenes (2).png" alt="" />
-                                            </div>
-                                            <div class="frame-k">
-                                                <img src="img/imagenes.png" alt="" />
-                                            </div>
-                                        </div>
-
-                                    </div><br>
-
-                                    <!--  CONTENIDO -->
-                                    <h3 class="text-center text-info">3 <br><br> Contenido del sitio web</h3>
-
-                                    <div id="carouselExampleFade2" class="carousel slide carousel-fade"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="img/contenido.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/contenido 2.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/contenido 3.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/contenido 4.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/contenido 5.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/contenido 6.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/contenido 7.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carouselExampleFade2" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                    </div><br>
-
-                                    <!-- INICIO -->
-                                    <h3 class="text-center text-info">4 <br><br> Página de inicio</h3><br>
-                                    <div class="text-center">
-                                        <img src="img/pag inicio.png" width="100%">
-                                    </div><br>
-                                    <div class="text-center">
-                                        <img src="img/pag inicio 2.png" width="100%">
-                                    </div><br>
-                                    <div class="text-center">
-                                        <img src="img/pag inicio 3.png" width="100%">
-                                    </div><br>
-                                   
-                                   <!-- FOOTER -->
-                                    <h3 class="text-center text-info">5 <br><br> Pie de página / footer</h3><br>
-
-                                    <div id="carouselExampleFade3" class="carousel slide carousel-fade"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="img/footer 1.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/footer 2.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/footer 3.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/footer 4.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/footer 5.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/footer 6.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="img/footer 7.png" class="d-block w-100" alt="...">
-                                            </div>
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carouselExampleFade3" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                    </div><br>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  HOSTING/ CONECTAR TU WEB A LA WEB POR DEFINIR SI ES DEFINITIVO-->
-                    <div class="card bg-dark  ">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="text-center">
-                                <button class="btn collapsed btn-outline-light btn-lg" type="button"
-                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                    HOSTING/ CONECTAR TU WEB A LA WEB
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-light">
-                                <h4 class=""> ¿Qué es y para qué sirve el e-commerce?</h4>
-                                <p>El E-commerce o comercio electrónico, es un concepto que empezó a utilizarse en los
-                                    años
-                                    90 para denominar todo proceso de compra o contratación de bienes y/o servicios a
-                                    través
-                                    de la red utilizando medios de pago como tarjetas de crédito o similares</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- TODO LO QUE HACEMOS POR VOS  FALTA LA INFORMACION CONECTA CON COMO TRABAJAMOS-->
-                    <div class="card bg-dark">
-                        <div class="card-header text-light" id="headingFour">
-                            <h5 class="text-center">
-                                <button class="btn collapsed btn-outline-light btn-lg" type="button"
-                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                    aria-controls="collapseFour">
-                                    TODO LO QUE HACEMOS POR VOS
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-light ">
-                                <h4 class=""> ¿Qué son las páginas corporativas?</h4>
-                                <p>Los Portales Web Empresariales son sitios web avanzados que se crean utilizando
-                                    plataformas denominadas Sistemas de Administración de Contenidos (ó CMS por sus
-                                    siglas en inglés). Estas plataformas de software permiten manejar múltiples
-                                    tipos de
-                                    contenidos clasificados de acuerdo a sus funcionalidades y que se almacenan en
-                                    bases
-                                    de datos, lo que permite que crezcan de acuerdo a lo que se necesite.
-                                </p>
-                                <p> Los Portales Web Empresariales tienen una estructura básica que se complementa
-                                    con
-                                    módulos funcionales. Esto permite que los mismos sean modulares y escalables, es
-                                    decir, que se configuren con los módulos que se requieran de acuerdo al perfil
-                                    de
-                                    cada portal logrando así especializarlos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--SEGUNDA SECCION DIFERENTES PAGINAS WEB -->
-            <div class="tab-pane fade opacity-95" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-                <div class="accordion" id="accordionExample">
-                    <div class="card bg-dark text-light">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="text-center">
-                                <button class="btn collapsed btn-outline-light btn-lg" type="button"
-                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">
-                                    Blog/magazine
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-center">
-                                <h4> ¿Qué es un blog en la web?</h4>
-                                <p></p>
-                                Un Weblog, conocido como blog , es un sitio web personal donde uno puede publicar
-                                cualquier cosa que desee compartir con otros. Se trata de un sitio Web, que se actualiza
-                                periódicamente y que se recopila cronológicamente textos y artículos de uno o varios
-                                autores (el más reciente aparece primero).
-                                </p>
-
-                                <h4> ¿Qué es una revista digital o magazine?</h4>
-                                <p></p>
-                                Una revista digital es una publicación con características idénticas a una revista
-                                tradicional, pero en lugar de emplear el formato de papel se presenta como medio de
-                                difusión en formato electrónico.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-light">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="text-center">
-                                <button class="btn collapsed  btn-outline-light btn-lg" type="button"
-                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    Landing pages
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-center">
-                                <h4> Landing pages (páginas de destino o aterrizaje)</h4><br>
-                                <p>son páginas web creadas con un objetivo de conversión en concreto. Son páginas
-                                    creadas para conseguir la conversión de los clientes potenciales para los cuales se
-                                    creó.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card bg-dark text-light">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="text-center">
-                                <button class="btn collapsed btn-outline-light btn-lg" type="button"
-                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                    E-commerce/ Tienda on-line
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-center">
-                                <h4> ¿Qué es y para qué sirve el e-commerce?</h4>
-                                <p>El E-commerce o comercio electrónico, es un concepto que empezó a utilizarse en los
-                                    años
-                                    90 para denominar todo proceso de compra o contratación de bienes y/o servicios a
-                                    través
-                                    de la red utilizando medios de pago como tarjetas de crédito o similares</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-light">
-                        <div class="card-header" id="headingFour">
-                            <h5 class="text-center">
-                                <button class="btn collapsed btn-outline-light btn-lg" type="button"
-                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                    aria-controls="collapseFour">
-                                    Empresariales/corporativas
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                            data-parent="#accordionExample">
-                            <div class="card-body text-center">
-                                <h4> ¿Qué son las páginas corporativas?</h4>
-                                <p>Los Portales Web Empresariales son sitios web avanzados que se crean utilizando
-                                    plataformas denominadas Sistemas de Administración de Contenidos (ó CMS por sus
-                                    siglas en inglés). Estas plataformas de software permiten manejar múltiples
-                                    tipos de
-                                    contenidos clasificados de acuerdo a sus funcionalidades y que se almacenan en
-                                    bases
-                                    de datos, lo que permite que crezcan de acuerdo a lo que se necesite.
-                                </p>
-                                <p> Los Portales Web Empresariales tienen una estructura básica que se complementa
-                                    con
-                                    módulos funcionales. Esto permite que los mismos sean modulares y escalables, es
-                                    decir, que se configuren con los módulos que se requieran de acuerdo al perfil
-                                    de
-                                    cada portal logrando así especializarlos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TERCER SECCION DISEÑO UX/UI -->
-            <div class="tab-pane fade show" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
-                <div class="container bg-dark">
-                    <h5 class="text-center" style="color: #f3f3ff;"> ¿Qué es el diseño UX/UI?</h5>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <h3 class="text-center">DISEÑO UX</h3>
-                                <p> <a href="/blog">mas info</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <form>
-                        <h3 class="text-center" style="color: #f3f3ff;"></h3><BR>
-
-                        <div class="form-row">
-                            <div class="form group col-sm-6">
-                                <label for="nombre">Nombre: </label>
-                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <label for="apellido">Apellido: </label>
-                                <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apellido">
-                            </div>
-                        </div>
-                        <div class="form-group ">
-                            <label for="email">Email: </label>
-                            <input type="email" class="form-control" id="email" placeholder="Ingrese su Email">
-                        </div>
-                        <div class="form-group ">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div><br>
+        <!-- TITULO -->
+        <div>
+            <h1 class="titulo">Todo lo que tengo que saber</h1>
         </div>
+
+        <!-- DIFERENTES PESTAÑAS -->
+        <div class="container" style="opacity: 90%">
+            <ul class="nav nav-tabs bg-dark fs-5" id="mytabs" role="tablist">
+
+                <li class="nav-item">
+                    <a class="nav-link active" id="uno-tab" data-toggle="tab" href="#uno" role="tab" aria-controls="uno"
+                        aria-selected="true">¿Por donde comenzar?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab"
+                        aria-controls="tarjetas" aria-selected="false">Diferentes páginas web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab"
+                        aria-controls="comentarios" aria-selected="false">Diseño UI/UX/Experiencia de usuario</a>
+                </li>
+
+            </ul><br>
+            <!-- DIFERENTES PESTAÑAS -->
+            <div class="tab-content " id="myTabContent">
+
+
+                <!--  PRIMERA SECCION ¿POR DONDE COMENZAR? -->
+                <div class="tab-pane fade show active" id="uno" role="tabpanel" aria-labelledby="uno-tab">
+
+                    <div class="accordion" id="accordionExample">
+
+
+                        <!-- 5 RAZONES -->
+                        <div class="card bg-dark">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed btn-outline-light text-center btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        5 RAZONES POR LAS QUE TU NEGOCIO DEBE TENER UNA PÁGINA WEB
+                                    </button>
+                                </h5>
+                            </div>
+                            <!-- CARROUSEL 5 RAZONES-->
+                            <div id="collapseOne" class="collapse show " aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <img src="img/1.png" width="80%">
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="img/1.1.gif" width="80%">
+                                    </div><br>
+
+                                    <div class="text-center">
+                                        <img src="img/2.png" width="80%">
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="img/2.1.gif" width="80%">
+                                    </div><br>
+
+                                    <div class="text-center">
+                                        <img src="img/3.png" width="80%">
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="img/3.2.gif" width="80%">
+                                    </div><br>
+                                    <div class="text-center">
+                                        <img src="img/4.png" width="80%">
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="img/4.1.gif" width="80%">
+                                    </div><br>
+                                    <div class="text-center">
+                                        <img src="img/5.png" width="80%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ESTRUCTURA DE UNA WEB -->
+                        <div class="card bg-dark">
+
+                            <!-- BOTON-->
+                            <div class="card-header bg-dark" id="headingTwo">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed  btn-outline-light btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        ESTRUCTURA DE UNA WEB
+                                    </button>
+                                </h5>
+
+
+
+
+                                <div class="container">
+
+
+                                    <div id="collapseTwo" class="collapse bg-dark " aria-labelledby="headingcollapseTwo"
+                                        data-parent="#accordionExample">
+
+                                        <!-- ENCABEZADO Y MENU -->
+                                        <h3 class="text-center text-info ">1 <br><br> Encabezado y menú </h3>
+                                        <br>
+                                        <div id="carouselExampleFade" class="carousel slide carousel-fade"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="img/fondo blanco 2.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/foto en blanco 2.jpg" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/fondo blanco 3.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/fondo blanco 4.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/fondo blanco 5.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/fondo blanco 6.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/fondo blanco 7.png" class="d-block w-100" alt="...">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <br>
+
+
+                                        <!-- IMAGENES  -->
+                                        <div class="card-body text-light">
+                                            <h3 class="text-center text-info">2 <br><br> Imágenes</h3>
+                                            <br>
+                                            <div class="text-center">
+                                                <img src="img/img 1.png" width="100%">
+                                            </div><br>
+                                            <div class="text-center">
+                                                <img src="img/img 2.png" width="100%">
+                                            </div><br>
+                                            <div class="text-center">
+                                                <img src="img/img 3.png" width="100%">
+                                            </div><br>
+                                            <!-- IMAGENES CORTADAS DIAPO-->
+                                            <div id="slider-k">
+                                                <div class="frame-k">
+                                                    <img src="img/imagenes.png" alt="" />
+                                                </div>
+                                                <div class="frame-k">
+                                                    <img src="img/imagenes (1).png" alt="" />
+                                                </div>
+                                                <div class="frame-k">
+                                                    <img src="img/imagenes (2).png" alt="" />
+                                                </div>
+                                                <div class="frame-k">
+                                                    <img src="img/imagenes.png" alt="" />
+                                                </div>
+                                            </div>
+
+                                        </div><br>
+
+                                        <!--  CONTENIDO -->
+                                        <h3 class="text-center text-info">3 <br><br> Contenido del sitio web</h3>
+
+                                        <div id="carouselExampleFade2" class="carousel slide carousel-fade"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="img/contenido.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/contenido 2.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/contenido 3.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/contenido 4.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/contenido 5.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/contenido 6.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/contenido 7.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div><br>
+
+                                        <!-- INICIO -->
+                                        <h3 class="text-center text-info">4 <br><br> Página de inicio</h3><br>
+                                        <div class="text-center">
+                                            <img src="img/pag inicio.png" width="100%">
+                                        </div><br>
+                                        <div class="text-center">
+                                            <img src="img/pag inicio 2.png" width="100%">
+                                        </div><br>
+                                        <div class="text-center">
+                                            <img src="img/pag inicio 3.png" width="100%">
+                                        </div><br>
+
+                                        <!-- FOOTER -->
+                                        <h3 class="text-center text-info">5 <br><br> Pie de página / footer</h3><br>
+
+                                        <div id="carouselExampleFade3" class="carousel slide carousel-fade"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="img/footer 1.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/footer 2.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/footer 3.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/footer 4.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/footer 5.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/footer 6.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/footer 7.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExampleFade3" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  HOSTING/ CONECTAR TU WEB A LA WEB POR DEFINIR SI ES DEFINITIVO-->
+                        <div class="card bg-dark  ">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed btn-outline-light btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        HOSTING/ CONECTAR TU WEB A LA WEB
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body text-light">
+                                    <h4 class=""> ¿Qué es y para qué sirve el e-commerce?</h4>
+                                    <p>El E-commerce o comercio electrónico, es un concepto que empezó a utilizarse en
+                                        los
+                                        años
+                                        90 para denominar todo proceso de compra o contratación de bienes y/o servicios
+                                        a
+                                        través
+                                        de la red utilizando medios de pago como tarjetas de crédito o similares</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TODO LO QUE HACEMOS POR VOS  FALTA LA INFORMACION CONECTA CON COMO TRABAJAMOS-->
+                        <div class="card bg-dark">
+                            <div class="card-header text-light" id="headingFour">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed btn-outline-light btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        TODO LO QUE HACEMOS POR VOS
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body text-light ">
+                                    <h4 class=""> ¿Qué son las páginas corporativas?</h4>
+                                    <p>Los Portales Web Empresariales son sitios web avanzados que se crean utilizando
+                                        plataformas denominadas Sistemas de Administración de Contenidos (ó CMS por sus
+                                        siglas en inglés). Estas plataformas de software permiten manejar múltiples
+                                        tipos de
+                                        contenidos clasificados de acuerdo a sus funcionalidades y que se almacenan en
+                                        bases
+                                        de datos, lo que permite que crezcan de acuerdo a lo que se necesite.
+                                    </p>
+                                    <p> Los Portales Web Empresariales tienen una estructura básica que se complementa
+                                        con
+                                        módulos funcionales. Esto permite que los mismos sean modulares y escalables, es
+                                        decir, que se configuren con los módulos que se requieran de acuerdo al perfil
+                                        de
+                                        cada portal logrando así especializarlos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--SEGUNDA SECCION DIFERENTES PAGINAS WEB -->
+                <div class="tab-pane fade opacity-95" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card bg-dark text-light">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed btn-outline-light btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Blog/magazine
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body text-center">
+                                    <h4> ¿Qué es un blog en la web?</h4>
+                                    <p></p>
+                                    Un Weblog, conocido como blog , es un sitio web personal donde uno puede publicar
+                                    cualquier cosa que desee compartir con otros. Se trata de un sitio Web, que se
+                                    actualiza
+                                    periódicamente y que se recopila cronológicamente textos y artículos de uno o varios
+                                    autores (el más reciente aparece primero).
+                                    </p>
+
+                                    <h4> ¿Qué es una revista digital o magazine?</h4>
+                                    <p></p>
+                                    Una revista digital es una publicación con características idénticas a una revista
+                                    tradicional, pero en lugar de emplear el formato de papel se presenta como medio de
+                                    difusión en formato electrónico.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-dark text-light">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed  btn-outline-light btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Landing pages
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body text-center">
+                                    <h4> Landing pages (páginas de destino o aterrizaje)</h4><br>
+                                    <p>son páginas web creadas con un objetivo de conversión en concreto. Son páginas
+                                        creadas para conseguir la conversión de los clientes potenciales para los cuales
+                                        se
+                                        creó.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-dark text-light">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed btn-outline-light btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        E-commerce/ Tienda on-line
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body text-center">
+                                    <h4> ¿Qué es y para qué sirve el e-commerce?</h4>
+                                    <p>El E-commerce o comercio electrónico, es un concepto que empezó a utilizarse en
+                                        los
+                                        años
+                                        90 para denominar todo proceso de compra o contratación de bienes y/o servicios
+                                        a
+                                        través
+                                        de la red utilizando medios de pago como tarjetas de crédito o similares</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-dark text-light">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed btn-outline-light btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Empresariales/corporativas
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body text-center">
+                                    <h4> ¿Qué son las páginas corporativas?</h4>
+                                    <p>Los Portales Web Empresariales son sitios web avanzados que se crean utilizando
+                                        plataformas denominadas Sistemas de Administración de Contenidos (ó CMS por sus
+                                        siglas en inglés). Estas plataformas de software permiten manejar múltiples
+                                        tipos de
+                                        contenidos clasificados de acuerdo a sus funcionalidades y que se almacenan en
+                                        bases
+                                        de datos, lo que permite que crezcan de acuerdo a lo que se necesite.
+                                    </p>
+                                    <p> Los Portales Web Empresariales tienen una estructura básica que se complementa
+                                        con
+                                        módulos funcionales. Esto permite que los mismos sean modulares y escalables, es
+                                        decir, que se configuren con los módulos que se requieran de acuerdo al perfil
+                                        de
+                                        cada portal logrando así especializarlos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TERCER SECCION DISEÑO UX/UI -->
+                <div class="tab-pane fade show" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                    <div class="container bg-dark">
+                        <h5 class="text-center" style="color: #f3f3ff;"> ¿Qué es el diseño UX/UI?</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3 class="text-center">DISEÑO UX</h3>
+                                    <p> <a href="/blog">mas info</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <form>
+                            <h3 class="text-center" style="color: #f3f3ff;"></h3><BR>
+
+                            <div class="form-row">
+                                <div class="form group col-sm-6">
+                                    <label for="nombre">Nombre: </label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="apellido">Apellido: </label>
+                                    <input type="text" class="form-control" id="apellido"
+                                        placeholder="Ingrese su Apellido">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label for="email">Email: </label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingrese su Email">
+                            </div>
+                            <div class="form-group ">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+
+
+
+        <!-- FOOTER  -->
+        {{> footer}}
     </div>
-
-
-
-    <!-- FOOTER  -->
-    {{> footer}}
-</div>
 </body>
 
 </html>
