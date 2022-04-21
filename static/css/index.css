@@ -14,22 +14,6 @@
   background-color:red;
 }
 
-
-  .jumbotronn {
-
-    background-image: url("../img/fondo.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-  }
-
- body {
-  background-image: url("../img/fondo.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-   
-}
 .breadcrumb {
   background-color:rgb(227, 255, 224, 0); color:rgba(174, 235, 168,) ;
 }
@@ -64,11 +48,11 @@
       height: 100%;
       float: left;
       overflow: hidden;
-      border-left: 10px solid #fff;
+      border-left: 10px solid rgb(0, 0, 0);
       
-      box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
       transform: skewX(-20deg);
-      transition: width 1.2s ease-in-out;
+      transition: width 0.8s ease-in-out;
      }
      #slider-k:hover div {width: 108px;cursor: w-resize;}
      #slider-k:hover div:hover {
