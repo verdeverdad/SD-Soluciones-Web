@@ -31,69 +31,57 @@ const verMisProyectos = async (req, res, done) => {
 
 const armarMiProyecto = async (req, res, done) => {
 
-        // TODO:resolver este array en menos lineas de codigo
-        const proyecto = [
-                que_proyecto_quiero = req.body.que_proyecto_quiero,
-                punto_de_partida = req.body.punto_de_partida,
-                crear_un_mapa_del_sitio = req.body.crear_un_mapa_del_sitio,
-                elige_las_palabras_clave = req.body.elige_las_palabras_clave,
-                crea_los_contenidos = req.body.crea_los_contenidos,
-                detalles_finales = req.body.detalles_finales,
-                precio_estimado = "el precio estimado es us$ 300"
-        ]
-
+        // TODO:guarda todos los datos en la parte de descripcion
+        // TODO:deberia modificar el modelo para que guarde los datos en su campo correspondiente 
         const descripcion = {
-                que_proyecto_quiero: req.body.que_proyecto_quiero,
-                punto_de_partida: req.body.punto_de_partida,
-                crear_un_mapa_del_sitio: req.body.crear_un_mapa_del_sitio,
-                elige_las_palabras_clave: req.body.elige_las_palabras_clave,
-                crea_los_contenidos: req.body.crea_los_contenidos,
-                detalles_finales: req.body.detalles_finales,
-                // TODO resolver el calculo de precio
-                precio_estimado: "el precio estimado es us$ 300"
+                que_proyecto_quiero : req.body.que_proyecto_quiero,
+                punto_de_partida : req.body.punto_de_partida,
+                crear_un_mapa_del_sitio : req.body.crear_un_mapa_del_sitio,
+                elige_las_palabras_clave : req.body.elige_las_palabras_clave,
+                crea_los_contenidos : req.body.crea_los_contenidos,
+                detalles_finales : req.body.detalles_finales
         }
 
-        const {productosDelNuevoProyecto} = req.body;
-        console.log('VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV')
-        console.log(productosDelNuevoProyecto)
+        //const {productosDelNuevoProyecto} = req.body;
+        //console.log('VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV')
+        //console.log(descripcion)
         
-        let data =[]
+        /*let data =[]
         
         for(let i in productosDelNuevoProyecto){
                 console.log(i)
                 console.log(productosDelNuevoProyecto[i])
                 data.push( await Producto.findOne({_id:productosDelNuevoProyecto[i]}))
-                
-        }
+        }*/
         
-        console.log("data para el new Proyecto() vvvvvv")
+        /*console.log("data para el new Proyecto() vvvvvv")
         console.log(data)
-
+*/
         // guardar el proyecto en la base de datos
-        let objetoProyecto = new Proyecto();
+        let nuevoProyecto = new Proyecto();
         
-        objetoProyecto.descripcion = JSON.stringify(descripcion);
+        nuevoProyecto.nombre = req.body.nombre;
+        nuevoProyecto.correo = req.body.correo;
+        nuevoProyecto.telefono = req.body.telefono;
+
+        nuevoProyecto.descripcion = JSON.stringify(descripcion);
         
-        // TODO 
-        // que el modelo de Proyectos guarde el objeto Date
-        const fecha = new Date();
-        objetoProyecto.fecha = fecha.toString();
+        //const fecha = new Date();
+        nuevoProyecto.fecha = new Date().toString();
         
         //el campo usuario hace referencia al modelo de usuarios
-        if(req.user){
-                objetoProyecto.usuario = req.user;
-        }
+        /*if(req.user){
+                nuevoProyecto.usuario = req.user;
+        }*/
         
-        objetoProyecto.productos = data;
-
-        await objetoProyecto.save();
+        await nuevoProyecto.save();
 
         res.redirect('armar_mi_proyecto')
         /*res.render('armar_mi_proyecto', {
                 total,
                 proyectos,
                 proyecto,
-                objetoProyecto,
+                nuevoProyecto,
                 productos
         })*/
 

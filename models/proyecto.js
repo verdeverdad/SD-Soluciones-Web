@@ -2,29 +2,37 @@ const { Schema, model } = require('mongoose');
 
 const ProyectoSchema = Schema({
 
+        nombre: {
+                type:String
+        },
+        correo: {
+                type:String
+        },
+        telefono: {
+                type:String
+        },
         descripcion: {
                 type:String,
                 //required:[true, 'El nombre es obligatorio']
         },
-        productos: [{
+        /*productos: [{
                 type:Schema.Types.ObjectId,
                 ref:'Producto',
-        }],
+        }],*/
 
-        //TODO vvvvvv
-        
-        categoria: {
+        /*categoria: {
                 type:String,
                 //required:[true, 'El password es obligatoria']
-        },
+        },*/
         fecha: {
+                //type:Date //no utilizo el date porque guarda una hora distinta a la de uruguay
                 type:String
         },
-        usuario: {
+        /*usuario: {
                 type:Schema.Types.ObjectId,
                 ref:'Usuario',
                 
-        },
+        },*/
         estado: {
                 type: Boolean,
                 default: true
