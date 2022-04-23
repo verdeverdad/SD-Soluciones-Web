@@ -7,7 +7,7 @@
 	<!-- ================================= -->
 	{{#if confirmacion_de_proyecto_guardado }}
 	<div class="alert alert-success alert-dismissible m-5" id="mensaje_de_confirmacion">
-  		<a href="#" class="close" data-dismiss="alert" aria-label="close" style="text-decoration: none">&times;</a>
+		<a href="#" class="close" data-dismiss="alert" aria-label="close" style="text-decoration: none">&times;</a>
 		<strong>Exito!</strong> El proyecto ha sido recibido. Nos comunicaremos con usted lo mas pronto posible.
 	</div>
 	{{/if}}
@@ -19,16 +19,9 @@
 	{{> jumbotron}}
 
 
-	
 
 
-	<!-- BREADCRUM  -->
-	<!--<nav aria-label="breadcrumb">
-		<ol class="breadcrumb bg-dark">
-			<li class="breadcrumb-item"><a href="/">Home</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Armar mi proyecto</li>
-		</ol>
-	</nav>-->
+
 	{{#if user }}
 	<div class="container">
 		{{#if total }}
@@ -65,7 +58,7 @@
 
 
 
-	
+
 
 
 	<div class="mb-5">
@@ -84,15 +77,14 @@
 					tener una primera entrevista</h3><br>
 				<h4 class="card-text">Así ya podremos
 					saber con que tipo de proyecto trabajaremos.</h4><br>
-				<a href="/como_trabajamos"
-					class="btn btn-outline-light btn-lg"><strong>¿Comenzamos?</strong></a><br>
+				<a href="/como_trabajamos" class="btn btn-outline-light btn-lg"><strong>¿Comenzamos?</strong></a><br>
 			</div>
 		</div><br>
 
 
 		<!-- CARDS ARMAR MI PROYECTO  -->
-	
-		<form method="post" action="/armar_mi_proyecto">				
+
+		<form method="post" action="/armar_mi_proyecto">
 			<div class="d-flex flex-wrap flex-row ">
 
 
@@ -107,16 +99,19 @@
 
 						<select class="form-control text-center" name="que_proyecto_quiero">
 							<option value="">¡Eligue uno!</option>
-							<option value="Blog/magazine" title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+							<option value="Blog/magazine"
+								title="Un blog o un sitio web de revista se centra en el contenido editorial.">
 								Blog/magazine
 							</option>
 							<option value="Landing page" title="informan al visitante sobre un producto específico">
 								Landing page
 							</option>
-							<option value="E-commerce/Tienda on-line" title="venta online de productos físicos o servicios">
+							<option value="E-commerce/Tienda on-line"
+								title="venta online de productos físicos o servicios">
 								E-commerce/Tienda on-line
 							</option>
-							<option value="Empresariales/corporativas" title="se utilizan para manejar la presencia de la empresa en internet">
+							<option value="Empresariales/corporativas"
+								title="se utilizan para manejar la presencia de la empresa en internet">
 								Empresariales/corporativas
 							</option>
 						</select>
@@ -135,13 +130,16 @@
 
 						<select class="form-control text-center" name="punto_de_partida">
 							<option value="">¡Eligue uno!</option>
-							<option value="¡Ya tengo una idea!" title="informan al visitante sobre un producto específico">
+							<option value="¡Ya tengo una idea!"
+								title="informan al visitante sobre un producto específico">
 								¡Ya tengo una idea!
 							</option>
-							<option value="Cuento con la idea y el diseño" title="venta online de productos físicos o servicios">
+							<option value="Cuento con la idea y el diseño"
+								title="venta online de productos físicos o servicios">
 								Cuento con la idea y el diseño
 							</option>
-							<option value="Hay un proyecto ya publicado" title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+							<option value="Hay un proyecto ya publicado"
+								title="Un blog o un sitio web de revista se centra en el contenido editorial.">
 								Hay un proyecto ya publicado</option>
 							<option value="Hay un proyecto no publicado">
 								Hay un proyecto no publicado
@@ -166,10 +164,12 @@
 							<option value="¡Ya tengo uno!" title="informan al visitante sobre un producto específico">
 								¡Ya tengo uno!
 							</option>
-							<option value="Cuento con la idea pero no tengo el diseño" title="venta online de productos físicos o servicios">
+							<option value="Cuento con la idea pero no tengo el diseño"
+								title="venta online de productos físicos o servicios">
 								Cuento con la idea pero no tengo el diseño
 							</option>
-							<option value="Quiero que lo hagan por mi" title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+							<option value="Quiero que lo hagan por mi"
+								title="Un blog o un sitio web de revista se centra en el contenido editorial.">
 								Quiero que lo hagan por mi
 							</option>
 						</select>
@@ -192,10 +192,12 @@
 							<option value="¡Ya las tengo!" title="informan al visitante sobre un producto específico">
 								¡Ya las tengo!
 							</option>
-							<option value="Tengo una idea pero necesito asesoramiento" title="venta online de productos físicos o servicios">
+							<option value="Tengo una idea pero necesito asesoramiento"
+								title="venta online de productos físicos o servicios">
 								Tengo una idea pero necesito asesoramiento
 							</option>
-							<option value="Quiero que lo hagan por mi" title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+							<option value="Quiero que lo hagan por mi"
+								title="Un blog o un sitio web de revista se centra en el contenido editorial.">
 								Quiero que lo hagan por mi
 							</option>
 						</select>
@@ -212,27 +214,30 @@
 					<div class="card-body text-center">
 						<h5 class="card-title">Crea los contenidos:</h5>
 						<p class="">¿Qué es lo que quiero mostrar?</p>
-							<select class="form-control text-center" name="crea_los_contenidos">
+						<select class="form-control text-center" name="crea_los_contenidos">
 
-								<option value="">¡Elige uno!</option>
-								<option value="Tengo las imagenes y el contenido" title="Un blog o un sitio web de revista se centra en el contenido editorial.">
-									Tengo las imagenes y el contenido
-								</option>
-								<option value="Tengo las imagenes pero no el contenido" title="informan al visitante sobre un producto específico">
-									Tengo las imagenes pero no el contenido
-								</option>
-								<option value="Tengo las imagenes y trabajaré en el contenido" title="venta online de productos físicos o servicios">
-									Tengo las imagenes y trabajaré en el contenido
-								</option>
-								<option value="No tengo las imagenes pero trabajaré en el contenido">
-									No tengo las imagenes pero trabajaré en el
-									contenido
-								</option>
-								<option value="No tengo las imagenes y	no tengo en el contenido">
-									No tengo las imagenes y no tengo en el contenido
-								</option>
+							<option value="">¡Elige uno!</option>
+							<option value="Tengo las imagenes y el contenido"
+								title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+								Tengo las imagenes y el contenido
+							</option>
+							<option value="Tengo las imagenes pero no el contenido"
+								title="informan al visitante sobre un producto específico">
+								Tengo las imagenes pero no el contenido
+							</option>
+							<option value="Tengo las imagenes y trabajaré en el contenido"
+								title="venta online de productos físicos o servicios">
+								Tengo las imagenes y trabajaré en el contenido
+							</option>
+							<option value="No tengo las imagenes pero trabajaré en el contenido">
+								No tengo las imagenes pero trabajaré en el
+								contenido
+							</option>
+							<option value="No tengo las imagenes y	no tengo en el contenido">
+								No tengo las imagenes y no tengo en el contenido
+							</option>
 
-							</select>
+						</select>
 
 					</div>
 				</div>
@@ -240,7 +245,7 @@
 
 
 
-				
+
 				<!-- ========================== -->
 				<!-- ===== Detalles finales ===== -->
 				<!-- ========================== -->
@@ -250,7 +255,7 @@
 						<h5 class="card-title">Detalles finales</h5>
 						<p class="">Agrega datos adicionales que creas que son importantes en este proceso</p>
 						<textarea name="detalles_finales" class="w-100"></textarea>
-						
+
 					</div>
 				</div>
 
@@ -263,7 +268,7 @@
 					<div class="card-body text-center">
 						<h5 class="card-title text-center">Datos personales</h5>
 						<p class="text-center">Usaremos estos datos exclusivamente para comunicarnos contigo.</p>
-						
+
 						<div class="form-group">
 							<label for="nombre">Nombre:</label>
 							<input type="text" class="form-control" name="nombre">
@@ -278,11 +283,11 @@
 							<label for="telefono">Telefono:</label>
 							<input type="text" class="form-control" name="telefono">
 						</div>
-						
+
 					</div>
 				</div>
 
-				
+
 
 			</div>
 
@@ -292,10 +297,18 @@
 
 		</form>
 
-		
-		
-	
+<br><br>
+
+
+		<div class="card ">
+			<iframe class="" width="860" height="515" src="https://www.youtube.com/embed/EvxSWpFCFkM"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen>
+			</iframe>
+		</div>
 	</div>
+
 
 	<!-- FOOTER  -->
 	<!-- 13-04-2022 -->
