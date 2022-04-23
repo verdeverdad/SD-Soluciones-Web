@@ -1,8 +1,11 @@
 $(function () {
-    $('.carousel').carousel({
-    interval: 4000})
+    $('.carousel').carousel({interval: 4000});
+
+        $('#mensaje_de_confirmacion').fadeOut(15000);
+        
     });
 
+    
     
 
     //Configuraciones para el elemento que sube archivos DE IMAGENES PERO NO ANDA
