@@ -31,8 +31,7 @@ const verMisProyectos = async (req, res, done) => {
 
 const armarMiProyecto = async (req, res, done) => {
 
-        // TODO:guarda todos los datos en la parte de descripcion
-        // TODO:deberia modificar el modelo para que guarde los datos en su campo correspondiente 
+
         const descripcion = {
                 que_proyecto_quiero : req.body.que_proyecto_quiero,
                 punto_de_partida : req.body.punto_de_partida,
@@ -76,7 +75,9 @@ const armarMiProyecto = async (req, res, done) => {
         
         await nuevoProyecto.save();
 
-        res.redirect('armar_mi_proyecto')
+        let msg = 'El proyecto ha sido creado con exito';
+
+        res.render('armar_mi_proyecto',{msg});
         /*res.render('armar_mi_proyecto', {
                 total,
                 proyectos,

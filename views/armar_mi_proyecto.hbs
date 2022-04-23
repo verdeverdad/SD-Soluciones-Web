@@ -49,6 +49,20 @@
 	{{/if}}
 
 
+
+
+	<!-- ================================= -->
+	<!-- ===== Mensaje de confirmacion ===== -->
+	<!-- ================================= -->
+	{{#if msg }}
+	<div class="alert alert-success alert-dismissible m-5">
+  		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<strong>Exito!</strong> los datos se enviaron correctamente.
+		<p>{{msg}}</p>
+	</div>
+	{{/if}}
+
+
 	<div class="mb-5">
 		<h3 class="titulo px-3">Armar mi proyecto</h3>
 	</div>
