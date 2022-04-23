@@ -2,10 +2,10 @@
     border-radius: 100%
   }
 
-.navbar {
+.navbar, .nav-link {
       background-color: #f5f5ef;
       /*font-size:100%;*/
-      /*color: #f5f5ef;*/
+      color:#293762;
       
   }
 
