@@ -2,11 +2,25 @@
 
 <body class="body">
 
+	<!-- ================================= -->
+	<!-- ===== Mensaje de confirmacion ===== -->
+	<!-- ================================= -->
+	{{#if confirmacion_de_proyecto_guardado }}
+	<div class="alert alert-success alert-dismissible m-5" id="mensaje_de_confirmacion">
+  		<a href="#" class="close" data-dismiss="alert" aria-label="close" style="text-decoration: none">&times;</a>
+		<strong>Exito!</strong> El proyecto ha sido recibido. Nos comunicaremos con usted lo mas pronto posible.
+	</div>
+	{{/if}}
+
 	<!--  NAVBAR -->
 	{{> header_2}}
 
 	<!--  JUMBOTRON CARROUSEL-->
 	{{> jumbotron}}
+
+
+	
+
 
 	<!-- BREADCRUM  -->
 	<!--<nav aria-label="breadcrumb">
@@ -51,16 +65,7 @@
 
 
 
-	<!-- ================================= -->
-	<!-- ===== Mensaje de confirmacion ===== -->
-	<!-- ================================= -->
-	{{#if msg }}
-	<div class="alert alert-success alert-dismissible m-5">
-  		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-		<strong>Exito!</strong> los datos se enviaron correctamente.
-		<p>{{msg}}</p>
-	</div>
-	{{/if}}
+	
 
 
 	<div class="mb-5">
@@ -69,19 +74,20 @@
 
 	<div class="container mb-5">
 
-		<div id="myDIV3" class="card bg-light" style="opacity: 85%;">
-			<div class="card-body text-center text-dark font-monospace">
-				<h3 class="">
-					Queremos comprender en que situacion te encuentras con respecto a la idea que tienes
-				</h3><br>
-				<h2 class="">Te pedimos que selecciones tus preferencias
+		<div id="myDIV3" class="card bg-dark" style="opacity: 85%;">
+			<h1 class="card-header text-center text-light font-monospace fs-2">
+				Queremos comprender en que situacion te encuentras con respecto a la idea que tienes
+			</h1>
+			<div class="card-body text-center text-light">
+				<h3 class="card-title font-monospace fs-1">Te pedimos que selecciones tus preferencias
 					antes de
-					tener una primera entrevista</h2><br>
-				<h4 class="">Así ya podremos
+					tener una primera entrevista</h3><br>
+				<h4 class="card-text">Así ya podremos
 					saber con que tipo de proyecto trabajaremos.</h4><br>
-				<p><strong>¿Comenzamos?</strong></p>
+				<a href="/como_trabajamos"
+					class="btn btn-outline-light btn-lg"><strong>¿Comenzamos?</strong></a><br>
 			</div>
-		</div>
+		</div><br>
 
 
 		<!-- CARDS ARMAR MI PROYECTO  -->

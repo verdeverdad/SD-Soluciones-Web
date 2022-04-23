@@ -17,23 +17,25 @@
 .breadcrumb {
   background-color:rgb(227, 255, 224, 0); color:rgba(174, 235, 168,) ;
 }
- footer {
+
+footer {
       background-color: #f5f5ef;
       
     }
 
- address {
+address {
       color: rgb(116, 101, 253);
     }
 
-    .card {
-      flex: 1 200px;
-  margin-top: 30px;
-  margin-right: 30px;
-  margin-left: 30px;
-    }
+.card {
+	flex: 1 200px;
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
 /*ANIMACION DE IMAGENES CORTADAS*/
-    #slider-k {
+#slider-k {
       background: #fff;
       width: 300px;
       height: 150px;
@@ -42,7 +44,7 @@
       border-radius: .5rem;
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
      }
-     #slider-k .frame-k {
+#slider-k .frame-k {
       box-sizing: border-box;
       width: 25%;
       height: 100%;
@@ -54,22 +56,22 @@
       transform: skewX(-20deg);
       transition: width 0.8s ease-in-out;
      }
-     #slider-k:hover div {width: 108px;cursor: w-resize;}
-     #slider-k:hover div:hover {
+#slider-k:hover div {width: 108px;cursor: w-resize;}
+#slider-k:hover div:hover {
      width: 392px;}
      
-     .frame-k img {
+.frame-k img {
      margin-left: -55px;
      transform: skewX(20deg);
      
      }
      
-     #slider-k > div:first-child {margin-left: -63px;}
-     #slider-k > div:last-child {margin-right: -63px;}
+#slider-k > div:first-child {margin-left: -63px;}
+#slider-k > div:last-child {margin-right: -63px;}
 /*ANIMACION DE IMAGENES CORTADAS*/
 
 
-    .titulo {
+.titulo {
       font-size: 240%;
       background-color: #212529;
       opacity: 90%;
@@ -81,7 +83,7 @@
       
     }
 
-    .tarjeta{
+.tarjeta{
       background-color: #212529;
       opacity: 90%;
       color: #f3f3ff;
@@ -100,13 +102,13 @@
 			border: 4px solid #ebf0f5;
 		}
 
-    .card {
+.card {
 
 			animation: mymove 16s infinite;
 			border: 4px solid #ebf0f5;
 		}
 
-		@keyframes mymove {
+@keyframes mymove {
 			50% {
 				box-shadow:  10px 10px 10px #011f3d;
 
@@ -118,5 +120,12 @@
 		}
     /* ANIMACION DE BORDE DE TARJETAS*/ 
 		
-	 
-	
+/*Mensaje de confirmacion cuando es creado 
+un proyecto en la pagina de armar_mi_proyecto*/	 
+#mensaje_de_confirmacion{
+	position: fixed;
+	top: 5em;
+	right: 0em;
+	z-index: 22;
+	opacity: 85%;
+}	

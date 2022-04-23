@@ -75,9 +75,9 @@ const armarMiProyecto = async (req, res, done) => {
         
         await nuevoProyecto.save();
 
-        let msg = 'El proyecto ha sido creado con exito';
+        let confirmacion_de_proyecto_guardado = true;
 
-        res.render('armar_mi_proyecto',{msg});
+        res.render('armar_mi_proyecto',{confirmacion_de_proyecto_guardado});
         /*res.render('armar_mi_proyecto', {
                 total,
                 proyectos,
