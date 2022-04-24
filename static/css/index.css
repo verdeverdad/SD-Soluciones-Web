@@ -1,8 +1,10 @@
 .circular--square {
     border-radius: 100%
   }
-
-.navbar, .nav-link {
+body {
+  background-color: #f5f5ef;
+}
+.navbar {
       background-color: #f5f5ef;
       /*font-size:100%;*/
       color:#293762;
