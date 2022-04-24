@@ -28,18 +28,18 @@ const verMisProyectos = async (req, res, done) => {
 
 
 
-
+/* Llegada de datos por POST */
 const armarMiProyecto = async (req, res, done) => {
 
 
-        const descripcion = {
-                que_proyecto_quiero : req.body.que_proyecto_quiero,
-                punto_de_partida : req.body.punto_de_partida,
-                crear_un_mapa_del_sitio : req.body.crear_un_mapa_del_sitio,
-                elige_las_palabras_clave : req.body.elige_las_palabras_clave,
-                crea_los_contenidos : req.body.crea_los_contenidos,
-                detalles_finales : req.body.detalles_finales
-        }
+        const descripcion = [
+                'Que proyecto quiero: ' + req.body.que_proyecto_quiero,
+                'Punto de partida: ' + req.body.punto_de_partida,
+                'Crear un mapa del sitio: ' + req.body.crear_un_mapa_del_sitio,
+                'Elige las palabras clave: ' + req.body.elige_las_palabras_clave,
+                'Crea los contenidos: ' + req.body.crea_los_contenidos,
+                'Detalles finales: ' + req.body.detalles_finales
+        ]
 
         //const {productosDelNuevoProyecto} = req.body;
         //console.log('VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV')

@@ -1,15 +1,36 @@
+<!-- ================================= -->
+<!-- ===== Mensaje de proveniente de  ===== -->
+<!-- ================================= -->
 {{#if signupMessage}}
-        <div class="container">
-                <div class="alert alert-danger m-5" role="alert">
-                        <strong> Ops! </strong> {{signupMessage}}
-                </div>
+        <div class="alert alert-success alert-dismissible mensaje_informativo m-5">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close" style="text-decoration: none">&times;</a>
+                <strong> signupMessage! </strong> {{signupMessage}}
         </div>
 {{/if}}
 
-{{#if signinMessage}}
-        <div class="container"></div>
-        <div class="alert alert-danger m-5" role="alert">
-                <strong> Ops! </strong>{{signinMessage}}
+
+
+
+<!-- ================================= -->
+<!-- ===== Mensaje de proveniente de  ===== -->
+<!-- ================================= -->
+<!---->
+{{#if mensaje_login}}
+        <div class="alert alert-warning alert-dismissible mensaje_informativo m-5">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close" style="text-decoration: none">&times;</a>
+                <strong> Ojo! </strong>{{mensaje_login}}
         </div>
-        </div>
+{{/if}}
+
+
+
+
+<!-- ================================= -->
+<!-- ===== Mensaje de confirmacion ===== -->
+<!-- ================================= -->
+{{#if confirmacion_de_proyecto_guardado }}
+<div class="alert alert-success alert-dismissible mensaje_informativo m-5">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close" style="text-decoration: none">&times;</a>
+        <strong>Exito!</strong> El proyecto ha sido recibido. Nos comunicaremos con usted lo mas pronto posible.
+</div>
 {{/if}}

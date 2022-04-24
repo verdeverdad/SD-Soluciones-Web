@@ -120,9 +120,8 @@ address {
 		}
     /* ANIMACION DE BORDE DE TARJETAS*/ 
 		
-/*Mensaje de confirmacion cuando es creado 
-un proyecto en la pagina de armar_mi_proyecto*/	 
-#mensaje_de_confirmacion{
+/*Mensajes de confirmacion que se desvanecen*/	 
+.mensaje_informativo{
 	position: fixed;
 	top: 5em;
 	right: 0em;

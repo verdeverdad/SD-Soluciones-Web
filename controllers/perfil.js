@@ -4,37 +4,46 @@ const jwt = require('jsonwebtoken');
 
 const Usuario = require('../models/usuario');
 
+const Proyecto = require('../models/proyecto')
 
 
-const verPerfil = (req , res) => {
 
-        //const {limite= 5, desde = 0} = req.query;
-        
-        /*
-        const usuarios = await Usuario.find({ estado:true })
-                .skip( Number(desde) )
-                .limit( Number(limite) );
+const verPerfil = async (req , res) => {
 
-        const total = await Usuario.countDocuments({ estado:true });
-        */
+        if(req.user){
+                const query = {estado:true};
 
-        /*const [total, usuarios] = await Promise.all( [
-                Usuario.countDocuments({ estado:true }),
-                Usuario.find({ estado:true })
-                        .skip( Number(desde) )
-                        .limit( Number(limite) )
-        ]);*/
+                const proyectos = await Proyecto.find(query);
 
-        /*res.json({
-                total,
-                usuarios
-        });*/
+                let array_de_proyectos = [];
 
-        res.render('perfil', {
+                for(proyecto of proyectos){
+                        datos = {
+                                id: proyecto._id,
+                                nombre: proyecto.nombre,
+                                correo: proyecto.correo,
+                                telefono: proyecto.telefono,
+                                descripcion: JSON.parse(proyecto.descripcion),
+                                fecha: proyecto.fecha.substr(0, 24),
+                                estado: proyecto.estado
+                        }
+                        array_de_proyectos.push( datos);                                        
+                }
+
+                //console.log('VVVVVVVVV')
+                //console.log(array_de_proyectos)
+
+                //const proyectos = req.user._id;
+                res.render('perfil', {
+                        array_de_proyectos
+                })
+        }
+
+        /*res.render('perfil', {
                 //titulo:'Soluciones Web'
                 miOtraVariable: 'Aca estoy!!!!',
                 laRec: req
-            })
+            })*/
 
 }
 

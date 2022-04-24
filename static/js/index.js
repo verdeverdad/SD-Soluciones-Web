@@ -2,6 +2,8 @@ $(function () {
     $('.carousel').carousel({interval: 4000});
 
         $('#mensaje_de_confirmacion').fadeOut(15000);
+
+        $('.mensaje_informativo').fadeOut(15000);
         
     });
 

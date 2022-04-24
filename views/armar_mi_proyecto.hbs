@@ -2,15 +2,8 @@
 
 <body class="body">
 
-	<!-- ================================= -->
-	<!-- ===== Mensaje de confirmacion ===== -->
-	<!-- ================================= -->
-	{{#if confirmacion_de_proyecto_guardado }}
-	<div class="alert alert-success alert-dismissible m-5" id="mensaje_de_confirmacion">
-  		<a href="#" class="close" data-dismiss="alert" aria-label="close" style="text-decoration: none">&times;</a>
-		<strong>Exito!</strong> El proyecto ha sido recibido. Nos comunicaremos con usted lo mas pronto posible.
-	</div>
-	{{/if}}
+	<!--mensajes tipo alert -->
+	{{> mensajes}}
 
 	<!--  NAVBAR -->
 	{{> header_2}}

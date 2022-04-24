@@ -2,84 +2,107 @@
 
 <body class="body">
 
-	<!-- HEADER -->
-	{{> header_2}}
-	
-	<!--  JUMBOTRON CARROUSEL-->
-	{{> jumbotron}}
+        <!--mensajes tipo alert -->
+        {{> mensajes}}
 
-	<!--mensajes tipo alert -->
-	{{> mensajes}}
-
-
-
-<div class="text-white p-5">
-        <ul>
-                <li>miVariable {{miVariable}}</li>
-                <li>miOtraVariable {{miOtraVariable}}</li>
-                <li>user.token: {{user.token}}</li>
-                <li>usuario.token: {{usuario.token}}</li>
-                <li>token: {{token}}</li>
-                <li>req.session: {{req.session}}</li>
-                <li>user: {{user}}</li>
-                <li>user.nombre: {{user.nombre}}</li>
-                <li>user.correo: {{user.correo}}</li>
-                <li>user.rol: {{user.rol}}</li>
-                <li>user.estado: {{user.estado}}</li>
-
-        </ul>
-</div>
+        <!-- HEADER -->
+        {{> header_2}}
 
 
         <div class="container mb-5">
 
+
+                <div class="text-dark p-5">
+                        <ul>
+                                <li>miVariable {{miVariable}}</li>
+                                <li>miOtraVariable {{miOtraVariable}}</li>
+                                <li>user.token: {{user.token}}</li>
+                                <li>usuario.token: {{usuario.token}}</li>
+                                <li>token: {{token}}</li>
+                                <li>req.session: {{req.session}}</li>
+                                <li>user: {{user}}</li>
+                                <li>user.nombre: {{user.nombre}}</li>
+                                <li>user.correo: {{user.correo}}</li>
+                                <li>user.rol: {{user.rol}}</li>
+                                <li>user.estado: {{user.estado}}</li>
+
+                        </ul>
+                </div>
+
+
+
+                <div class="p-3 mb-5">
+                        <h2 class="text-center">Proyectos</h2>
+
+                        <table class="table table-sm table-hover">
+                                <thead>
+                                        <tr>
+                                                <th scope="col">Fecha</th>
+                                                <th scope="col">Descripcion del proyecto</th>
+                                                <th scope="col">Contacto</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+
+                                        {{#each array_de_proyectos}}
+                                                 <tr>
+                                                        <td>{{this.fecha}}</td>
+                                                        <td>
+                                                                <ul>
+                                                                {{#each this.descripcion}}
+                                                                <li>{{this}}</li>
+                                                                {{/each}}
+                                                                </ul>
+                                                        </td>
+                                                        <td>
+                                                                <ul>
+                                                                        <li>Nombre: {{this.nombre}}</li>
+                                                                        <li>Correo: {{this.correo}}</li>
+                                                                        <li>Telefono: {{this.telefono}}</li>
+                                                                </ul>
+                                                        </td>
+                                                </tr>
+                                        {{/each}}
+                                        
+                                </tbody>
+                        </table>
+
+                </div>
+
+
+
                 <div class="tarjeta p-3">
                         <h2 class="text-center">Edita tus datos</h2>
-                        <form >
+                        <form>
                                 <input type="hidden" id="token" name="token" value="{{user.token}}">
                                 <input type="hidden" id="id" name="id" value="{{user._id}}">
 
                                 <div class="form-group">
                                         <label for="editar-nombre" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" id="editar-nombre" value="{{user.nombre}}">
+                                        <input type="text" class="form-control" id="editar-nombre"
+                                                value="{{user.nombre}}">
                                 </div>
 
                                 <div class="form-group">
                                         <label for="editar-apellido" class="form-label">Apellido</label>
-                                        <input type="text" class="form-control" id="editar-apellido" value="{{user.apellido}}">
+                                        <input type="text" class="form-control" id="editar-apellido"
+                                                value="{{user.apellido}}">
                                 </div>
 
                                 <div class="form-group">
                                         <label for="editar-ubicacion" class="form-label">Ubicacion</label>
-                                        <input type="text" class="form-control" id="editar-ubicacion" required value="{{user.ubicacion}}">
+                                        <input type="text" class="form-control" id="editar-ubicacion" required
+                                                value="{{user.ubicacion}}">
                                 </div>
 
                                 <div class="">
                                         <button class="btn btn-primary" id="editar-datos">Guardar</button>
                                 </div>
-                                
+
                         </form>
                 </div>
 
-                <!--
-                <div id="slider-k">
-                        <div class="frame-k">
-                                <img src="img/1.png" alt="" />
-                        </div>
-                        <div class="frame-k">
-                                <img src="img/2.png" alt="" />
-                        </div>
-                        <div class="frame-k">
-                                <img src="img/3.png" alt="" />
-                        </div>
-                        <div class="frame-k">
-                                <img src="img/4.png" alt="" />
-                        </div>
-                        <div class="frame-k">
-                                <img src="img/5.png" alt="" />
-                        </div>
-                </div>
-                -->
+
 
         </div>
 
