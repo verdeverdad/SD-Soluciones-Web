@@ -128,5 +128,9 @@ address {
 	top: 5em;
 	right: 0em;
 	z-index: 22;
-	opacity: 85%;
+	opacity: 90%;
 }	
+
+.nav-item{
+  margin:0 auto;
+}

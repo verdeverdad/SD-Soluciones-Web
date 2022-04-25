@@ -1,73 +1,65 @@
-<nav class="navbar navbar-expand-lg fixed-top" style="color: #293762;">
-        <div class="container-fluid">
-                <a class="navbar-brand" href="/">
-                        <img id="myImg" src="img/horizontal logo.png" width="135" height="86">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon" style="color: #293762;"></span>
-                </button>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
 
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav justify-content-center">
-                                
-                                <li class="nav-item">
-                                        <a class="nav-link fs-6" style="color:#293762" href="/">INICIO</a>
-                                </li>
-                                <li class="nav-item">
-                                        <a class="nav-link fs-6" style="color:#293762" href="/quienes_somos">¿QUIÉNES
-                                                SOMOS?</a>
-                                </li>
-                                <li class="nav-item">
-                                        <a class="nav-link fs-6" style="color:#293762" href="/como_trabajamos">¿CÓMO
-                                                TRABAJAMOS?</a>
-                                </li>
+        <a class="navbar-brand" href="/">
+                <img id="myImg" class="" src="img/horizontal logo.png"
+                        alt="099675402 <br> contacto@SolucionesDesarrolloWeb.com" style="width:45%;max-width:150px;min-width:150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+        </button>
 
-                                <li class="nav-item dropdown">
-                                        <a class="nav-link fs-6 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                                data-toggle="dropdown" style="color: #293762">
-                                                ¿CÓMO COMENZAR?
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav nav-pills nav-fill">
+                        <!--<li class="nav-item px-1"></li>-->
+                        <li class="nav-item px-1">
+                                <a class="nav-link" href="/">INICIO</a>
+                        </li>
+                        <li class="nav-item px-1">
+                                <a class="nav-link" href="/quienes_somos">¿QUIÉNES SOMOS?</a>
+                        </li>
+                        <li class="nav-item px-1">
+                                <a class="nav-link" href="/como_trabajamos">¿CÓMO TRABAJAMOS?</a>
+                        </li>
+
+                        <li class="nav-item px-1">
+                                <a class="nav-link" href="/todo_lo_que_tengo_que_saber">TODO LO QUE TENGO QUE SABER</a>
+                        </li>
+                        <li class="nav-item px-1">
+                                <a class="nav-link" href="/armar_mi_proyecto">ARMAR MI PROYECTO</a>
+                        </li>
+<!--
+                        <li class="nav-item px-1 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        data-toggle="dropdown">
+                                        ¿CÓMO COMENZAR?
+                                </a>
+                                <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="/todo_lo_que_tengo_que_saber">
+                                                Todo lo que tengo que saber
                                         </a>
-                                        <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="/todo_lo_que_tengo_que_saber"
-                                                        style="color:#293762">
-                                                        Todo lo que tengo que saber
-                                                </a>
-                                                <a class="dropdown-item" style="color:#293762"
-                                                        href="/armar_mi_proyecto">
-                                                        Armar mi proyecto
-                                                </a>
-                                        </div>
-                                </li>
-
-
-                                {{#if user}}
-
-                                <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                                data-toggle="dropdown">
-                                                MI PERFIL
+                                        <a class="dropdown-item" href="/armar_mi_proyecto">
+                                                Armar mi proyecto
                                         </a>
-                                        <div class="dropdown-menu" style="right: 100px">
-                                                <a class="dropdown-item" href="/perfil">
-                                                        Perfil
-                                                </a>
-                                                <a class="dropdown-item" href="/armar_mi_proyecto">
-                                                        Mis proyectos
-                                                </a>
-                                                <a class="dropdown-item" href="/cerrar_sesion">
-                                                        Cerrar sesíon
-                                                </a>
-                                        </div>
-                                </li>
+                                </div>
+                        </li>
+-->
+
+                        {{#if user}}
+
+                        <li class="nav-item px-1">
+                                <a class="nav-link" href="/perfil">PERFIL</a>
+                        </li>
+                        <li class="nav-item px-1">
+                                <a class="nav-link" href="/cerrar_sesion">SALIR</a>
+                        </li>
+
+                        {{/if}}
+
+                        <!--<li class="nav-item px-1"></li>-->
 
 
-                                {{/if}}
-
-                                
-
-
-                        </ul>
-                </div>
+                </ul>
         </div>
+
 </nav>
 <div class="espaciador-del-navbar"></div>
