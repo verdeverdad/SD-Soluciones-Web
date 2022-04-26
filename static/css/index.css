@@ -5,15 +5,22 @@ body {
   background-color: #f5f5ef;
 }
 .navbar {
-      background-color: #f5f5ef;
+      /*background-color: #f5f5efee;*/
+      background-color: #f5f5efef;
       /*font-size:100%;*/
       color:#293762;
-      
-  }
+      z-index: 11;
+    /*opacity: 90%;*/
+    -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 
+  }
+  
 .espaciador-del-navbar{
+  /*z-index: 19;*/
   height: 101px;
-  background-color:red;
+  /*background-color:red;*/
+  background-color:#f5f5ef;
 }
 
 .breadcrumb {
@@ -128,9 +135,6 @@ address {
 	top: 5em;
 	right: 0em;
 	z-index: 22;
-	opacity: 90%;
+	opacity: 95%;
 }	
 
-.nav-item{
-  margin:0 auto;
-}
