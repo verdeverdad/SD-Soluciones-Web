@@ -11,29 +11,33 @@
 
 	<div class="container mb-5">
 
-		<div class="tarjeta mt-5 p-3">
-			<h2 class="text-center">Iniciar sesion</h2>
-			<form action="/iniciar_sesion" method="post">
+		<div class="card mx-5" style="opacity:95%; background-color:#7dd8b7; color:#293762">
+			<div class="card-header text-center">
+				<h2 class="font-monospace fs-2">Iniciar sesion</h2>
+			</div>
 
-				<div class="form-group">
-					<input class="form-control" type="email" name="email" placeholder="Email">
-				</div>
-				<div class="form-group">
-					<input class="form-control" type="password" name="password"
-						placeholder="Password">
-				</div>
-				<div class="mb-3">
-					<button class="btn btn-primary" type="submit">Iniciar sesíon</button>
-				</div>
-				<hr>
-				<div class="">
-					<a class="text-light" href="/registrarse">Registrarse.</a>
-				</div>
-			</form>
+			<div class="card-body text-center">
+				<form action="/iniciar_sesion" method="post">
 
+					<div class="form-group">
+						<input class="form-control" type="email" name="email" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="password" name="password"
+							placeholder="Password">
+					</div>
+					<div class="mb-3">
+						<button class="btn btn-outline-light btn-lg" style="color:#293762" type="submit"><strong>Iniciar sesíon</strong></button>
+					</div>
+					<hr>
+					<div class="">
+						<a class="" style="color:#293762" href="/registrarse">Registrarse.</a>
+					</div>
+				</form>
+			</div>
 		</div>
 
-
+<!--
 		<div class="tarjeta mt-5 p-3 text-center">
 			<h2>Iniciar sesion con Google</h2>
 
@@ -56,7 +60,7 @@
 			</div>
 
 		</div>
-
+-->
 	</div>
 
 	<script src="https://accounts.google.com/gsi/client" async defer></script>

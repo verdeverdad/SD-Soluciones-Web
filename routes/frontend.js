@@ -134,7 +134,7 @@ router.get('*', (req, res) => {
 // ============
 // registro de usuario
 // ============
-router.get('/registrarse', (req, res, next) => {
+/*router.get('/registrarse', (req, res, next) => {
 	res.render('registrarse');
 });
 
@@ -143,7 +143,7 @@ router.post('/registrarse', passport.authenticate('local-signup', {
 	successRedirect: '/perfil',
 	failureRedirect: '/registrarse',
 	passReqToCallback: true
-}));
+}));*///desactive estas dos rutas para evitar vulnerabilidades
 
 
 
