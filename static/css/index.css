@@ -32,9 +32,18 @@ footer {
       
     }
 
-address {
-      color: rgb(116, 101, 253);
+    footer p {
+      color: #293762;
     }
+
+    footer a{
+      text-decoration:none;
+      color: #293762;
+    }
+
+/*address {
+      color: rgb(116, 101, 253);
+    }*/
 
 .card {
 	flex: 1 200px;
