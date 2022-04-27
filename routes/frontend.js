@@ -33,7 +33,10 @@ router.get('/', (req, res) => {
 });*/
 
 //el parametro msg es opcional
-router.get('/armar_mi_proyecto',verMisProyectos);
+/*router.get('/armar_mi_proyecto',verMisProyectos);*/
+router.get('/armar_mi_proyecto',(req, res) => {
+	res.render('armar_mi_proyecto')
+});
 /*router.get('/armar_mi_proyecto/:msg?', (req, res) => {
 	res.render('armar_mi_proyecto', { miMensaje: req.params.msg })
 });*/
@@ -143,8 +146,10 @@ router.post('/registrarse', passport.authenticate('local-signup', {
 	successRedirect: '/perfil',
 	failureRedirect: '/registrarse',
 	passReqToCallback: true
-}));*///desactive estas dos rutas para evitar vulnerabilidades
-
+}));*/
+//===================================
+//desactive estas dos rutas para evitar vulnerabilidades
+//===================================
 
 
 // ============

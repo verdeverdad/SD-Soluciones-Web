@@ -9,11 +9,125 @@
         {{> header_2}}
 
 
+        <div class="mt-5">
+                <h3 class="titulo px-3">Proyectos</h3>
+        </div>
+
         <div class="container mb-5">
 
+                {{#each array_de_proyectos}}
+                <div class="card mb-5" style="background-color:#f3f3ff; color: #293762">
+                        <div class="card-header">
+                                <h2 class="card-title text-center font-monospace fs-1">{{this.nombre}}</h2>
+                        </div>
+                        <div class="card-body">
+                                {{#each this.descripcion}}
+                                <p class="card-text">{{this}}</p>
+                                {{/each}}
+                                <!--<ul>
+                                        <li>Que proyecto quiero: Landing page</li>
+                                        <li>Punto de partida: ¡Ya tengo una idea!</li>
+                                        <li>Crear un mapa del sitio: Cuento con la idea pero no tengo el diseño</li>
+                                        <li>Elige las palabras clave: Quiero que lo hagan por mi</li>
+                                        <li>Crea los contenidos: No tengo las imagenes y no tengo en el contenido</li>
+                                </ul>-->
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                                <div class="">
+                                        <p>{{this.correo}}</p>
+                                        <p>Tel.: {{this.telefono}}</p>
+                                </div>
+                                <small class="text-muted">{{this.fecha}}</small>
+                        </div>
+                </div>
+                {{/each}}
 
-                <div class="text-dark p-5">
-                        <ul style="overflow: hidden">
+<!--
+                <div class="card mb-5" style="background-color:#f3f3ff; color: #293762">
+                        <div class="card-header">
+                                <h2 class="text-center">Proyectos</h2>
+                        </div>
+
+                        <div class="card-body">
+                                <table class="table table-sm table-hover">
+                                        <thead>
+                                                <tr>
+                                                        <th scope="col">Fecha</th>
+                                                        <th scope="col">Descripcion del proyecto</th>
+                                                        <th scope="col">Contacto</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+
+                                                {{#each array_de_proyectos}}
+                                                        <tr>
+                                                                <td>{{this.fecha}}</td>
+                                                                <td>
+                                                                        <ul>
+                                                                        {{#each this.descripcion}}
+                                                                        <li>{{this}}</li>
+                                                                        {{/each}}
+                                                                        </ul>
+                                                                </td>
+                                                                <td>
+                                                                        <ul>
+                                                                                <li>Nombre: {{this.nombre}}</li>
+                                                                                <li>Correo: {{this.correo}}</li>
+                                                                                <li>Telefono: {{this.telefono}}</li>
+                                                                        </ul>
+                                                                </td>
+                                                        </tr>
+                                                {{/each}}
+                                                
+                                        </tbody>
+                                </table>
+                        </div>
+
+                </div>-->
+
+
+
+                <div class="card text-center mt-5" style="opacity:95%; background-color:#293762; color:#7dd8b7;border-radius:10px;">
+                        <div class="card-header">
+                                <h2 class="font-monospace fs-1">Edita tus datos</h2>
+                        </div>
+
+                        <div class="card-body">
+                                <form>
+                                        <input type="hidden" id="token" name="token" value="{{user.token}}">
+                                        <input type="hidden" id="id" name="id" value="{{user._id}}">
+
+                                        <div class="form-group">
+                                                <label for="editar-nombre" class="form-label">Nombre</label>
+                                                <input type="text" class="form-control" id="editar-nombre"
+                                                        value="{{user.nombre}}">
+                                        </div>
+
+                                        <div class="form-group">
+                                                <label for="editar-apellido" class="form-label">Apellido</label>
+                                                <input type="text" class="form-control" id="editar-apellido"
+                                                        value="{{user.apellido}}">
+                                        </div>
+
+                                        <div class="form-group">
+                                                <label for="editar-ubicacion" class="form-label">Ubicacion</label>
+                                                <input type="text" class="form-control" id="editar-ubicacion" required
+                                                        value="{{user.ubicacion}}">
+                                        </div>
+
+                                        <div class="">
+                                                <button class="btn btn-outline-light" style="color:#7dd8b7" id="editar-datos">Guardar</button>
+                                        </div>
+
+                                </form>
+                        </div>
+                </div>
+
+
+                <!-- El siguiente bloque se puede borrar despues de publicar la web -->
+                <div class="text-dark p-5 my-5">
+                        <h3>Variables que vienen del backend</h3>
+                        <ul style="overflow: >idden">
                                 <li><p>miVariable {{miVariable}}</p></li>
                                 <li><p>miOtraVariable {{miOtraVariable}}</p></li>
                                 <li><p>user.token: {{user.token}}</p></li>
@@ -27,79 +141,6 @@
                                 <li><p>user.estado: {{user.estado}}</p></li>
 
                         </ul>
-                </div>
-
-
-
-                <div class="p-3 mb-5">
-                        <h2 class="text-center">Proyectos</h2>
-
-                        <table class="table table-sm table-hover">
-                                <thead>
-                                        <tr>
-                                                <th scope="col">Fecha</th>
-                                                <th scope="col">Descripcion del proyecto</th>
-                                                <th scope="col">Contacto</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-
-                                        {{#each array_de_proyectos}}
-                                                 <tr>
-                                                        <td>{{this.fecha}}</td>
-                                                        <td>
-                                                                <ul>
-                                                                {{#each this.descripcion}}
-                                                                <li>{{this}}</li>
-                                                                {{/each}}
-                                                                </ul>
-                                                        </td>
-                                                        <td>
-                                                                <ul>
-                                                                        <li>Nombre: {{this.nombre}}</li>
-                                                                        <li>Correo: {{this.correo}}</li>
-                                                                        <li>Telefono: {{this.telefono}}</li>
-                                                                </ul>
-                                                        </td>
-                                                </tr>
-                                        {{/each}}
-                                        
-                                </tbody>
-                        </table>
-
-                </div>
-
-
-
-                <div class="tarjeta p-3">
-                        <h2 class="text-center">Edita tus datos</h2>
-                        <form>
-                                <input type="hidden" id="token" name="token" value="{{user.token}}">
-                                <input type="hidden" id="id" name="id" value="{{user._id}}">
-
-                                <div class="form-group">
-                                        <label for="editar-nombre" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" id="editar-nombre"
-                                                value="{{user.nombre}}">
-                                </div>
-
-                                <div class="form-group">
-                                        <label for="editar-apellido" class="form-label">Apellido</label>
-                                        <input type="text" class="form-control" id="editar-apellido"
-                                                value="{{user.apellido}}">
-                                </div>
-
-                                <div class="form-group">
-                                        <label for="editar-ubicacion" class="form-label">Ubicacion</label>
-                                        <input type="text" class="form-control" id="editar-ubicacion" required
-                                                value="{{user.ubicacion}}">
-                                </div>
-
-                                <div class="">
-                                        <button class="btn btn-primary" id="editar-datos">Guardar</button>
-                                </div>
-
-                        </form>
                 </div>
 
 
