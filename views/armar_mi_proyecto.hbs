@@ -9,7 +9,7 @@
 	{{> header_2}}
 
 	<!--  JUMBOTRON CARROUSEL-->
-	{{> jumbotron}}
+
 
 
 
@@ -285,12 +285,239 @@
 			</div>
 
 			<div class="p-4">
-				<button class="btn btn-block btn-outline-success" type="submit">Enviar</button>
+				<button class="btn btn-block btn-outline-dark" type="submit">Enviar</button>
 			</div>
 
 		</form>
 
 <br><br>
+
+
+		<!-- CARDS ARMAR MI PROYECTO  -->
+
+		<form method="post" action="/armar_mi_proyecto">
+			<div class="">
+				<img src="img/proyecto.png" class="card-img-top" alt="">
+				<div class=" row p-4">
+
+					<div class="col-lg">
+
+						<!-- ============================== -->
+						<!-- =====¿Qué proyecto quiero?===== -->
+						<!-- ============================== -->
+						<div class="card m-2 mb-4 p-4 d-flex flex-column justify-content-between" >
+							<div class="text-center">
+								<h5 class="">Define el objetivo</h5>
+								<p>Selecciona el tipo de plataforma que se adapta a tus requerimientos.</p>
+								<select class="form-control text-center" name="que_proyecto_quiero">
+									<option value="">¡Eligue uno!</option>
+									<option value="Blog/magazine"
+										title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+										Blog/magazine
+									</option>
+									<option value="Landing page" title="informan al visitante sobre un producto específico">
+										Landing page
+									</option>
+									<option value="E-commerce/Tienda on-line"
+										title="venta online de productos físicos o servicios">
+										E-commerce/Tienda on-line
+									</option>
+									<option value="Empresariales/corporativas"
+										title="se utilizan para manejar la presencia de la empresa en internet">
+										Empresariales/corporativas
+									</option>
+								</select>
+
+							</div>
+						</div>
+
+						<!-- =============================== -->
+						<!-- =====Crear un mapa del sitio===== -->
+						<!-- =============================== -->
+						<div class="card m-2 mb-4 p-4 d-flex flex-column justify-content-between" >
+							<div class=" text-center">
+								<h5 class="">Mapa del sitio:</h5>
+								<p class="">Los planos para construir un proyecto</p>
+
+								<select class="form-control text-center" name="crear_un_mapa_del_sitio">
+									<option value="">¡Eligue uno!</option>
+									<option value="¡Ya tengo uno!" title="informan al visitante sobre un producto específico">
+										¡Ya tengo uno!
+									</option>
+									<option value="Cuento con la idea pero no tengo el diseño"
+										title="venta online de productos físicos o servicios">
+										Cuento con la idea pero no tengo el diseño
+									</option>
+									<option value="Aun no lo he decidido"
+										title="">
+										Aun no lo he decidido
+									</option>
+									<option value="Quiero que lo hagan por mi"
+										title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+										Quiero que lo hagan por mi
+									</option>
+								</select>
+
+							</div>
+						</div>
+
+						<!-- ============================= -->
+						<!-- ===== Crea los contenidos ===== -->
+						<!-- ============================= -->
+						<div class="card m-2 mb-4 p-4 d-flex flex-column justify-content-between" >
+							<div class="text-center">
+								<h5 class="">Creacion de contenidos:</h5>
+								<p class="">¿Qué es lo que quiero mostrar?</p>
+								<select class="form-control text-center" name="crea_los_contenidos">
+
+									<option value="">¡Elige uno!</option>
+									<option value="Tengo las imagenes y el contenido"
+										title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+										Tengo las imagenes y el contenido
+									</option>
+									<option value="Tengo las imagenes pero no el contenido"
+										title="informan al visitante sobre un producto específico">
+										Tengo las imagenes pero no el contenido
+									</option>
+									<option value="Tengo las imagenes y trabajaré en el contenido"
+										title="venta online de productos físicos o servicios">
+										Tengo las imagenes y trabajaré en el contenido
+									</option>
+									<option value="No tengo las imagenes pero trabajaré en el contenido">
+										No tengo las imagenes pero trabajaré en el
+										contenido
+									</option>
+									<option value="No tengo las imagenes y	no tengo en el contenido">
+										No tengo las imagenes y no tengo en el contenido
+									</option>
+
+								</select>
+
+							</div>
+						</div>
+
+						<!-- ============================= -->
+						<!-- ===== Telefono ===== -->
+						<!-- ============================= -->
+						<div class="card m-2 mb-4 p-4 d-flex flex-column justify-content-between" >
+							<div class="text-center">
+								<h5 class="">Comunicacion</h5>
+								<p class="">Podemos contactarte por teléfono</p>
+								<input type="text" class="form-control text-center" name="telefono" placeholder="telefono">
+
+							</div>
+						</div>
+
+						<!-- ============================= -->
+						<!-- ===== Nombre ===== -->
+						<!-- ============================= -->
+						<div class="card m-2 mb-4 p-4 d-flex flex-column justify-content-between" >
+							<div class="text-center">
+								<h5 class="">Informacion de contacto</h5>
+								<p class="">Tu nombre</p>
+								<input type="text" class="form-control text-center" name="nombre" placeholder="Nombre">
+
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<div class="col-lg">
+
+						<!-- ========================= -->
+						<!-- =====Punto de partida===== -->
+						<!-- ========================= -->
+						<div class="card m-2 mb-4 p-4 d-flex flex-column justify-content-between" >
+							<div class="text-center">
+								<h5 class="">Punto de partida:</h5>
+								<p>¿En que punto de la incercion digital estas?</p>
+								<select class="form-control text-center" name="punto_de_partida">
+									<option value="">¡Eligue uno!</option>
+									<option value="¡Ya tengo una idea!"
+										title="informan al visitante sobre un producto específico">
+										¡Ya tengo una idea!
+									</option>
+									<option value="Cuento con la idea y el diseño"
+										title="venta online de productos físicos o servicios">
+										Cuento con la idea y el diseño
+									</option>
+									<option value="Hay un proyecto ya publicado"
+										title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+										Hay un proyecto ya publicado</option>
+									<option value="Hay un proyecto no publicado">
+										Hay un proyecto no publicado
+									</option>
+								</select>
+
+							</div>
+						</div>
+
+						<!-- ================================= -->
+						<!-- ===== Elige las Palabras clave ===== -->
+						<!-- ================================= -->
+						<div class="card m-2 mb-4 p-4 d-flex flex-column justify-content-between" >
+							<div class="text-center">
+								<h5 class="">Elige las Palabras clave</h5>
+								<p class="">El mensaje correcto hace la diferencia</p>
+
+								<select class="form-control text-center" name="elige_las_palabras_clave">
+									<option value="">¡Eligue uno!</option>
+									<option value="¡Ya las tengo!" title="informan al visitante sobre un producto específico">
+										¡Ya las tengo!
+									</option>
+									<option value="Tengo una idea pero necesito asesoramiento"
+										title="venta online de productos físicos o servicios">
+										Tengo una idea pero necesito asesoramiento
+									</option>
+									<option value="Quiero que lo hagan por mi"
+										title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+										Quiero que lo hagan por mi
+									</option>
+								</select>
+
+							</div>
+						</div>
+
+						<!-- ========================== -->
+						<!-- ===== Detalles finales ===== -->
+						<!-- ========================== -->
+						<div class="card m-2 mb-4 p-4 d-flex flex-column justify-content-between" >
+							<div class="text-center">
+								<h5 class="">Detalles finales</h5>
+								<p class="">Agrega una descripcion adicional</p> 
+								<p>Que crees importante para conocer tu proyecto</p>
+								<textarea name="detalles_finales" class="w-100"></textarea>
+
+							</div>
+						</div>
+
+						<!-- ============================= -->
+						<!-- ===== Correo ===== -->
+						<!-- ============================= -->
+						<div class="card m-2 mb-4 p-4 d-flex flex-column justify-content-between" >
+							<div class="text-center">
+								<h5 class="">Correo electronico:</h5>
+								<p class="">Nos ayudara a conmunicarnos contigo</p>
+								<input type="text" class="form-control text-center" name="correo" placeholder="Correo electrónico">
+
+							</div>
+						</div>
+
+					</div>
+
+					
+
+					<div class="p-4">
+						<button class="btn btn-block btn-outline-dark" type="submit">¡Todo listo!</button>
+					</div>
+
+				</div>
+			</div>
+		</form>
+			
+
 
 <!--
 		<div class="card ">
