@@ -6,7 +6,7 @@ body {
 }
 .navbar {
       /*background-color: #f5f5efee;*/
-      background-color: #f5f5ef;
+      background-color: #f5f5efee;
       /*font-size:100%;*/
       color:#293762;
       z-index: 11;
@@ -123,7 +123,7 @@ footer {
 .card {
 
 			animation: mymove 16s infinite;
-			border: 4px solid #ebf0f5;
+			border: 3px solid #ebf0f5;
 		}
 
 @keyframes mymove {
