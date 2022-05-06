@@ -306,17 +306,18 @@
 			<!-- ========================== -->
 			<div class="modal fade" id="myModal">
 				<div class="modal-dialog">
-					<div class="modal-content">
+					<div class="card" style="opacity:97%; background-color:#7dd8b7; color:#293762">
 
 						<!-- Modal Header -->
-						<div class="modal-header">
+						<!--<div class="modal-header">
 							<h4 class="modal-title text-center">Revisa que los datos sean correctos</h4>
 							<button type="button" class="btn-close"
 								data-bs-dismiss="modal"></button>
-						</div>
-
+						</div>-->
+						<h1 class="card-header text-center text- font-monospace fs-2">Revisa que los datos sean correctos</h1>
+						
 						<!-- Modal body -->
-						<div class="modal-body">
+						<div class="card-body">
 							<p id="que_proyecto_quiero_modal"></p>
 							<p id="punto_de_partida_modal"></p>
 							<p id="crear_un_mapa_del_sitio_modal"></p>
@@ -327,12 +328,14 @@
 							<p id="correo_modal"></p>
 							<p id="telefono_modal"></p>
 						</div>
-
+						<hr class="m-0 p-0">
 						<!-- Modal footer -->
-						<div class="modal-footerr p-3">
-							<div class="clearfix">
-								<button type="button" class="btn btn-secondary float-start" data-bs-dismiss="modal">Volver</button>
-								<button class="btn btn-success float-end" type="submit">Enviar</button>
+						<div class="row p-3">
+							<div class="col">
+								<button type="button" class="btn btn-block btn-secondary" data-bs-dismiss="modal">Volver</button>
+							</div>
+							<div class="col">
+								<button class="btn btn-block btn-success" type="submit">Enviar</button>
 							</div>
 						</div>
 

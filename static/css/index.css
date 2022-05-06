@@ -121,20 +121,17 @@ footer {
 		}
 
 .card {
-
-			animation: mymove 16s infinite;
-			border: 3px solid #ebf0f5;
-		}
+	border: 3px solid #ebf0f5;
+	box-shadow:  0px 0px 2px #ebf0f5;
+	animation: mymove 16s infinite;
+	}
 
 @keyframes mymove {
 			50% {
-				box-shadow:  10px 10px 10px #011f3d;
-
-			}
-
-			50% {
+				box-shadow:  5px 5px 15px #011f3d;
 				border-color: #011f3d;
 			}
+
 		}
     /* ANIMACION DE BORDE DE TARJETAS*/ 
 		
@@ -146,4 +143,3 @@ footer {
 	z-index: 22;
 	opacity: 95%;
 }	
-
