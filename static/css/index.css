@@ -143,3 +143,16 @@ footer {
 	z-index: 22;
 	opacity: 95%;
 }	
+
+.quienes {
+  opacity: 95%; 
+  background-color:#f3f3ef; 
+  color: #293762
+}
+
+.armar {
+  background-image: url("../img/armar.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
