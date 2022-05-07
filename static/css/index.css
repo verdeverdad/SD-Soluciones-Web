@@ -121,7 +121,7 @@ footer {
 		}
 
 .card {
-	border: 3px solid #ebf0f5;
+	border: 2px solid #d5dadf;
 	box-shadow:  0px 0px 2px #ebf0f5;
 	animation: mymove 16s infinite;
 	}
@@ -143,3 +143,77 @@ footer {
 	z-index: 22;
 	opacity: 95%;
 }	
+
+
+
+/*=================================*/
+/*======= boton de color celeste ======*/
+/*=================================*/
+.btn-celeste {
+  color: #f3f3ff;
+  background-color: #22a5fc;
+  border-color: #6b7a92;
+}
+.btn-celeste:hover {
+  color: #293762;
+  background-color: #7dd8b7;
+  border-color: #293762;
+}
+.btn-outline-celeste {
+  color: #293762;
+  background-color: #b6def8;
+  border-color: #6b7a92;
+}
+.btn-outline-celeste:hover {
+  color: #f3f3ff;
+  background-color: #52ace7;
+  border-color: #3877a1;
+}
+
+/*===============================*/
+/*======= boton de color verde ======*/
+/*===============================*/
+.btn-verde {
+  color: #f3f3ff;
+  background-color: #1ca875;
+  border-color: #7dd8b7;
+}
+.btn-verde:hover {
+  color: #293762;
+  background-color: #7dd8b7;
+  border-color: #293762;
+}
+.btn-outline-verde {
+  color: #293762;
+  background-color: #7dd8b7;
+  border-color: #6b7a92;
+}
+.btn-outline-verde:hover {
+  color: #f3f3ff;
+  background-color: #1ca875;
+  border-color: #157e57;
+}
+
+/*===============================*/
+/*======= boton de color negro ======*/
+/*===============================*/
+.btn-negro {
+  color: #f3f3ff;
+  background-color: #293762;
+  border-color: #bfcefc;
+}
+.btn-negro:hover {
+  color: #293762;
+  background-color: #d3ddfd;
+  border-color: #293762;
+}
+.btn-outline-negro {
+  color: #293762;
+  background-color: #f3f3ff;
+  border-color: #bfcefc;
+}
+.btn-outline-negro:hover {
+  color: #f3f3ff;
+  background-color: #5673ca;
+  border-color: #293762;
+}
