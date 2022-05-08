@@ -1,3 +1,20 @@
+/*======================================*/
+/*========== variables de color ==========*/
+/*======================================*/
+:root {
+  --celeste: #52ace7;
+  --celeste-claro: #b6def8;
+
+  --verde: #208661;
+  --verde-claro: #7dd8b7;
+
+  --blanco: #f3f3ff;
+  --negro: #212529;
+
+  --azul: #293762;
+  --gris: #6b7a92;
+}
+
 .circular--square {
     border-radius: 100%
   }
@@ -8,7 +25,7 @@ body {
       /*background-color: #f5f5efee;*/
       background-color: #f5f5efee;
       /*font-size:100%;*/
-      color:#293762;
+      color:var(--azul);
       z-index: 11;
     /*opacity: 90%;*/
     -webkit-backdrop-filter: blur(4px);
@@ -33,12 +50,12 @@ footer {
     }
 
     footer p {
-      color: #293762;
+      color: var(--azul);
     }
 
     footer a{
       text-decoration:none;
-      color: #293762;
+      color: var(--azul);
     }
 
 /*address {
@@ -91,20 +108,17 @@ footer {
 
 .titulo {
       font-size: 240%;
-      background-color: #293762;
       opacity: 90%;
       text-align: center;
-      text-shadow: 1px 1px 4px rgb(0, 195, 255);
-      color: #f3f3ef;
+      text-shadow: 0px 1px 2px #00c3ff;
       font-family: monospace;
-      margin-bottom: 20px;
-      
+    
     }
 
 .tarjeta{
-      background-color: #212529;
+      background-color: var(--negro);
       opacity: 90%;
-      color: #f3f3ff;
+      color: var(--blanco);
     }
 
 
@@ -121,6 +135,7 @@ footer {
 		}
 
 .card {
+  opacity:95%; 
 	border: 2px solid #d5dadf;
 	box-shadow:  0px 0px 2px #ebf0f5;
 	animation: mymove 16s infinite;
@@ -146,74 +161,189 @@ footer {
 
 
 
+
+
+
+
 /*=================================*/
-/*======= boton de color celeste ======*/
+/*======= color celeste ======*/
 /*=================================*/
+.card-celeste{
+  color:var(--negro);
+  /*background-color:#20a4fc46; */
+  background-color:var(--celeste-claro); 
+}
+
 .btn-celeste {
-  color: #f3f3ff;
-  background-color: #22a5fc;
-  border-color: #6b7a92;
+  color: var(--blanco);
+  background-color: var(--celeste);
+  border-color: var(--gris);
 }
 .btn-celeste:hover {
-  color: #293762;
-  background-color: #7dd8b7;
-  border-color: #293762;
+  color: var(--negro);
+  background-color: var(--celeste-claro);
+  border-color: var(--azul);
 }
 .btn-outline-celeste {
-  color: #293762;
-  background-color: #b6def8;
-  border-color: #6b7a92;
+  color: var(--negro);
+  background-color: var(--celeste-claro);
+  border-color: var(--gris);
 }
 .btn-outline-celeste:hover {
-  color: #f3f3ff;
-  background-color: #52ace7;
+  color: var(--blanco);
+  background-color: var(--celeste);
   border-color: #3877a1;
 }
 
 /*===============================*/
-/*======= boton de color verde ======*/
+/*======= color verde ======*/
 /*===============================*/
+.card-verde{
+  color:#23473c;
+  background-color:var(--verde-claro); 
+}
+
 .btn-verde {
-  color: #f3f3ff;
-  background-color: #1ca875;
-  border-color: #7dd8b7;
+  color: var(--blanco);
+  background-color: var(--verde);
+  /*border: 2px solid var(--verde-claro);*/
+  border-color: var(--verde-claro);
 }
 .btn-verde:hover {
-  color: #293762;
-  background-color: #7dd8b7;
-  border-color: #293762;
+  color: var(--azul);
+  background-color: var(--verde-claro);
+  border-color: #2e6d56;
 }
 .btn-outline-verde {
-  color: #293762;
-  background-color: #7dd8b7;
-  border-color: #6b7a92;
+  color: var(--azul);
+  background-color: var(--verde-claro);
+  /*border: 2px solid var(--gris);*/
+  border-color: #2e6d56;
 }
 .btn-outline-verde:hover {
-  color: #f3f3ff;
-  background-color: #1ca875;
+  color: var(--blanco);
+  background-color: var(--verde);
   border-color: #157e57;
 }
 
+
 /*===============================*/
-/*======= boton de color negro ======*/
+/*======= color blanco ======*/
 /*===============================*/
+.card-blanco{
+  color:var(--gris);
+  background-color:var(--blanco); 
+}
+
+.btn-blanco {
+  color: var(--blanco);
+  background-color: var(--gris);
+  /*border: 2px solid var(--verde-claro);*/
+  border-color: #8694aa;
+}
+.btn-blanco:hover {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: var(--gris);
+}
+.btn-outline-blanco {
+  color: var(--azul);
+  background-color: var(--blanco);
+  /*border: 2px solid var(--gris);*/
+  border-color: var(--gris);
+}
+.btn-outline-blanco:hover {
+  color: var(--blanco);
+  background-color: var(--gris);
+  border-color: #8694aa;
+}
+
+
+/*===============================*/
+/*======= color negro ======*/
+/*===============================*/
+.card-negro{
+  color:var(--verde-claro);
+  background-color:var(--negro); 
+}
+
 .btn-negro {
-  color: #f3f3ff;
-  background-color: #293762;
-  border-color: #bfcefc;
+  color: var(--verde-claro);
+  background-color: var(--negro);
+  border-color: var(--verde-claro);
 }
 .btn-negro:hover {
-  color: #293762;
-  background-color: #d3ddfd;
-  border-color: #293762;
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: #5267a7;
 }
 .btn-outline-negro {
-  color: #293762;
-  background-color: #f3f3ff;
-  border-color: #bfcefc;
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: #5267a7;
 }
 .btn-outline-negro:hover {
-  color: #f3f3ff;
-  background-color: #5673ca;
-  border-color: #293762;
+  color: var(--verde-claro);
+  background-color: var(--negro);
+  border-color: var(--verde-claro);
+}
+
+
+/*===============================*/
+/*======= color azul ======*/
+/*===============================*/
+.card-azul{
+  color:var(--verde-claro);
+  background-color:var(--azul); 
+}
+
+.btn-azul {
+  color: var(--verde-claro);
+  background-color: var(--azul);
+  border-color: var(--verde-claro);
+}
+.btn-azul:hover {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: var(--azul);
+}
+.btn-outline-azul {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: #5673ca;
+}
+.btn-outline-azul:hover {
+  color: var(--verde-claro);
+  background-color: var(--azul);
+  border-color: var(--verde-claro);
+}
+
+
+/*===============================*/
+/*======= color gris ======*/
+/*===============================*/
+.card-gris{
+  color:var(--blanco);
+  background-color:var(--gris); 
+}
+
+.btn-gris {
+  color: var(--blanco);
+  background-color: var(--gris);
+  border-color: var(--blanco);
+}
+.btn-gris:hover {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: var(--gris);
+}
+.btn-outline-gris {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: var(--gris);
+}
+.btn-outline-gris:hover {
+  color: var(--blanco);
+  background-color: var(--gris);
+  border-color: var(--blanco);
 }
