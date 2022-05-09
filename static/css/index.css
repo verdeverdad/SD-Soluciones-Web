@@ -1,3 +1,20 @@
+/*======================================*/
+/*========== variables de color ==========*/
+/*======================================*/
+:root {
+  --celeste: #52ace7;
+  --celeste-claro: #b6def8;
+
+  --verde: #208661;
+  --verde-claro: #7dd8b7;
+
+  --blanco: #f3f3ff;
+  --negro: #212529;
+
+  --azul: #293762;
+  --gris: #6b7a92;
+}
+
 .circular--square {
     border-radius: 100%
   }
@@ -8,7 +25,7 @@ body {
       /*background-color: #f5f5efee;*/
       background-color: #f5f5efee;
       /*font-size:100%;*/
-      color:#293762;
+      color:var(--azul);
       z-index: 11;
     /*opacity: 90%;*/
     -webkit-backdrop-filter: blur(4px);
@@ -33,12 +50,12 @@ footer {
     }
 
     footer p {
-      color: #293762;
+      color: var(--azul);
     }
 
     footer a{
       text-decoration:none;
-      color: #293762;
+      color: var(--azul);
     }
 
 /*address {
@@ -50,6 +67,11 @@ footer {
 	margin-top: 30px;
 	margin-right: 30px;
 	margin-left: 30px;
+  opacity:95%; 
+	border: 2px solid #d5dadf;
+  border-radius: 5px;
+	box-shadow:  0px 0px 2px #ebf0f5;
+	animation: mymove 16s infinite;
 }
 
 /*ANIMACION DE IMAGENES CORTADAS*/
@@ -91,20 +113,17 @@ footer {
 
 .titulo {
       font-size: 240%;
-      background-color: #293762;
       opacity: 90%;
       text-align: center;
-      text-shadow: 1px 1px 4px rgb(0, 195, 255);
-      color: #f3f3ef;
+      text-shadow: 0px 1px 2px #00c3ff;
       font-family: monospace;
-      margin-bottom: 20px;
-      
+    
     }
 
 .tarjeta{
-      background-color: #212529;
+      background-color: var(--negro);
       opacity: 90%;
-      color: #f3f3ff;
+      color: var(--blanco);
     }
 
 
@@ -118,11 +137,7 @@ footer {
 			border: 4px solid #ebf0f5;
 		}
 
-.card {
-	border: 3px solid #ebf0f5;
-	box-shadow:  0px 0px 2px #ebf0f5;
-	animation: mymove 16s infinite;
-	}
+
 
 @keyframes mymove {
 			50% {
@@ -145,7 +160,7 @@ footer {
 .quienes {
   opacity: 95%; 
   background-color:#f3f3ef; 
-  color: #293762
+  color: var(--azul);
 }
 
 .armar {
@@ -154,3 +169,189 @@ footer {
   background-attachment: fixed;
   background-position: center;
 }
+
+
+
+/*=================================*/
+/*======= color celeste ======*/
+/*=================================*/
+.card-celeste{
+  color:var(--negro);
+  /*background-color:#20a4fc46; */
+  background-color:var(--celeste-claro); 
+}
+
+.btn-celeste {
+  color: var(--blanco);
+  background-color: var(--celeste);
+  border-color: var(--gris);
+}
+.btn-celeste:hover {
+  color: var(--negro);
+  background-color: var(--celeste-claro);
+  border-color: var(--azul);
+}
+.btn-outline-celeste {
+  color: var(--negro);
+  background-color: var(--celeste-claro);
+  border-color: var(--gris);
+}
+.btn-outline-celeste:hover {
+  color: var(--blanco);
+  background-color: var(--celeste);
+  border-color: #3877a1;
+}
+
+/*===============================*/
+/*======= color verde ======*/
+/*===============================*/
+.card-verde{
+  color:#23473c;
+  background-color:var(--verde-claro); 
+}
+
+.btn-verde {
+  color: var(--blanco);
+  background-color: var(--verde);
+  /*border: 2px solid var(--verde-claro);*/
+  border-color: var(--verde-claro);
+}
+.btn-verde:hover {
+  color: var(--azul);
+  background-color: var(--verde-claro);
+  border-color: #2e6d56;
+}
+.btn-outline-verde {
+  color: var(--azul);
+  background-color: var(--verde-claro);
+  /*border: 2px solid var(--gris);*/
+  border-color: #2e6d56;
+}
+.btn-outline-verde:hover {
+  color: var(--blanco);
+  background-color: var(--verde);
+  border-color: #157e57;
+}
+
+
+/*===============================*/
+/*======= color blanco ======*/
+/*===============================*/
+.card-blanco{
+  color:var(--gris);
+  background-color:var(--blanco); 
+}
+
+.btn-blanco {
+  color: var(--blanco);
+  background-color: var(--gris);
+  /*border: 2px solid var(--verde-claro);*/
+  border-color: #8694aa;
+}
+.btn-blanco:hover {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: var(--gris);
+}
+.btn-outline-blanco {
+  color: var(--azul);
+  background-color: var(--blanco);
+  /*border: 2px solid var(--gris);*/
+  border-color: var(--gris);
+}
+.btn-outline-blanco:hover {
+  color: var(--blanco);
+  background-color: var(--gris);
+  border-color: #8694aa;
+}
+
+
+/*===============================*/
+/*======= color negro ======*/
+/*===============================*/
+.card-negro{
+  color:var(--verde-claro);
+  background-color:var(--negro); 
+}
+
+.btn-negro {
+  color: var(--verde-claro);
+  background-color: var(--negro);
+  border-color: var(--verde-claro);
+}
+.btn-negro:hover {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: #5267a7;
+}
+.btn-outline-negro {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: #5267a7;
+}
+.btn-outline-negro:hover {
+  color: var(--verde-claro);
+  background-color: var(--negro);
+  border-color: var(--verde-claro);
+}
+
+
+/*===============================*/
+/*======= color azul ======*/
+/*===============================*/
+.card-azul{
+  color:var(--verde-claro);
+  background-color:var(--azul); 
+}
+
+.btn-azul {
+  color: var(--verde-claro);
+  background-color: var(--azul);
+  border-color: var(--verde-claro);
+}
+.btn-azul:hover {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: var(--azul);
+}
+.btn-outline-azul {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: #5673ca;
+}
+.btn-outline-azul:hover {
+  color: var(--verde-claro);
+  background-color: var(--azul);
+  border-color: var(--verde-claro);
+}
+
+
+/*===============================*/
+/*======= color gris ======*/
+/*===============================*/
+.card-gris{
+  color:var(--blanco);
+  background-color:var(--gris); 
+}
+
+.btn-gris {
+  color: var(--blanco);
+  background-color: var(--gris);
+  border-color: var(--blanco);
+}
+.btn-gris:hover {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: var(--gris);
+}
+.btn-outline-gris {
+  color: var(--azul);
+  background-color: var(--blanco);
+  border-color: var(--gris);
+}
+.btn-outline-gris:hover {
+  color: var(--blanco);
+  background-color: var(--gris);
+  border-color: var(--blanco);
+}
+
