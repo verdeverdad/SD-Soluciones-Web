@@ -206,13 +206,13 @@ footer {
 /*======= color verde ======*/
 /*===============================*/
 .card-verde{
-  color:#23473c;
+  color:var(--azul);
   background-color:var(--verde-claro); 
 }
 
 .btn-verde {
   color: var(--blanco);
-  background-color: var(--verde);
+  background-color: var(--azul);
   /*border: 2px solid var(--verde-claro);*/
   border-color: var(--verde-claro);
 }
@@ -285,14 +285,14 @@ footer {
   border-color: #5267a7;
 }
 .btn-outline-negro {
-  color: var(--azul);
-  background-color: var(--blanco);
-  border-color: #5267a7;
-}
-.btn-outline-negro:hover {
   color: var(--verde-claro);
   background-color: var(--negro);
   border-color: var(--verde-claro);
+}
+.btn-outline-negro:hover {
+  color: var(--negro);
+  background-color: var(--verde-claro);
+  border-color: var(--negro);
 }
 
 
@@ -345,13 +345,13 @@ footer {
   border-color: var(--gris);
 }
 .btn-outline-gris {
-  color: var(--azul);
-  background-color: var(--blanco);
-  border-color: var(--gris);
+  color: var(--negro);
+  background-color: var(--gris);
+  border-color: var(--negro);
 }
 .btn-outline-gris:hover {
   color: var(--blanco);
-  background-color: var(--gris);
-  border-color: var(--blanco);
+  background-color: var(--negro);
+  border-color: var(--negro);
 }
 
