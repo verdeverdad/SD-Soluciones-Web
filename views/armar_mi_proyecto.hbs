@@ -293,17 +293,17 @@
 
 						<div class="form-group">
 							<label for="nombre">Nombre:</label>
-							<input type="text" class="form-control" name="nombre" id="nombre">
+							<input type="text" class="form-control" name="nombre" id="nombre" required>
 						</div>
 
 						<div class="form-group">
 							<label for="correo">Correo electronico:</label>
-							<input type="email" class="form-control" name="correo" id="correo">
+							<input type="email" class="form-control" name="correo" id="correo" required>
 						</div>
 
 						<div class="form-group">
 							<label for="telefono">Telefono:</label>
-							<input type="text" class="form-control" name="telefono" id="telefono">
+							<input type="text" class="form-control" name="telefono" id="telefono" required>
 						</div>
 
 					</div>
@@ -348,9 +348,10 @@
 								<p id="elige_las_palabras_clave_modal"></p>
 								<p id="crea_los_contenidos_modal"></p>
 								<p id="detalles_finales_modal"></p>
-								<p id="nombre_modal"></p>
-								<p id="correo_modal"></p>
-								<p id="telefono_modal"></p>
+								<hr>
+								<p class="text-right" id="nombre_modal"></p>
+								<p class="text-right" id="correo_modal"></p>
+								<p class="text-right" id="telefono_modal"></p>
 							</div>
 							<hr class="m-0 p-0">
 							<!-- Modal footer -->
@@ -359,7 +360,7 @@
 									<button type="button" class="btn btn-block btn-outline-secondary btn-outline-gris" data-bs-dismiss="modal">Volver</button>
 								</div>
 								<div class="col">
-									<button class="btn btn-block btn-outline-secondary btn-outline-celeste" type="submit">Enviar</button>
+									<button id="btn-enviar" class="btn btn-block btn-outline-secondary btn-outline-celeste" type="submit">Enviar</button>
 								</div>
 							</div>
 

@@ -10,6 +10,7 @@ $(function () {
 
     function modal_armar_mi_proyecto(){
         //console.log("modal_armar_mi_proyecto");
+        document.getElementById("btn-enviar").style.display = "block"; 
 
         let que_proyecto_quiero = document.getElementById("que_proyecto_quiero").value;
         let punto_de_partida = document.getElementById("punto_de_partida").value;
@@ -21,15 +22,28 @@ $(function () {
         let correo = document.getElementById("correo").value;
         let telefono = document.getElementById("telefono").value;
 
-        document.getElementById("que_proyecto_quiero_modal").innerHTML = "Que proyecto quiero: " + que_proyecto_quiero;
-        document.getElementById("punto_de_partida_modal").innerHTML = "Punto de partida: " + punto_de_partida;
-        document.getElementById("crear_un_mapa_del_sitio_modal").innerHTML = "Crear un mapa del sitio: " + crear_un_mapa_del_sitio;
-        document.getElementById("elige_las_palabras_clave_modal").innerHTML = "Elige las palabras clave: " + elige_las_palabras_clave;
-        document.getElementById("crea_los_contenidos_modal").innerHTML = "Crea los contenidos: " + crea_los_contenidos;
-        document.getElementById("detalles_finales_modal").innerHTML = "Detalles finales: " + detalles_finales;
-        document.getElementById("nombre_modal").innerHTML = " Tu nombre: " + nombre;
-        document.getElementById("correo_modal").innerHTML = "Tu correo: " + correo;
-        document.getElementById("telefono_modal").innerHTML = "Tu telefono: " + telefono;
+        if (nombre == "") {
+            nombre = "<span class='text-danger'>Debe ingresar un nombre.</span>";
+            document.getElementById("btn-enviar").style.display = "none"; 
+        }
+        if (correo == "") {
+            correo = "<span class='text-danger'>Debe ingresar un correo electrónico.</span>";
+            document.getElementById("btn-enviar").style.display = "none"; 
+        }
+        if (telefono == "") {
+            telefono = "<span class='text-danger'>Debe ingresar un teléfono.</span>";
+            document.getElementById("btn-enviar").style.display = "none"; 
+        }
+
+        document.getElementById("que_proyecto_quiero_modal").innerHTML = "<strong>Que proyecto quiero:</strong>  " + que_proyecto_quiero;
+        document.getElementById("punto_de_partida_modal").innerHTML = "<strong>Punto de partida:</strong>  " + punto_de_partida;
+        document.getElementById("crear_un_mapa_del_sitio_modal").innerHTML = "<strong>Crear un mapa del sitio:</strong>  " + crear_un_mapa_del_sitio;
+        document.getElementById("elige_las_palabras_clave_modal").innerHTML = "<strong>Elige las palabras clave:</strong>  " + elige_las_palabras_clave;
+        document.getElementById("crea_los_contenidos_modal").innerHTML = "<strong>Crea los contenidos:</strong>  " + crea_los_contenidos;
+        document.getElementById("detalles_finales_modal").innerHTML = "<strong>Detalles finales:</strong>  " + detalles_finales;
+        document.getElementById("nombre_modal").innerHTML = nombre;
+        document.getElementById("correo_modal").innerHTML = correo;
+        document.getElementById("telefono_modal").innerHTML = telefono;
 
 
     }
