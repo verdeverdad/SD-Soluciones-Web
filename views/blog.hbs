@@ -4,232 +4,759 @@
 
 	<!--  NAVBAR -->
 	{{> header_2}}
-		
+
 	<!--  JUMBOTRON CARROUSEL-->
 	{{> jumbotron}}
 
-  
-<!-- CARDS ARMAR MI PROYECTO  -->
 
-		<form method="post" action="/armar_mi_proyecto">
-			<div class="">
-				<div class=" row p-4">
+	<!-- CARDS ARMAR MI PROYECTO  -->
 
-					<div class="col-lg">
+	<form method="post" action="/armar_mi_proyecto">
+		<div class="">
+			<div class=" row p-4">
 
-						<!-- ============================== -->
-						<!-- =====¿Qué proyecto quiero?===== -->
-						<!-- ============================== -->
-						<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
-							<img src="img/que proyecto quiero.png" class="card-img-top" alt="">
-							<div class="text-center p-4">
-								<h5 class="">Define el objetivo</h5>
-								<p>Selecciona el tipo de plataforma que se adapta a tus
-									requerimientos.</p>
-								<select class="form-control text-center" name="que_proyecto_quiero">
-									<option value="">¡Eligue uno!</option>
-									<option value="Blog/magazine"
-										title="Un blog o un sitio web de revista se centra en el contenido editorial.">
-										Blog/magazine
-									</option>
-									<option value="Landing page"
-										title="informan al visitante sobre un producto específico">
-										Landing page
-									</option>
-									<option value="E-commerce/Tienda on-line"
-										title="venta online de productos físicos o servicios">
-										E-commerce/Tienda on-line
-									</option>
-									<option value="Empresariales/corporativas"
-										title="se utilizan para manejar la presencia de la empresa en internet">
-										Empresariales/corporativas
-									</option>
-								</select>
+				<div class="col-lg">
 
-							</div>
+					<!-- ============================== -->
+					<!-- =====¿Qué proyecto quiero?===== -->
+					<!-- ============================== -->
+					<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
+						<img src="img/que proyecto quiero.png" class="card-img-top" alt="">
+						<div class="text-center p-4">
+							<h5 class="">Define el objetivo</h5>
+							<p>Selecciona el tipo de plataforma que se adapta a tus
+								requerimientos.</p>
+							<select class="form-control text-center" name="que_proyecto_quiero">
+								<option value="">¡Eligue uno!</option>
+								<option value="Blog/magazine"
+									title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+									Blog/magazine
+								</option>
+								<option value="Landing page" title="informan al visitante sobre un producto específico">
+									Landing page
+								</option>
+								<option value="E-commerce/Tienda on-line"
+									title="venta online de productos físicos o servicios">
+									E-commerce/Tienda on-line
+								</option>
+								<option value="Empresariales/corporativas"
+									title="se utilizan para manejar la presencia de la empresa en internet">
+									Empresariales/corporativas
+								</option>
+							</select>
+
 						</div>
-
-						<!-- =============================== -->
-						<!-- =====Crear un mapa del sitio===== -->
-						<!-- =============================== -->
-						<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
-							<img src="img/proyecto.png" class="card-img-top" alt="">
-							<div class=" text-center p-4">
-								<h5 class="">Mapa del sitio</h5>
-								<p class="">Planos para construir un proyecto</p>
-
-								<select class="form-control text-center" name="crear_un_mapa_del_sitio">
-									<option value="">¡Eligue uno!</option>
-									<option value="¡Ya tengo uno!"
-										title="informan al visitante sobre un producto específico">
-										¡Ya tengo uno!
-									</option>
-									<option value="Cuento con la idea pero no tengo el diseño"
-										title="venta online de productos físicos o servicios">
-										Cuento con la idea pero no tengo el
-										diseño
-									</option>
-									<option value="Aun no lo he decidido" title="">
-										Aun no lo he decidido
-									</option>
-									<option value="Quiero que lo hagan por mi"
-										title="Un blog o un sitio web de revista se centra en el contenido editorial.">
-										Quiero que lo hagan por mi
-									</option>
-								</select>
-
-							</div>
-						</div>
-
-						<!-- ============================= -->
-						<!-- ===== Crea los contenidos ===== -->
-						<!-- ============================= -->
-						<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
-							<img src="img/e_commerce.png" class="card-img-top" alt="">
-							<div class="text-center p-4">
-								<h5 class="">Creacion de contenidos:</h5>
-								<p class="">¿Qué es lo que quiero mostrar?</p>
-								<select class="form-control text-center" name="crea_los_contenidos">
-
-									<option value="">¡Elige uno!</option>
-									<option value="Tengo las imagenes y el contenido"
-										title="Un blog o un sitio web de revista se centra en el contenido editorial.">
-										Tengo las imagenes y el contenido
-									</option>
-									<option value="Tengo las imagenes pero no el contenido"
-										title="informan al visitante sobre un producto específico">
-										Tengo las imagenes pero no el contenido
-									</option>
-									<option value="Tengo las imagenes y trabajaré en el contenido"
-										title="venta online de productos físicos o servicios">
-										Tengo las imagenes y trabajaré en el
-										contenido
-									</option>
-									<option value="No tengo las imagenes pero trabajaré en el contenido">
-										No tengo las imagenes pero trabajaré en
-										el
-										contenido
-									</option>
-									<option value="No tengo las imagenes y	no tengo en el contenido">
-										No tengo las imagenes y no tengo en el
-										contenido
-									</option>
-
-								</select>
-
-							</div>
-						</div>
-
-						<!-- ============================= -->
-						<!-- ===== Informacion de contacto ===== -->
-						<!-- ============================= -->
-						<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
-							<img src="img/equipo3.png" class="card-img-top" alt="">
-							<div class="text-center p-4">
-								<h5 class="">Informacion de contacto</h5>
-								<p class="">Nos comunicaremos para concretar una
-									entrevista</p>
-								<input type="text" class="form-control mb-2" name="nombre" placeholder="Nombre">
-								<input type="text" class="form-control mb-2" name="correo"
-									placeholder="Correo electrónico">
-								<input type="text" class="form-control mb-2" name="telefono" placeholder="telefono">
-
-							</div>
-						</div>
-
-
 					</div>
 
+					<!-- =============================== -->
+					<!-- =====Crear un mapa del sitio===== -->
+					<!-- =============================== -->
+					<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
+						<img src="img/proyecto.png" class="card-img-top" alt="">
+						<div class=" text-center p-4">
+							<h5 class="">Mapa del sitio</h5>
+							<p class="">Planos para construir un proyecto</p>
 
-					<div class="col-lg">
+							<select class="form-control text-center" name="crear_un_mapa_del_sitio">
+								<option value="">¡Eligue uno!</option>
+								<option value="¡Ya tengo uno!"
+									title="informan al visitante sobre un producto específico">
+									¡Ya tengo uno!
+								</option>
+								<option value="Cuento con la idea pero no tengo el diseño"
+									title="venta online de productos físicos o servicios">
+									Cuento con la idea pero no tengo el
+									diseño
+								</option>
+								<option value="Aun no lo he decidido" title="">
+									Aun no lo he decidido
+								</option>
+								<option value="Quiero que lo hagan por mi"
+									title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+									Quiero que lo hagan por mi
+								</option>
+							</select>
 
-						<!-- ========================= -->
-						<!-- =====Punto de partida===== -->
-						<!-- ========================= -->
-						<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
-							<img src="img/partida.png" class="card-img-top" alt="">
-							<div class="text-center p-4">
-								<h5 class="">Punto de partida:</h5>
-								<p>¿En que punto de la incercion digital estas?</p>
-								<select class="form-control text-center" name="punto_de_partida">
-									<option value="">¡Eligue uno!</option>
-									<option value="¡Ya tengo una idea!"
-										title="informan al visitante sobre un producto específico">
-										¡Ya tengo una idea!
-									</option>
-									<option value="Cuento con la idea y el diseño"
-										title="venta online de productos físicos o servicios">
-										Cuento con la idea y el diseño
-									</option>
-									<option value="Hay un proyecto ya publicado"
-										title="Un blog o un sitio web de revista se centra en el contenido editorial.">
-										Hay un proyecto ya publicado</option>
-									<option value="Hay un proyecto no publicado">
-										Hay un proyecto no publicado
-									</option>
-								</select>
-
-							</div>
 						</div>
-
-						<!-- ================================= -->
-						<!-- ===== Elige las Palabras clave ===== -->
-						<!-- ================================= -->
-						<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
-							<img src="img/equipo3.png" class="card-img-top" alt="">
-							<div class="text-center p-4">
-								<h5 class="">Elige las Palabras clave</h5>
-								<p class="">El mensaje correcto hace la diferencia</p>
-
-								<select class="form-control text-center" name="elige_las_palabras_clave">
-									<option value="">¡Eligue uno!</option>
-									<option value="¡Ya las tengo!"
-										title="informan al visitante sobre un producto específico">
-										¡Ya las tengo!
-									</option>
-									<option value="Tengo una idea pero necesito asesoramiento"
-										title="venta online de productos físicos o servicios">
-										Tengo una idea pero necesito
-										asesoramiento
-									</option>
-									<option value="Quiero que lo hagan por mi"
-										title="Un blog o un sitio web de revista se centra en el contenido editorial.">
-										Quiero que lo hagan por mi
-									</option>
-								</select>
-
-							</div>
-						</div>
-
-						<!-- ========================== -->
-						<!-- ===== Detalles finales ===== -->
-						<!-- ========================== -->
-						<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
-							<img src="img/compartir2.png" class="card-img-top" alt="">
-							<div class="text-center p-4">
-								<h5 class="">Detalles finales</h5>
-								<p class="">Agrega una descripcion adicional</p>
-								<p>Que crees importante para conocer tu proyecto</p>
-								<textarea name="detalles_finales" class="w-100"></textarea>
-
-							</div>
-						</div>
-
-
 					</div>
 
+					<!-- ============================= -->
+					<!-- ===== Crea los contenidos ===== -->
+					<!-- ============================= -->
+					<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
+						<img src="img/e_commerce.png" class="card-img-top" alt="">
+						<div class="text-center p-4">
+							<h5 class="">Creacion de contenidos:</h5>
+							<p class="">¿Qué es lo que quiero mostrar?</p>
+							<select class="form-control text-center" name="crea_los_contenidos">
 
+								<option value="">¡Elige uno!</option>
+								<option value="Tengo las imagenes y el contenido"
+									title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+									Tengo las imagenes y el contenido
+								</option>
+								<option value="Tengo las imagenes pero no el contenido"
+									title="informan al visitante sobre un producto específico">
+									Tengo las imagenes pero no el contenido
+								</option>
+								<option value="Tengo las imagenes y trabajaré en el contenido"
+									title="venta online de productos físicos o servicios">
+									Tengo las imagenes y trabajaré en el
+									contenido
+								</option>
+								<option value="No tengo las imagenes pero trabajaré en el contenido">
+									No tengo las imagenes pero trabajaré en
+									el
+									contenido
+								</option>
+								<option value="No tengo las imagenes y	no tengo en el contenido">
+									No tengo las imagenes y no tengo en el
+									contenido
+								</option>
 
-					<div class="p-4">
-						<button class="btn btn-block btn-outline-dark" type="submit">¡Todo
-							listo!</button>
+							</select>
+
+						</div>
 					</div>
+
+					<!-- ============================= -->
+					<!-- ===== Informacion de contacto ===== -->
+					<!-- ============================= -->
+					<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
+						<img src="img/equipo3.png" class="card-img-top" alt="">
+						<div class="text-center p-4">
+							<h5 class="">Informacion de contacto</h5>
+							<p class="">Nos comunicaremos para concretar una
+								entrevista</p>
+							<input type="text" class="form-control mb-2" name="nombre" placeholder="Nombre">
+							<input type="text" class="form-control mb-2" name="correo" placeholder="Correo electrónico">
+							<input type="text" class="form-control mb-2" name="telefono" placeholder="telefono">
+
+						</div>
+					</div>
+
 
 				</div>
-			</div>
-		</form>
 
-    {{>footer}}
+
+				<div class="col-lg">
+
+					<!-- ========================= -->
+					<!-- =====Punto de partida===== -->
+					<!-- ========================= -->
+					<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
+						<img src="img/partida.png" class="card-img-top" alt="">
+						<div class="text-center p-4">
+							<h5 class="">Punto de partida:</h5>
+							<p>¿En que punto de la incercion digital estas?</p>
+							<select class="form-control text-center" name="punto_de_partida">
+								<option value="">¡Eligue uno!</option>
+								<option value="¡Ya tengo una idea!"
+									title="informan al visitante sobre un producto específico">
+									¡Ya tengo una idea!
+								</option>
+								<option value="Cuento con la idea y el diseño"
+									title="venta online de productos físicos o servicios">
+									Cuento con la idea y el diseño
+								</option>
+								<option value="Hay un proyecto ya publicado"
+									title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+									Hay un proyecto ya publicado</option>
+								<option value="Hay un proyecto no publicado">
+									Hay un proyecto no publicado
+								</option>
+							</select>
+
+						</div>
+					</div>
+
+					<!-- ================================= -->
+					<!-- ===== Elige las Palabras clave ===== -->
+					<!-- ================================= -->
+					<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
+						<img src="img/equipo3.png" class="card-img-top" alt="">
+						<div class="text-center p-4">
+							<h5 class="">Elige las Palabras clave</h5>
+							<p class="">El mensaje correcto hace la diferencia</p>
+
+							<select class="form-control text-center" name="elige_las_palabras_clave">
+								<option value="">¡Eligue uno!</option>
+								<option value="¡Ya las tengo!"
+									title="informan al visitante sobre un producto específico">
+									¡Ya las tengo!
+								</option>
+								<option value="Tengo una idea pero necesito asesoramiento"
+									title="venta online de productos físicos o servicios">
+									Tengo una idea pero necesito
+									asesoramiento
+								</option>
+								<option value="Quiero que lo hagan por mi"
+									title="Un blog o un sitio web de revista se centra en el contenido editorial.">
+									Quiero que lo hagan por mi
+								</option>
+							</select>
+
+						</div>
+					</div>
+
+					<!-- ========================== -->
+					<!-- ===== Detalles finales ===== -->
+					<!-- ========================== -->
+					<div class="card m-1 mb-4 d-flex flex-column justify-content-between">
+						<img src="img/compartir2.png" class="card-img-top" alt="">
+						<div class="text-center p-4">
+							<h5 class="">Detalles finales</h5>
+							<p class="">Agrega una descripcion adicional</p>
+							<p>Que crees importante para conocer tu proyecto</p>
+							<textarea name="detalles_finales" class="w-100"></textarea>
+
+						</div>
+					</div>
+
+
+				</div>
+
+
+
+				<div class="p-4">
+					<button class="btn btn-block btn-outline-dark" type="submit">¡Todo
+						listo!</button>
+				</div>
+
+			</div>
+		</div>
+	</form>
+
+
+
+
+
+
+
+	<h3 class="text-center text-info ">1 <br><br> Encabezado y menú </h3>
+	<br>
+	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/fondo blanco 2.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/foto en blanco 2.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/fondo blanco 3.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/fondo blanco 4.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/fondo blanco 5.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/fondo blanco 6.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/fondo blanco 7.png" class="d-block w-100" alt="...">
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+	<br>
+
+
+	<!-- IMAGENES  -->
+	<div class="card-body text-light">
+		<h3 class="text-center text-info">2 <br><br> Imágenes</h3>
+		<br>
+		<div class="text-center">
+			<img src="img/img 1.png" width="100%">
+		</div><br>
+		<div class="text-center">
+			<img src="img/img 2.png" width="100%">
+		</div><br>
+		<div class="text-center">
+			<img src="img/img 3.png" width="100%">
+		</div><br>
+		<!-- IMAGENES CORTADAS DIAPO-->
+		<div id="slider-k">
+			<div class="frame-k">
+				<img src="img/imagenes.png" alt="" />
+			</div>
+			<div class="frame-k">
+				<img src="img/imagenes (1).png" alt="" />
+			</div>
+			<div class="frame-k">
+				<img src="img/imagenes (2).png" alt="" />
+			</div>
+			<div class="frame-k">
+				<img src="img/imagenes.png" alt="" />
+			</div>
+		</div>
+
+	</div><br>
+
+	<!--  CONTENIDO -->
+	<h3 class="text-center text-info">3 <br><br> Contenido del sitio web</h3>
+
+	<div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/contenido.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/contenido 2.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/contenido 3.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/contenido 4.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/contenido 5.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/contenido 6.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/contenido 7.png" class="d-block w-100" alt="...">
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div><br>
+
+	<!-- INICIO -->
+	<h3 class="text-center text-info">4 <br><br> Página de inicio</h3><br>
+	<div class="text-center">
+		<img src="img/pag inicio.png" width="100%">
+	</div><br>
+	<div class="text-center">
+		<img src="img/pag inicio 2.png" width="100%">
+	</div><br>
+	<div class="text-center">
+		<img src="img/pag inicio 3.png" width="100%">
+	</div><br>
+
+	<!-- FOOTER -->
+	<h3 class="text-center text-info">5 <br><br> Pie de página / footer</h3><br>
+
+	<div id="carouselExampleFade3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/footer 1.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/footer 2.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/footer 3.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/footer 4.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/footer 5.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/footer 6.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="img/footer 7.png" class="d-block w-100" alt="...">
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div><br>
+	</div>
+	</div>
+
+
+
+
+ <div class="tab-pane fade show active" id="uno" role="tabpanel" aria-labelledby="uno-tab">
+
+                    <div class="accordion" id="accordionExample">
+
+                        <!-- ESTRUCTURA DE UNA WEB -->
+                        <!-- ESTRUCTURA DE UNA WEB -->
+                        <!-- ESTRUCTURA DE UNA WEB -->
+                        <!-- ESTRUCTURA DE UNA WEB -->
+                        <div class="card-azul">
+
+                            <!-- BOTON ESTRUCTURA DE UNA WEB-->
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed  btn-outline-light btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        ESTRUCTURA DE UNA WEB
+                                    </button>
+                                </h5>
+
+
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingcollapseTwo"
+                                    data-parent="#accordionExample">
+
+                                    <!--ENCABEZADO Y MENU-->
+                                    <!--ENCABEZADO Y MENU-->
+                                    <!--ENCABEZADO Y MENU-->
+                                    <br>
+                                    <h4 class=" text-center" style="color:#7dd8b7">
+                                        ENCABEZADO Y MENÚ
+                                    </h4><br>
+                                    <p class="text-center " style="color:#7dd8b7">El
+                                        encabezado es la parte superior de la pagina web, normalmente es lo
+                                        primero que ven los visitantes y se suele
+                                        encontrar el logo o el nombre de la marca y el menú del sitio web.
+                                        Se recomienda que al hacer click en el logo se diriga a la página de
+                                        inicio ya que es una acción estandarizada de las páginas web.
+                                    </p>
+
+                                    <p class="text-center" style="color:#7dd8b7">El menú es un mapa del sitio
+                                        que ayuda o guía a los usuarios para ubicarse y encontrar lo que
+                                        buscan en la
+                                        pagina web. Es un cuadro de búsqueda rápido y casi siempre se
+                                        encuentran en
+                                        los mismos lugares porque los usuarios de internet ya estan
+                                        familiarizados con
+                                        su uso.<br> Existen diferentes tipos de menú, los más comunes
+                                        aparecen en el encabezado e incluyen las paginas mas importantes del
+                                        sitio. <br> <strong>Incluir las categorías adecuadas en el menú dentro del
+                                            encabezado es escencial para ayudar a los visitantes a encontrar lo
+                                            que buscan.</strong> </p>
+
+                                    <br>
+                                    <hr><br>
+
+
+                                    <!-- IMAGENES-->
+                                    <!-- IMAGENES-->
+                                    <!-- IMAGENES-->
+
+                                    <h4 class="text-center " style="color:#f3f3ff">
+                                        IMAGENES
+                                    </h4>
+
+                                    <p class="text-center " style="color:#f3f3ff;">Lo que
+                                        realmente atrapa son las imágenes, son lo primero que ve un usuario
+                                        después del encabezado. Las imágenes que elijas
+                                        deben representar lo que hace tu negocio o marca, simplemente que
+                                        representen tu escencia</p>
+
+                                    <p class="text-center" style="color:#f3f3ff">Se recomienda buscar un
+                                        equilibrio y simplificar para
+                                        no abusar de este recurso, demasiadas imagenes requieren más
+                                        descarga y eso enlentece la navegación de la pagina web. Los
+                                        usuarios modernos no tienen suficiente paciencia. </p>
+
+                                    <br>
+                                    <hr><br>
+
+
+                                    <!--CONTENIDO -->
+                                    <!--CONTENIDO -->
+                                    <!--CONTENIDO -->
+
+                                    <h4 class="text-center " style="color:#7dd8b7">
+                                        CONTENIDO
+                                    </h4>
+
+                                    <p class="text-center" style="color:#7dd8b7">El
+                                        contenido son las palabras escritas en tu sitio. Explican de que se
+                                        trata, que tienes para ofrecer y porque es importante para los
+                                        visitantes.<br>
+                                        Tiene diferentes funciones, botones, parrafos, menú, títulos, desde
+                                        lo más breve hasta largas explicaciones, tómate tu tiempo para
+                                        planificar cuidadosamente el contenido de tu sitio. Siempre puedes
+                                        actualizar tu contenido o mejorarlo.</p>
+
+                                    <p class="text-center" style="color:#7dd8b7">Algunos consejos: recuerda
+                                        que tu usuario
+                                        necesita que le resuelvas un problema, tus palabras deben ser más
+                                        que intentar venderle. Necesitas conectarte con el visitante,
+                                        intenta
+                                        que tus palabras sean atractivas y útiles, transmíteles confianza
+                                        sin intimidarlos, piensa cual sería el lenguaje adecuado para tu
+                                        publico y lo último y no menos importante, no presumas lo bueno que
+                                        eres, mejor consigue testimonios y comentarios de tus clientes.</p>
+                                    <br>
+                                    <hr><br>
+
+
+
+
+                                    <!--PAGINA DE INICIO -->
+                                    <!--PAGINA DE INICIO -->
+                                    <!--PAGINA DE INICIO -->
+
+                                    <h4 class="text-center " style="color:#f3f3ff">
+                                        PAGINA DE INICIO
+                                    </h4>
+
+                                    <p class="text-center " style="color:#f3f3ff">La página
+                                        de inicio es lo primero que ven los visitantes, entonces es lo que
+                                        les generará la primera impresion. Debe comunicar tu mensaje
+                                        principal al instante para mantenerlos interesados.
+                                    </p>
+
+                                    <p class="text-center" style="color:#f3f3ff">Se recomienda que se
+                                        mantenga
+                                        limpia y organizada, con una presentación que invite a explorar
+                                        otras secciones. No es conveniente que sea muy extensa hacia abajo
+                                        porque
+                                        no se entendera donde termina, en su lugar organiza y agrupa los
+                                        contenidos y con una breve reseña y un link los invitas a saber mas.
+                                    </p>
+                                    <br>
+                                    <hr><br>
+
+
+
+
+                                    <!-- FOOTER -->
+                                    <!-- FOOTER -->
+                                    <!-- FOOTER -->
+
+                                    <h4 class="text-center " style="color:#7dd8b7">
+                                        PIE DE PAGINA / FOOTER
+                                    </h4>
+
+                                    <p class="text-center " style="color:#7dd8b7">Es la
+                                        parte inferior de la pagina web, normalmente incluye un mapa del
+                                        sitio donde puedes agregar las secciones que no están en el menú
+                                        superior.</p>
+
+                                    <p class="text-center" style="color:#7dd8b7">Casi siempre se incluye
+                                        información básica de contacto y redes sociales.
+                                        Sirve como un medio de enlace entre el usuario y la marca ya que
+                                        tiene los datos específicos de contacto.<br><br>
+                                        - Identificación del autores<br> - Enlaces de interés<br> -
+                                        Información sobre copyright<br>- Aviso sobre políticas de privacidad
+                                        <br> -Datos de contacto<br>- Mapa del sitio
+                                    </p>
+                                    <br>
+                                </div>
+
+
+
+                            </div>
+
+                        </div><br>
+
+
+                        <!-- DOMINIO Y HOSTING/ CONECTAR TU WEB A LA WEB-->
+                        <!-- DOMINIO Y HOSTING/ CONECTAR TU WEB A LA WEB-->
+                        <!-- DOMINIO Y HOSTING/ CONECTAR TU WEB A LA WEB-->
+                        <!-- DOMINIO Y HOSTING/ CONECTAR TU WEB A LA WEB-->
+                        <!-- DOMINIO Y HOSTING/ CONECTAR TU WEB A LA WEB-->
+                        <div class="card-verde  ">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed btn-outline-verde btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        DOMINIO Y HOSTING-CONECTAR TU WEB A LA WEB
+                                    </button>
+                                </h5>
+                            </div>
+
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+
+                                    <!-- DOMINIO -->
+                                    <!-- DOMINIO -->
+                                    <!-- DOMINIO -->
+
+                                    <h4 class="card-header text-center " style="color:#212529">
+                                        DOMINIO
+                                    </h4>
+                                    <div class="card-body text-center">
+                                        <p class=" " style="color:#212529">
+                                            El dominio es lo que permite que te encuentren, es "www." y todo lo que
+                                            sigue después. Está compuesto por el
+                                            nombre
+                                            que quieras darle a tu página más una extencion (.com .net .com.uy,
+                                            etc).<br>Se
+                                            recomienda que su nombre de dominio sea el mismo nombre o lo mas similar
+                                            posible al de su
+                                            negocio/emprendimiento físico. También intenta que sea breve, así será
+                                            fácil de
+                                            recordar y si puedes también que sea relevante y descriptivo.</p>
+                                        <br>
+                                        <p class="text-center" style="color:#212529">¿Demasiado pedir? Puedes
+                                            chequear en la web "registro de dominios" y ver si el
+                                            que
+                                            tu quieres está disponible, si no lo está, puedes cambiar la extencion y
+                                            volver a
+                                            probar de nuevo (a
+                                            veces no esta disponible .com pero si en .net). <br>
+                                            Algunas extenciones nos dan indicaciones de ubicaciones o que tipo de
+                                            pagina es,
+                                            seguro conoces extenciones .gub .org .com o .com.ar debes elegir la que
+                                            se adapte a tus objetivos.</p><br>
+
+                                    </div><br>
+
+
+                                    <!-- HOSTING -->
+                                    <!-- DOMINIO -->
+                                    <!-- DOMINIO -->
+
+                                    <h4 class="card-header text-center " style="color:#293762">
+                                        HOSTING
+                                    </h4>
+                                    <div class="text-center">
+                                        <p class=" " style="color:#293762">El
+                                            hosting es un servicio de alojamiento en linea, es como pagar un
+                                            alquiler pero en este caso el lugar que alquilás es un espacio en un
+                                            servidor, en vez
+                                            de
+                                            tener tu tienda fisica,
+                                            en vez de guardar "cosas" en una "habitación", la página web (todos los
+                                            archivos que se necesitan para que funcione correctamente) se aloja (se
+                                            guarda)
+                                            en el
+                                            servidor.</p>
+                                        <br>
+                                        <p class="text-center" style="color:#293762">Entonces cada vez que alquien
+                                            busque tu nombre (dominio) en internet,
+                                            el buscador
+                                            se dirigirá a
+                                            tu servidor para mostrar lo que tienes guardado para ofrecer. De esta
+                                            manera tú
+                                            puedes estar
+                                            en linea 24hs.
+                                        </p><br>
+
+                                    </div><br>
+
+
+                                </div>
+                            </div>
+                        </div><br>
+
+
+
+                        <!--DIFERENCIAS ENTRE DISEÑO WEB Y DESARROLLO WEB-->
+                        <!--DIFERENCIAS ENTRE DISEÑO WEB Y DESARROLLO WEB-->
+                        <!--DIFERENCIAS ENTRE DISEÑO WEB Y DESARROLLO WEB-->
+                        <!--DIFERENCIAS ENTRE DISEÑO WEB Y DESARROLLO WEB-->
+                        <div class="card-gris">
+                            <div class="card-header text-light" id="headingFour">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed btn-outline-gris btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        DIFERENCIAS ENTRE DISEÑO WEB Y DESARROLLO WEB
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="text-light ">
+                                    <h4 class=""> ¿No son lo mismo?</h4>
+                                    <p>Los Portales Web Empresariales son sitios web avanzados que se crean utilizando
+                                        plataformas denominadas Sistemas de Administración de Contenidos (ó CMS por sus
+                                        siglas en inglés). Estas plataformas de software permiten manejar múltiples
+                                        tipos de
+                                        contenidos clasificados de acuerdo a sus funcionalidades y que se almacenan en
+                                        bases
+                                        de datos, lo que permite que crezcan de acuerdo a lo que se necesite.
+                                    </p>
+                                    <p> Los Portales Web Empresariales tienen una estructura básica que se complementa
+                                        con
+                                        módulos funcionales. Esto permite que los mismos sean modulares y escalables, es
+                                        decir, que se configuren con los módulos que se requieran de acuerdo al perfil
+                                        de
+                                        cada portal logrando así especializarlos.</p>
+                                </div>
+                            </div>
+                        </div><br>
+
+
+
+                        <!-- 5 RAZONES -->
+                        <!-- 5 RAZONES -->
+                        <!-- 5 RAZONES -->
+                        <!-- 5 RAZONES -->
+                        <div class="card-negro">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="text-center">
+                                    <button class="btn collapsed btn-outline-light text-center btn-lg" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        5 RAZONES POR LAS QUE TU NEGOCIO DEBE TENER UNA PÁGINA WEB
+                                    </button>
+                                </h5>
+                            </div>
+                            <!-- CARROUSEL 5 RAZONES-->
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body text-center">
+                                    <div class="text-center">
+                                        <img src="img/1.png" width="80%">
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="img/1.1.gif" width="80%">
+                                    </div><br>
+
+                                    <div class="text-center">
+                                        <img src="img/2.png" width="80%">
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="img/2.1.gif" width="80%">
+                                    </div><br>
+
+                                    <div class="text-center">
+                                        <img src="img/3.png" width="80%">
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="img/3.2.gif" width="80%">
+                                    </div><br>
+                                    <div class="text-center">
+                                        <img src="img/4.png" width="80%">
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="img/4.1.gif" width="80%">
+                                    </div><br>
+                                    <div class="text-center">
+                                        <img src="img/5.png" width="80%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br>
+
+
+                    </div>
+                </div>
+
+	{{>footer}}
 </body>
 
 </html>
