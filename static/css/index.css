@@ -35,8 +35,8 @@ body {
   
 .espaciador-del-navbar{
   /*z-index: 19;*/
-  height: 101px;
-  /*background-color:red;*/
+  height: 96px;
+  /*background-color:greenyellow;*/
   background-color:#f5f5ef;
 }
 
@@ -58,10 +58,7 @@ footer {
 /*address {
       color: rgb(116, 101, 253);
     }*/
-#myImg {
 
-  width: 60%;
-}
 .card {
 	flex: 1 200px;
 	margin-top: 30px;
