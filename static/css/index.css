@@ -58,7 +58,10 @@ footer {
 /*address {
       color: rgb(116, 101, 253);
     }*/
+#myImg {
 
+  width: 60%;
+}
 .card {
 	flex: 1 200px;
 	margin-top: 30px;
@@ -70,42 +73,6 @@ footer {
 	box-shadow:  0px 0px 2px #ebf0f5;
 	animation: mymove 16s infinite;
 }
-
-/*ANIMACION DE IMAGENES CORTADAS*/
-#slider-k {
-      background: #fff;
-      width: 300px;
-      height: 150px;
-      margin: 50px auto;
-      overflow: hidden;
-      border-radius: .5rem;
-      box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-     }
-#slider-k .frame-k {
-      box-sizing: border-box;
-      width: 25%;
-      height: 100%;
-      float: left;
-      overflow: hidden;
-      border-left: 10px solid rgb(0, 0, 0);
-      
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
-      transform: skewX(-20deg);
-      transition: width 0.8s ease-in-out;
-     }
-#slider-k:hover div {width: 108px;cursor: w-resize;}
-#slider-k:hover div:hover {
-     width: 392px;}
-     
-.frame-k img {
-     margin-left: -55px;
-     transform: skewX(20deg);
-     
-     }
-     
-#slider-k > div:first-child {margin-left: -63px;}
-#slider-k > div:last-child {margin-right: -63px;}
-/*ANIMACION DE IMAGENES CORTADAS*/
 
 
 .titulo {
