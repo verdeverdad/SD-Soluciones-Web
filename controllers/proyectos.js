@@ -35,9 +35,10 @@ const armarMiProyecto = async (req, res, done) => {
         const descripcion = [
                 'Que proyecto quiero: ' + req.body.que_proyecto_quiero,
                 'Punto de partida: ' + req.body.punto_de_partida,
-                'Crear un mapa del sitio: ' + req.body.crear_un_mapa_del_sitio,
-                'Elige las palabras clave: ' + req.body.elige_las_palabras_clave,
-                'Crea los contenidos: ' + req.body.crea_los_contenidos,
+                'Mapa del sitio: ' + req.body.mapa_del_sitio,
+                'Imagenes: ' + req.body.imagenes,
+                'Contenido: ' + req.body.contenido,
+                'Palabras clave: ' + req.body.palabras_clave,
                 'Detalles finales: ' + req.body.detalles_finales
         ]
 
