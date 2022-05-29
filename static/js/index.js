@@ -10,7 +10,7 @@ $(function () {
 
     function modal_armar_mi_proyecto(){
         //console.log("modal_armar_mi_proyecto");
-        
+        document.getElementById("btn-enviar").style.display = "block"; 
 
         let que_proyecto_quiero = document.getElementById("que_proyecto_quiero").value;
         let punto_de_partida = document.getElementById("punto_de_partida").value;
@@ -47,7 +47,7 @@ $(function () {
         document.getElementById("correo_modal").innerHTML = correo;
         document.getElementById("telefono_modal").innerHTML = telefono;
 
-        document.getElementById("btn-enviar").style.display = "block"; 
+        
 
     }
     
