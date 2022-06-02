@@ -35,7 +35,8 @@ const verPerfil = async (req , res) => {
 
                 //const proyectos = req.user._id;
                 res.render('perfil', {
-                        array_de_proyectos
+                        array_de_proyectos, 
+                        titulo: '- Mi Perfil'
                 })
         }
 
@@ -60,7 +61,7 @@ const editarPerfil = async (req , res) => {
         const token = req.header('x-token');
 
         const {uid} = jwt.verify(token, process.env.SECRETORPRIVATEKEY)
-        console.log('el usuario._id es: ', id)
+        //console.log('el usuario._id es: ', id)
 
         if(id === uid){
                 
@@ -73,7 +74,7 @@ const editarPerfil = async (req , res) => {
                         contraseña, 
                         ubicacion
                 };
-                console.log('la data es: ',data);
+                // console.log('la data es: ',data);
 
                 //busco la categoria que voy a modificar
                 //const producto = await Producto.findByIdAndUpdate(id, data, {new:true});
@@ -92,7 +93,7 @@ const editarPerfil = async (req , res) => {
         //console.log('usuario._id: ', usuario);
 
         res.json({
-                mensaje:'sotopu aca estoooooooy!!!'
+                mensaje:'aca estoooooooy!!!'
         });
 
        

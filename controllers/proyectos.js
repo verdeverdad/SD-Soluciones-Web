@@ -78,16 +78,11 @@ const armarMiProyecto = async (req, res, done) => {
 
         let confirmacion_de_proyecto_guardado = true;
 
-        res.render('armar_mi_proyecto',{confirmacion_de_proyecto_guardado});
-        /*res.render('armar_mi_proyecto', {
-                total,
-                proyectos,
-                proyecto,
-                nuevoProyecto,
-                productos
-        })*/
-
-
+        res.render('armar_mi_proyecto',{
+                confirmacion_de_proyecto_guardado, 
+                titulo: '- Armar mi proyecto - Confirmación, proyecto enviado.'
+        });
+        
 
 
 }

@@ -14,28 +14,26 @@ const router = Router();
 const passport = require('passport');
 
 
+
+// ###################
 // HOME
+// ###################
 router.get('/', (req, res) => {
 	res.render('home', {
-		nombre: 'Rafael',
-		//titulo:'Soluciones Web'
-		titulo: 'SD-Soluciones en desarrollo'
+		titulo: ''
 	})
 });
 
 
-// ARMAR MI PROYECTO
-/*router.get('/armar_mi_proyecto', (req, res) => {
-	res.render('armar_mi_proyecto', {
-	//titulo:'Soluciones Web'
-	miMensaje: 'llegue por get'
-    })
-});*/
 
-//el parametro msg es opcional
+// ###################
+// Armar mi proyecto
+// ###################
 /*router.get('/armar_mi_proyecto',verMisProyectos);*/
 router.get('/armar_mi_proyecto',(req, res) => {
-	res.render('armar_mi_proyecto')
+	res.render('armar_mi_proyecto', {
+		titulo: '- Armar mi proyecto'
+	})
 });
 /*router.get('/armar_mi_proyecto/:msg?', (req, res) => {
 	res.render('armar_mi_proyecto', { miMensaje: req.params.msg })
@@ -44,16 +42,20 @@ router.post('/armar_mi_proyecto', armarMiProyecto);
 
 
 
+// ###################
 // QUIENES SOMOS
+// ###################
 router.get('/quienes_somos', (req, res) => {
 	res.render('quienes_somos', {
-		//titulo:'Soluciones Web'
-		titulo: 'SD-Soluciones en desarrollo'
+		titulo: '- ¿Quiénes somos?'
 	})
 });
 
 
+
+// ###################
 // PERFIL
+// ###################
 router.get('/perfil', [estaAutenticado], verPerfil);
 /*router.get('/perfil', [estaAutenticado], (req, res) => {
 	res.render('perfil', {
@@ -78,48 +80,55 @@ router.put('/editar_perfil/:id', [
 
 
 
-
-
+// ###########################
 // TODO LO QUE TENGO QUE SABER
+// ###########################
 router.get('/todo_lo_que_tengo_que_saber', (req, res) => {
 	res.render('todo_lo_que_tengo_que_saber', {
-		//titulo:'Soluciones Web'
-		titulo: 'SD-Soluciones en desarrollo'
+		titulo: '- Todo lo que tengo que saber'
 	})
 });
 
 
+
+// ###################
 // COMO TRABAJAMOS
+// ###################
 router.get('/como_trabajamos', (req, res) => {
 	res.render('como_trabajamos', {
-		//titulo:'Soluciones Web'
-		titulo: 'SD-Soluciones en desarrollo'
+		titulo: '- ¿Cómo trabajamos?'
 	})
 });
 
 
+
+// ###################
 // BLOG
-router.get('/blog', (req, res) => {
+// ###################
+/*router.get('/blog', (req, res) => {
 	res.render('blog', {
-		//titulo:'Soluciones Web'
-		titulo: 'SD-Soluciones en desarrollo'
+		titulo: '- Blog'
 	})
-});
+});*/
 
 
+
+// ###################
 // administracion
-router.get('/administracion', verProductos);
+// ###################
+router.get('/administracion', [estaAutenticado], verProductos);
 
-router.post('/administracion', peticionesPostDeAdministracion); // controlers/productos.js
-
-
-
+router.post('/administracion', [estaAutenticado], peticionesPostDeAdministracion); // controlers/productos.js
 
 
 
+// ###################
 // api test
-router.get('/api_test', (req, res) => {
-	res.render('api_test')
+// ###################
+router.get('/api_test', [estaAutenticado], (req, res) => {
+	res.render('api_test', {
+		titulo: '- Api test'
+	})
 });
 
 
@@ -128,9 +137,6 @@ router.get('*', (req, res) => {
 	res.sendFile(__dirname+'/static/templates/404.html')
 })
 */
-
-
-
 
 
 
@@ -152,13 +158,13 @@ router.post('/registrarse', passport.authenticate('local-signup', {
 //===================================
 
 
+
 // ============
 // login
 // ============
 router.get('/iniciar_sesion', (req, res) => {
 	res.render('iniciar_sesion', {
-		//titulo:'Soluciones Web'
-		titulo: 'SD-Soluciones en desarrollo'
+		titulo: '- Iniciar sesión'
 	})
 });
 
@@ -172,6 +178,7 @@ router.post('/iniciar_sesion', passport.authenticate('local-signin', {
 	failureRedirect: '/iniciar_sesion',
 	passReqToCallback: true
 }));
+
 
 
 // ============
