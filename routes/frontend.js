@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 	res.render('home', {
 		nombre: 'Rafael',
 		//titulo:'Soluciones Web'
-		titulo: 'SD-Soluciones en desarrollo'
+		titulo: 'Desarrollo Soluciones Web'
 	})
 });
 
