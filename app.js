@@ -1,11 +1,11 @@
-/*if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
   }
   
   const DB_URI = process.env.DB_URI
   const PORT = process.env.PORT || 3000;
 
-*/
+
 
 // para utilizar las variables de entorno que estan en el archivo .env
 require('dotenv').config()
